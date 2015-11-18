@@ -1,9 +1,9 @@
-package jdbc.Gupta.Rowset;
+package jdbc.Gupta.rowset;
 
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import jdbc.RowSetConnector;
+import jdbc.Gupta.connection.RowSetConnector;
 
 public class RowSetExample {
 

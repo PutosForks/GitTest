@@ -5,16 +5,11 @@
  */
 package jdbc.applets;
 
-import java.applet.Applet;
-import java.awt.Graphics;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.Timestamp;
+import jdbc.Gupta.connection.DbConnector;
 
-import jdbc.DbConnector;
+import java.applet.Applet;
+import java.awt.*;
+import java.sql.*;
 
 public class TestApplet extends Applet {
 

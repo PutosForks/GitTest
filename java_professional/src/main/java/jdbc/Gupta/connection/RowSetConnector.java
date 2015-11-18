@@ -1,4 +1,4 @@
-package jdbc;
+package jdbc.Gupta.connection;
 
 import java.sql.SQLException;
 import java.util.logging.Level;

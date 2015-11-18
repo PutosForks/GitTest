@@ -3,11 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jdbc.JDBC.Callable;
+package jdbc.Gupta.callable;
 
-import java.sql.*;
-import java.util.*;
-import jdbc.DbConnector;
+import jdbc.Gupta.connection.DbConnector;
+
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.SQLException;
 
 public class UpdateJobHistory {
 

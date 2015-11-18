@@ -1,6 +1,6 @@
-package jdbc.JDBC.Resultsets;
+package jdbc.Gupta.resultsets;
 
-import jdbc.DbConnector;
+import jdbc.Gupta.connection.DbConnector;
 import java.sql.*;
 
 public class Contacts {

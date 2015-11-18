@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import jdbc.DbConnector;
+import jdbc.Gupta.connection.DbConnector;
 
 public class queryTableData {
 
@@ -27,7 +27,9 @@ public class queryTableData {
             while (r.next()) {
                 for (int i = 1; i <= cnt; i++) {
                     System.out.printf("%-15s\t", r.getString(i));
+
                 }
+                System.out.println();
             }
 
             System.out.println("");

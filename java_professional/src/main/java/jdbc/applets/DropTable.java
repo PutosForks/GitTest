@@ -5,8 +5,10 @@
  */
 package jdbc.applets;
 
-import java.awt.BorderLayout;
-import java.awt.Container;
+import jdbc.Gupta.connection.DbConnector;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.Connection;
@@ -15,13 +17,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.swing.JApplet;
-import javax.swing.JOptionPane;
-import javax.swing.JButton;
-import javax.swing.JList;
-import javax.swing.JScrollPane;
-import jdbc.DbConnector;
 
 public class DropTable extends JApplet implements ActionListener {
 

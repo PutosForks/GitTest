@@ -1,6 +1,6 @@
-package jdbc.JDBC.Metadata;
+package jdbc.Gupta.metadata;
 
-import jdbc.DbConnector;
+import jdbc.Gupta.connection.DbConnector;
 import java.sql.*;
 // To illustrate how to obtain metadata from Collection object
 // and examine the metadata for using it in a program

@@ -1,6 +1,6 @@
-package jdbc.JDBC.ResultsetsDML;
+package jdbc.Gupta.resultsetsDML;
 
-import jdbc.DbConnector;
+import jdbc.Gupta.connection.DbConnector;
 import java.sql.*;
 
 public class DeleteContact {

@@ -1,9 +1,10 @@
-package jdbc.JDBC.Binds;
+ package jdbc.Gupta.binds;
 
-import jdbc.DbConnector;
 import java.sql.*;
 
-public class BindSQL {
+import jdbc.Gupta.connection.DbConnector;
+
+ public class BindSQL {
 
     public static void main(String[] args) throws SQLException {
 

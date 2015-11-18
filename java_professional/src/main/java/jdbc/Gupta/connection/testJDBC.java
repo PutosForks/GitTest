@@ -1,4 +1,4 @@
-package jdbc.JDBC.Oracle_Connect;
+package jdbc.Gupta.connection;
 
 import java.sql.DriverManager;
 import java.sql.Connection;
@@ -11,11 +11,8 @@ public class testJDBC {
         System.out.println("-------- Oracle JDBC Connection Testing ------");
 
         try {
-
-            Class.forName("oracle.jdbc.driver.OracleDriver");
-
+            Class.forName("oracle.jdbc.OracleDriver");
         } catch (ClassNotFoundException e) {
-
             System.out.println("Where is your Oracle JDBC Driver?");
             e.printStackTrace();
             return;
@@ -23,17 +20,13 @@ public class testJDBC {
         }
 
         System.out.println("Oracle JDBC Driver Registered!");
-
         Connection connection = null;
 
         try {
-
             connection = DriverManager.getConnection(
                     "jdbc:oracle:thin:@localhost:1521:XE", "hr_remote",
                     "hr");
-
         } catch (SQLException e) {
-
             System.out.println("Connection Failed! Check output console");
             e.printStackTrace();
             return;

@@ -1,6 +1,6 @@
-package jdbc.JDBC.ResultsetsDML;
+package jdbc.Gupta.resultsetsDML;
 
-import jdbc.DbConnector;
+import jdbc.Gupta.connection.DbConnector;
 import java.sql.*;
 
 // To illustrate how to insert a row in a ResultSet and in the database 
