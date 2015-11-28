@@ -1,4 +1,4 @@
-package classdesign.FinalClass;
+package classdesign.gupta.Final;
 
 class Final {
 
@@ -6,7 +6,7 @@ class Final {
     int b;
 
     Final(int a) {
-        this.a = a; // initialization of "a" must be in constructor
+        this.a = a; // initialization of "a" must be in constructor or initialization block
     }
 
     Final() {
