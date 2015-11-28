@@ -19,7 +19,6 @@ public enum IceCream2 {
 }
 
 class UseIceCream2 {
-
     public static void main(String[] args) {
         System.out.println(IceCream2.VANILLA);
     }

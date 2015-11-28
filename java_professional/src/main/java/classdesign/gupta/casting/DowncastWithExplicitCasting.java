@@ -5,10 +5,7 @@
  */
 package classdesign.gupta.casting;
 
-/**
- *
- * @author 502413934
- */
+
 public class DowncastWithExplicitCasting {
 
     static void DowncastWithExplicitCasting(ShoppingItem item) {
