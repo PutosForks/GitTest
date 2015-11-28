@@ -5,15 +5,16 @@ public enum IceCream3 {
     VANILLA("white"),
     STRAWBERRY("pink"),
     WALNUT("brown") {
+        @Override
+        public String toString() {
+            return name() + " overrideed method ";
+        }
 
-                public String toString() {
-                    return name() + " overrideed method ";
-                }
-
-                public void flavour() {
-                    System.out.println("Great!");
-                }
-            },
+        @Override
+        public void flavour() {
+            System.out.println("Great!");
+        }
+    },
     CHOCOLATE("dark brown");
     private String color;
 
@@ -40,12 +41,10 @@ class UseIceCream3 {
 
             System.out.println(ic);
         }
-        
+
         IceCream3.VANILLA.flavour();
         IceCream3.WALNUT.flavour();
-        
-        
-        
-        
+
+
     }
 }

@@ -6,7 +6,9 @@ enum printerTypeEnum {
 
     private int pagePrintCapacity;
 
-    private printerTypeEnum(int pagePrintCapacity) {
+
+    // private constructor
+    printerTypeEnum(int pagePrintCapacity) {
         this.pagePrintCapacity = pagePrintCapacity;
     }
 

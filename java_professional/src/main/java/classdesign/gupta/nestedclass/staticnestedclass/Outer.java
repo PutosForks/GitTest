@@ -7,15 +7,15 @@ public class Outer {
 
     static class Inner {
 
-        static int innerStatic = 5;
+        private static int innerStatic = 5;
         int innerInstance = 8;
-        
+
         Inner () {
             System.out.println(Outer.outerStatic);
         }
-        
+
     }
-    
+
     static int outerStatic2 = Inner.innerStatic;
 
     public static void main(String[] args) {
