@@ -1,4 +1,4 @@
-package classdesign.Enum.Enum2;
+package classdesign.gupta.Enum.printer;
 
 enum printerTypeEnum {
 
