@@ -9,7 +9,9 @@ class DemoMultipleStaticBlocks2 {
 
     static {
         // ++staticVar;              // Static variable cannot access static variable before created
+        staticVar = (int) Math.random();  // YES
         staticVar = 10;              // YES
+
     }
 
     static int staticVar = 0;
