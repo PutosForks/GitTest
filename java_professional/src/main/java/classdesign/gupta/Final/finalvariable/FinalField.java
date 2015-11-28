@@ -1,4 +1,4 @@
-package classdesign.gupta.Final;
+package classdesign.gupta.Final.finalvariable;
 
 class Final {
 

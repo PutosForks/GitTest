@@ -5,10 +5,7 @@
  */
 package classdesign.gupta.Final.finalvariable;
 
-/**
- *
- * @author 502413934
- */
+
 abstract class MyClass {
    // public final int finalVar;
 }
