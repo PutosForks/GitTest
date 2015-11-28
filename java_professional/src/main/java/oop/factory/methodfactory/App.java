@@ -17,12 +17,15 @@ class TextEditor implements App {
 }
 
 abstract class AppFactory {
+
+    public abstract App getApp();
+
     public App getAppInstance() {
         App appln = getApp();
         return appln;
     }
 
-    public abstract App getApp();
+
 }
 
 class WordAppFactory extends AppFactory {

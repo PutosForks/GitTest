@@ -33,9 +33,9 @@ class AppFactory {
 
 class Client {
     public static void main(String args[]) {
-        iApp iApp = AppFactory.getAppInstance(".doc");
-        iApp.open("Hello.doc");
-        iApp iApp2 = AppFactory.getAppInstance(".xml");
-        iApp2.open("Hello.xml");
+        iApp app = AppFactory.getAppInstance(".doc");
+        app.open("Hello.doc");
+        iApp app2 = AppFactory.getAppInstance(".xml");
+        app2.open("Hello.xml");
     }
 }
