@@ -1,5 +1,5 @@
 
-package classdesign.NestedClasses.LocalClass;
+package classdesign.gupta.nestedclass.innerclass;
 
 public class LocalClassExample {
 
