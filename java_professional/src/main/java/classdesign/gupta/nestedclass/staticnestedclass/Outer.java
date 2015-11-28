@@ -11,7 +11,7 @@ public class Outer {
         int innerInstance = 8;
 
         Inner () {
-            System.out.println(Outer.outerStatic);
+            System.out.println(classdesign.gupta.nestedclass.staticnestedclass.phonenumber.Outer.outerStatic);
         }
 
     }
@@ -22,15 +22,15 @@ public class Outer {
         Inner nested1 = new Inner();
         System.out.println(nested1.innerInstance);
         System.out.println(Inner.innerStatic);
-        System.out.println(Outer.outerStatic2);
+        System.out.println(classdesign.gupta.nestedclass.staticnestedclass.phonenumber.Outer.outerStatic2);
     }
 
 }
 
 class TestInner {
     public static void main(String[] args) {
-        Outer.Inner nested1 = new Outer.Inner();
-        Outer outer1 = new Outer();
+        classdesign.gupta.nestedclass.staticnestedclass.phonenumber.Outer.Inner nested1 = new classdesign.gupta.nestedclass.staticnestedclass.phonenumber.Outer.Inner();
+        classdesign.gupta.nestedclass.staticnestedclass.phonenumber.Outer outer1 = new classdesign.gupta.nestedclass.staticnestedclass.phonenumber.Outer();
         //System.out.println(outer1.Inner.);
     }
 }

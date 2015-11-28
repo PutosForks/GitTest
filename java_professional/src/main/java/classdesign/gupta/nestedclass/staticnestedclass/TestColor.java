@@ -1,4 +1,4 @@
-package classdesign.NestedClasses.StaticNestedClass;
+package classdesign.gupta.nestedclass.staticnestedclass;
 
 abstract class Shape {
 
@@ -7,7 +7,7 @@ abstract class Shape {
         int m_red, m_green, m_blue;
 
         public Color() {
-            // call the other overloaded Color constructor by passing default values 
+            // call the other overloaded Color constructor by passing default values
             this(0, 0, 0);
         }
 
@@ -20,17 +20,17 @@ abstract class Shape {
         public String toString() {
             return " red = " + m_red + " green = " + m_green + " blue = " + m_blue;
         }
-        // other color members elided 
+        // other color members elided
     }
-    	// other Shape members elided 
+    	// other Shape members elided
 }
 
 public class TestColor {
 
     public static void main(String[] args) {
-// since Color is a static nested class, 
-// we access it using the name of the outer class, as in Shape.Color 
-// note that we do not (and cannot) instantiate Shape class for using Color class 
+// since Color is a static nested class,
+// we access it using the name of the outer class, as in Shape.Color
+// note that we do not (and cannot) instantiate Shape class for using Color class
         Shape.Color white = new Shape.Color(255, 255, 255);
         System.out.println("White color has values:" + white);
     }

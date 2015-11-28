@@ -1,4 +1,4 @@
-package classdesign.NestedClasses.StaticNestedClass;
+package classdesign.gupta.nestedclass.staticnestedclass.phonenumber;
 
 class Outer {
 
@@ -17,7 +17,7 @@ class Outer {
             System.out.println(Outer.out2);
 
             // non-static variable cannot be accessed from static context
-            //System.out.println(out);  
+            //System.out.println(out);
         }
 
     }
@@ -26,7 +26,7 @@ class Outer {
         this.out = out;
         System.out.println(this.out);
         Inner newIn = new Inner(out + " Initalizing");  // access class
-        newIn.in = "He, he he";  // access inner class members through object of inner class
+        Inner.in = "He, he he";  // access inner class members through object of inner class
     }
 
     void print() {
@@ -49,7 +49,7 @@ public class StaticNestedClass {
         // initailizes only inner class
         Outer.Inner b = new Outer.Inner("Strings 2");
         // b.print     // only inner class is initialized, static cannot address non-static
-        // b.printStatic();    // cannot even use static members 
+        // b.printStatic();    // cannot even use static members
     }
 
 }
