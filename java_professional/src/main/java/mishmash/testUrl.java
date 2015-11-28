@@ -22,7 +22,8 @@ public class testUrl {
 
 		try {
 			InetAddress addr = InetAddress.getByName(
-					InetAddress.getByName("frontend").getHostAddress());
+					InetAddress.getByName("gemoney.my.salesforce.com").getHostAddress());
+			System.out.println(addr.toString());
 		}catch(UnknownHostException e){
 				System.out.println(e);
 			}
