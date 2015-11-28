@@ -1,4 +1,4 @@
-package classdesign.Abstract;
+package classdesign.gupta.abstractclass;
 
 class Base {
 
