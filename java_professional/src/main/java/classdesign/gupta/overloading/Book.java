@@ -14,19 +14,19 @@ public class Book {
         b.review(1, new ArrayList(5));
     }
 
-    void criticize (Integer in) {
+    void criticize(Integer in) {
         System.out.println("Book critic");
     }
 }
 
 class CourseBook extends Book {
 
-    void review(int id, ArrayList names) {            // Overrides
+    void review(int id, ArrayList names) {            //    Overloads
         System.out.println("This is CourseBook list: " + names.size());
 
     }
 
-    void criticize (Integer in) {                    //Overloads
+    void criticize(Integer in) {                    //   Overrides
         System.out.println("CourseBook critic");
     }
 

@@ -10,11 +10,11 @@ package classdesign.gupta.instanceinitializer;
  * @author 502413934
  */
 public class Parent {
-    
+
     Parent () {
         System.out.println("parent constuctor");
     }
-    
+
     {
         System.out.println("parent init block");
     }
@@ -22,17 +22,17 @@ public class Parent {
 
 class Child extends Parent {
     Child () {
-        super();
+      //  super();       // nemusi byt
         System.out.println("child constructor");
     }
-    
+
     {
-     System.out.println("child init block"); 
+     System.out.println("child init block");
     }
 
     public static void main(String[] args) {
-        Child c = new Child();
+       new Child();
     }
-    
+
 }
 

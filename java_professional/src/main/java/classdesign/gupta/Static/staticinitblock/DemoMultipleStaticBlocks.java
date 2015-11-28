@@ -5,15 +5,13 @@
  */
 package classdesign.gupta.Static.staticinitblock;
 
-/**
- *
- * @author 502413934
- */
+
 public class DemoMultipleStaticBlocks {
 
     static {
-        staticVar = 10; 
+        staticVar = 10;
     }
+
     static int staticVar = 0;
 
     static {

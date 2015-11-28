@@ -4,11 +4,12 @@ package classdesign.gupta.Static.staticinitblock;
 
 class StaticBlock {
 
-    static double var;
-
     static {
         var = (Math.random());
     }
+
+    static double var;
+
 }
 
 public class StaticBlockDemo {
