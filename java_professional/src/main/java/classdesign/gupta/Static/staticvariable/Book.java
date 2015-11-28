@@ -17,11 +17,11 @@ class Book {
 class Publisher {
 
     public static void main(String args[]) {
-        System.out.println(Book.bookCount);
+        System.out.println(Book.bookCount);    // 0
         Book b1 = new Book();
         Book b2 = new Book();
-        System.out.println(Book.bookCount);
+        System.out.println(Book.bookCount);    // 2
         b1.bookCount = 10;
-        System.out.println(b2.bookCount);
+        System.out.println(b2.bookCount);      // 10
     }
 }

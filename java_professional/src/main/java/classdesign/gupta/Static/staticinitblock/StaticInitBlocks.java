@@ -23,8 +23,8 @@ public class StaticInitBlocks {
     }
 
     public static void main(String args[]) {
-        new StaticInitBlocks();  // makes 11, 12
+        new StaticInitBlocks();  // First, Second,  12
         modifyStaticVar();      // makes 13
-        new StaticInitBlocks();    // nothing 
+        new StaticInitBlocks();    // only prints out the 13 from previous
     }
 }

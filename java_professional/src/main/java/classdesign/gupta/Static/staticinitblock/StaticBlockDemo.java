@@ -1,4 +1,4 @@
-package classdesign.StaticClass;
+package classdesign.gupta.Static.staticinitblock;
 
 
 
