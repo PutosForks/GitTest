@@ -4,6 +4,8 @@ interface App {
     void open(String filename);
 }
 
+
+// two classes of files being opened
 class WordProcessor implements App {
     public void open(String filename) {
         System.out.println("Launch WordProcessor using " + filename);
@@ -15,6 +17,8 @@ class TextEditor implements App {
         System.out.println("Launch TextEditor using " + filename);
     }
 }
+
+
 
 abstract class AppFactory {
 
