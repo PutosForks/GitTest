@@ -3,27 +3,21 @@ package oop.dao;
 import java.util.ArrayList;
 
 class Emp {
-
     int id;
     String name;
     int age;
     String address;
 }
 
-interface EmpDAO {
-
-    public int create(Emp e);
-
-    public Emp get(int id);
-
-    public boolean delete(Emp e);
-
-    public boolean update(Emp e);
-
-    public ArrayList<Emp> getAll();
+interface iEmpDAO {
+    int create(Emp e);
+    Emp get(int id);
+    boolean delete(Emp e);
+    boolean update(Emp e);
+    ArrayList<Emp> getAll();
 }
 
-class EmpDAOImpl implements EmpDAO {
+class EmpDAOImpl implements iEmpDAO {
 
     public int create(Emp e) {
         /* connect to datastore, insert data for employee e */
@@ -59,7 +53,7 @@ public class Dao {
         emp.name = "Harry";
         emp.age = 39;
         emp.address = "UK";
-        EmpDAO dao = new EmpDAOImpl();
+        iEmpDAO dao = new EmpDAOImpl();
         dao.create(emp);
         emp.name = "Harry M";
         emp.age = 40;

@@ -51,7 +51,7 @@ class Application {
 
 }
 
-class testApplication {
+class ConnectToApplication {
 
     public static void main(String[] args) {
         Application application = new Application(getConnectionFactory(ConnectionEnum.MSSQL));
