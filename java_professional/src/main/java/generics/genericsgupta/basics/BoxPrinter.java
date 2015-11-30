@@ -1,11 +1,11 @@
 package generics.genericsgupta.basics;
 
 
-public class BoxPinter<T> {
+public class BoxPrinter<T> {
 
     private T val;
 
-    BoxPinter(T val) {
+    BoxPrinter(T val) {
         this.val = val;
     }
 
@@ -14,13 +14,13 @@ public class BoxPinter<T> {
     }
 }
 
-class BoxPinterTest {
+class BoxPrinterTest {
 
     public static void main(String[] args) {
-        BoxPinter<Integer> bp1 = new BoxPinter<>(10);
+        BoxPrinter<Integer> bp1 = new BoxPrinter<>(10);
         System.out.println(bp1);
 
-        BoxPinter<String> bp2 = new BoxPinter<>("Hello man");
+        BoxPrinter<String> bp2 = new BoxPrinter<>("Hello man");
         System.out.println(bp2);
     }
 }
