@@ -16,10 +16,10 @@ public class Examples {
         return count;
     }
 
-    public interface Comparable<T> {
-        public int compareTo(T o);
-    }
+
 }
+
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
