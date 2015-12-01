@@ -1,0 +1,15 @@
+command;description
+ALT+F1;Find in Project
+CTRL+N;Find class by name
+ALT+INSERT  ;New(Add)
+ALT+ENTER ;fix individual import
+CTRL+ALT+O;optimize imports
+CTRL+ALT+L;reformat code
+CTRL+ALT+/;comment/uncomment
+;
+;
+search;description
+F3;find next
+SHIFT+F3;find previous
+;
+CTRL+F12 ;describe current file
