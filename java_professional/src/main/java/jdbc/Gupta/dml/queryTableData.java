@@ -1,12 +1,14 @@
 package jdbc.Gupta.dml;
 
+
+import jdbc.DbConnector;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import jdbc.Gupta.connection.DbConnector;
 
 public class queryTableData {
 

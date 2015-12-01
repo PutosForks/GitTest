@@ -1,8 +1,11 @@
  package jdbc.Gupta.binds;
 
-import java.sql.*;
+ import jdbc.DbConnector;
 
-import jdbc.Gupta.connection.DbConnector;
+ import java.sql.Connection;
+ import java.sql.PreparedStatement;
+ import java.sql.ResultSet;
+ import java.sql.SQLException;
 
  public class BindSQL {
 

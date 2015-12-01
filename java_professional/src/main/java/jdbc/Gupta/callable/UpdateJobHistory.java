@@ -5,11 +5,13 @@
  */
 package jdbc.Gupta.callable;
 
-import jdbc.Gupta.connection.DbConnector;
+import jdbc.DbConnector;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.SQLException;
+
+;
 
 public class UpdateJobHistory {
 

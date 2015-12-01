@@ -5,7 +5,8 @@
  */
 package jdbc.applets;
 
-import jdbc.Gupta.connection.DbConnector;
+
+import jdbc.DbConnector;
 
 import javax.swing.*;
 import java.awt.*;

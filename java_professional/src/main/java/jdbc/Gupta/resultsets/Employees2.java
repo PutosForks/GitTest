@@ -1,7 +1,12 @@
 package jdbc.Gupta.resultsets;
 
-import jdbc.Gupta.connection.DbConnector;
-import java.sql.*;
+
+import jdbc.DbConnector;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class Employees2 {
 

@@ -1,6 +1,7 @@
 package jdbc.Gupta.transaction;
 
-import jdbc.Gupta.connection.DbConnector;
+
+import jdbc.DbConnector;
 
 import java.sql.Connection;
 import java.sql.SQLException;
