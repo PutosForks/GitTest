@@ -1,23 +1,19 @@
 
-package jdbc.Gupta.connection;
+package jdbc;
 
-import java.sql.*;
-import java.util.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class DbConnector {
 
     public static Connection connectToDb() throws SQLException {
-        //String url = "jdbc:oracle:thin:@comdbtstx:1521:";
-        //String database = "comodadev";
-        String url = "jdbc:oracle:thin:@localhost:1521:XE";
-        Properties prop = new Properties();
-        prop.put("user", "hr_remote");
-        prop.put("password", "hr");
+        String url = "jdbc:oracle:thin:@comdbtstx:1521:";
+        String database = "comodadev";
+        String userName = "developer7";
+        String password = "marko14";
 
-        String userName = "developer5";
-        String password = "tomas32";
-
-        return DriverManager.getConnection(url, prop);
+        return DriverManager.getConnection(url + database, userName, password);
 
     }
 }

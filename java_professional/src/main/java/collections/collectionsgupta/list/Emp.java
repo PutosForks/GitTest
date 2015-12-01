@@ -25,7 +25,7 @@ public class Emp {
     }
 
     public static void main(String args[]) {
-        ArrayList<Emp> list = new ArrayList<Emp>();
+        ArrayList<Emp> list = new ArrayList<>();
         list.add(new Emp(121, "Shreya"));
         list.add(new Emp(55, "Harry"));
         list.add(new Emp(15, "Paul"));
