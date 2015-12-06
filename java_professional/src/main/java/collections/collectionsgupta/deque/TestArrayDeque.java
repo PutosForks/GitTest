@@ -7,8 +7,7 @@ import java.util.Arrays;
 public class TestArrayDeque {
     public static void main(String... args) {
         String strArray[] = {"A1", "B2", "C3"};
-        ArrayDeque<String> arrDeque = new
-                ArrayDeque<String>(Arrays.asList(strArray));
+        ArrayDeque<String> arrDeque = new ArrayDeque<String>(Arrays.asList(strArray));
         arrDeque.push("D4");   // adds to beginning
         arrDeque.offer("E5");   //  adds to end
         //arrDeque.push(null);   // Runtime NullPointerexception

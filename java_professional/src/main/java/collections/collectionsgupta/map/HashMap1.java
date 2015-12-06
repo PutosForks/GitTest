@@ -22,7 +22,7 @@ public class HashMap1 {
         keys = copySalaryMap.keySet();
 
         for (String k : keys)
-            System.out.println(k);
+            System.out.println(k);   // Paul still there
 
     }
 }

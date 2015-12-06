@@ -21,7 +21,6 @@ public class HashMap2 {
 
         if (iceCreamMap.containsKey("Shreya")) System.out.println(iceCreamMap.get("Shreya"));
 
-
         if (iceCreamMap.containsKey("Shreya") && iceCreamMap.get("Shreya").contains(IceCream.WALNUT)) System.out.println("I am delicious");
 
 

@@ -7,8 +7,8 @@ import java.util.Set;
 
 
 enum Color {
-        RED,BLUE,YELLOW;
-        }
+    RED, BLUE, YELLOW;
+}
 
 
 public class HashMap6 {

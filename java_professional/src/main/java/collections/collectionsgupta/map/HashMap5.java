@@ -14,7 +14,7 @@ public class HashMap5 {
         HashMap<Integer, String> targetMap = new HashMap<>();
         targetMap.put(1, "Shreya");
 
-            targetMap.putAll(sourceMap);
+        targetMap.putAll(sourceMap);
 
         for (Integer key : targetMap.keySet())
         System.out.println(targetMap.get(key));
