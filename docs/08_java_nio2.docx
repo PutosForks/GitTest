@@ -1,0 +1,3 @@
+Nio2
+* Objects of the java.nio.file.Path interface are used to represent the path of files or directories in a file system.
+* an object of Path might not be tied to a real file or directory on a system. The Path interface defines methods to work with and to manipulate Path objects, resolving one path to another. But it doesn’t contain methods to work with the actual physical directories and files that a Path object refers to. To work with the actual files and directories, you can use java.nio.file.Files.
