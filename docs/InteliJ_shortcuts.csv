@@ -13,3 +13,9 @@ F3;find next
 SHIFT+F3;find previous
 ;
 CTRL+F12 ;describe current file
+;
+;
+view;
+CTRL+ Q;view documentation
+CTRL + B ;go to decaration
+CTRL + P;see parameters
