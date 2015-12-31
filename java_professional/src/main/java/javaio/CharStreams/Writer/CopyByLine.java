@@ -2,7 +2,7 @@ package javaio.CharStreams.Writer;
 
 import java.io.*;
 
-public class Copy {
+public class CopyByLine {
 
     public static void main(String[] files) {
         if (files.length != 2) {
@@ -15,10 +15,10 @@ public class Copy {
         try (BufferedReader inputfile = new BufferedReader(new FileReader(srcFile));
              BufferedWriter outputFile = new BufferedWriter(new FileWriter(destFile))) {
 
-            int ch = 0;
+            String chars;
 
-            while ((ch = inputfile.read()) != -1) {
-                outputFile.write(ch);
+            while ((chars = inputfile.readLine()) != null) {
+                outputFile.write(chars);
             }
 
         } catch (FileNotFoundException fnfe) {
@@ -32,5 +32,4 @@ public class Copy {
         }
 
     }
-
 }

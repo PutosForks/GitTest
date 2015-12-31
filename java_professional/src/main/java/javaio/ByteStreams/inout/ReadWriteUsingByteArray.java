@@ -4,9 +4,6 @@ import javaio.file.ResourceDir;
 
 import java.io.*;
 
-/**
- * Created by 502413934 on 7.12.2015.
- */
 public class ReadWriteUsingByteArray {
 	public static void main(String[] args) {
 		File resource = ResourceDir.getResourceDir();
@@ -19,7 +16,7 @@ public class ReadWriteUsingByteArray {
 			OutputStream out = new FileOutputStream(pdfCopy);
 
           int data;
-			byte [] byteArray = new byte[2048];
+			byte [] byteArray = new byte[1024];
 
 			while ((data = in.read(byteArray)) != -1) {
 				out.write(byteArray,0,data);

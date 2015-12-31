@@ -10,9 +10,8 @@ public class CountDirFiles {
 		File dir = ResourceDir.getResourceDir();
 		System.out.println(dir.isDirectory());
 		if (dir.isDirectory()) {
-			String[] files = dir.list();
-			for (String item: files) {
-				File fileItem = new File(dir, item);
+			File[] files = dir.listFiles();
+			for (File fileItem: files) {
 				if (fileItem.isDirectory())   directoryCount++;
 				if (fileItem.isFile()) fileCount++;
 

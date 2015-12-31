@@ -17,7 +17,8 @@ public class ReadWriteFiles {
 			OutputStream out = new FileOutputStream(pdfCopy);
 
 			int data;
-			while ((data = in.read()) != -1) {
+			while ((data = in.read())
+					!= -1) {
               out.write(data);
 			}
 

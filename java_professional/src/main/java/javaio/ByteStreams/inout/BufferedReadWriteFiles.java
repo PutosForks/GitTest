@@ -4,9 +4,6 @@ import javaio.file.ResourceDir;
 
 import java.io.*;
 
-/**
- * Created by 502413934 on 7.12.2015.
- */
 public class BufferedReadWriteFiles {
 	public static void main(String[] args) {
 		File resource = ResourceDir.getResourceDir();
