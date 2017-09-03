@@ -17,11 +17,16 @@
     <property name="show_sql">true</property>
     <property name="hibernate.format_sql">true</property>
 
+
     <mapping class="hibernate.model.Price"/>
     <mapping class="hibernate.model.Skill"/>
     <mapping class="hibernate.model.Client"/>
     <mapping class="hibernate.model.ClientDetail"/>
     <mapping class="hibernate.model.Address"/>
+    <mapping class="hibernate.model.JsTransaction"/>
+    <mapping class="hibernate.model.JsCustomer"/>
+    <mapping class="hibernate.model.one2one.Person"/>
+    <mapping class="hibernate.model.one2one.PersonAddress"/>
 
   </session-factory>
 </hibernate-configuration>
