@@ -1,0 +1,1529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ClientPropertiesManager">
+    <properties class="javax.swing.AbstractButton">
+      <property name="hideActionText" class="java.lang.Boolean" />
+    </properties>
+    <properties class="javax.swing.JComponent">
+      <property name="html.disable" class="java.lang.Boolean" />
+    </properties>
+    <properties class="javax.swing.JEditorPane">
+      <property name="JEditorPane.w3cLengthUnits" class="java.lang.Boolean" />
+      <property name="JEditorPane.honorDisplayProperties" class="java.lang.Boolean" />
+      <property name="charset" class="java.lang.String" />
+    </properties>
+    <properties class="javax.swing.JList">
+      <property name="List.isFileList" class="java.lang.Boolean" />
+    </properties>
+    <properties class="javax.swing.JPasswordField">
+      <property name="JPasswordField.cutCopyAllowed" class="java.lang.Boolean" />
+    </properties>
+    <properties class="javax.swing.JSlider">
+      <property name="Slider.paintThumbArrowShape" class="java.lang.Boolean" />
+      <property name="JSlider.isFilled" class="java.lang.Boolean" />
+    </properties>
+    <properties class="javax.swing.JTable">
+      <property name="Table.isFileList" class="java.lang.Boolean" />
+      <property name="JTable.autoStartsEdit" class="java.lang.Boolean" />
+      <property name="terminateEditOnFocusLost" class="java.lang.Boolean" />
+    </properties>
+    <properties class="javax.swing.JToolBar">
+      <property name="JToolBar.isRollover" class="java.lang.Boolean" />
+    </properties>
+    <properties class="javax.swing.JTree">
+      <property name="JTree.lineStyle" class="java.lang.String" />
+    </properties>
+    <properties class="javax.swing.text.JTextComponent">
+      <property name="caretAspectRatio" class="java.lang.Double" />
+      <property name="caretWidth" class="java.lang.Integer" />
+    </properties>
+  </component>
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="Javac" />
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="2ndLevelCache" />
+        <module name="AccessHibernateApi" />
+        <module name="AttributeConverterForDateAndTime" />
+        <module name="CheckSQLStatementCount" />
+        <module name="CommentSQLStatements" />
+        <module name="CustomEnumerationsMapping" />
+        <module name="CustomSequence" />
+        <module name="DatabaseViews" />
+        <module name="DefineTableAndSchemaName" />
+        <module name="DerivedPrimaryKey" />
+        <module name="Formula" />
+        <module name="HibernateBootstrapping" />
+        <module name="HibernateJoinUnassociatedEntities" />
+        <module name="InheritanceJoined" />
+        <module name="InheritanceMappedSuperclass" />
+        <module name="InheritanceSingleTable" />
+        <module name="InheritanceTablePerClass" />
+        <module name="JoinFetch" />
+        <module name="JPQLAdHocQuery" />
+        <module name="JPQLConstructorExpression" />
+        <module name="JPQLNamedQuery" />
+        <module name="JPQLScalarValues" />
+        <module name="LogSQLStatements" />
+        <module name="MapBasicAttributes" />
+        <module name="MapEnumerations" />
+        <module name="MapGeneratedColumns" />
+        <module name="MapNativeQueryToEntity" />
+        <module name="MapNativeQueryToPojo" />
+        <module name="MapUtilDate" />
+        <module name="NamedNativeQuery" />
+        <module name="NativeQuery" />
+        <module name="OrderRelationships" />
+        <module name="PrePersistLifecycleEvent" />
+        <module name="QueryCache" />
+        <module name="QueryPagination" />
+        <module name="QueryTimeout" />
+        <module name="SpringBootBootstrapping" />
+        <module name="StoredProcedureQuery" />
+        <module name="TransientAttributes" />
+        <module name="Treat" />
+      </profile>
+      <profile default="false" name="Annotation profile for HibernateMultipleId" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="HibernateMultipleId" />
+      </profile>
+      <profile default="false" name="Annotation profile for CriteriaQuery" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="CriteriaQuery" />
+      </profile>
+      <profile default="false" name="Annotation profile for PrimaryKey" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="PrimaryKey" />
+      </profile>
+      <profile default="false" name="Annotation profile for JPQLUpdate" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="JPQLUpdate" />
+      </profile>
+      <profile default="false" name="Annotation profile for AssociationUnidirectionalManyToOne" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="AssociationUnidirectionalManyToOne" />
+      </profile>
+      <profile default="false" name="Annotation profile for CriteriaUpdate" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="CriteriaUpdate" />
+      </profile>
+      <profile default="false" name="Annotation profile for MapOptionalAssociations" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="MapOptionalAssociations" />
+      </profile>
+      <profile default="false" name="Annotation profile for CriteriaDelete" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="CriteriaDelete" />
+      </profile>
+      <profile default="false" name="Annotation profile for AssociationUnidirectionalManyToMany" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="AssociationUnidirectionalManyToMany" />
+      </profile>
+      <profile default="false" name="Annotation profile for DateAndTime" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="DateAndTime" />
+      </profile>
+      <profile default="false" name="Annotation profile for CriteriaTuples" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="CriteriaTuples" />
+      </profile>
+      <profile default="false" name="Annotation profile for CriteriaCustomFunction" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="CriteriaCustomFunction" />
+      </profile>
+      <profile default="false" name="Annotation profile for PrimaryKeyUUID" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="PrimaryKeyUUID" />
+      </profile>
+      <profile default="false" name="Annotation profile for AssociationsWithAttributes" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="AssociationsWithAttributes" />
+      </profile>
+      <profile default="false" name="Annotation profile for JPAMetamodel" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="JPAMetamodel" />
+      </profile>
+      <profile default="false" name="Annotation profile for AssociationBidirectionalOneToOne" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="AssociationBidirectionalOneToOne" />
+      </profile>
+      <profile default="false" name="Annotation profile for CriteriaStandardFunction" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="CriteriaStandardFunction" />
+      </profile>
+      <profile default="false" name="Annotation profile for JpqlStandardFunction" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="JpqlStandardFunction" />
+      </profile>
+      <profile default="false" name="Annotation profile for CriteriaConstructor" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="CriteriaConstructor" />
+      </profile>
+      <profile default="false" name="Annotation profile for ResultsAsStreams" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="ResultsAsStreams" />
+      </profile>
+      <profile default="false" name="Annotation profile for PrimaryKeyTableStrategy" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="PrimaryKeyTableStrategy" />
+      </profile>
+      <profile default="false" name="Annotation profile for AssociationBidirectionalManyToMany" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="AssociationBidirectionalManyToMany" />
+      </profile>
+      <profile default="false" name="Annotation profile for JPQLDelete" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="JPQLDelete" />
+      </profile>
+      <profile default="false" name="Annotation profile for AssociationUnidirectionalOneToOne" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="AssociationUnidirectionalOneToOne" />
+      </profile>
+      <profile default="false" name="Annotation profile for JPABootstrapping" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="JPABootstrapping" />
+      </profile>
+      <profile default="false" name="Annotation profile for AssociationBidirectionalManyToOne" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="AssociationBidirectionalManyToOne" />
+      </profile>
+      <profile default="false" name="Annotation profile for EntityGraph" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="EntityGraph" />
+      </profile>
+      <profile default="false" name="Annotation profile for HibernateNaturalId" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="HibernateNaturalId" />
+      </profile>
+      <profile default="false" name="Annotation profile for CriteriaQueryPagination" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="CriteriaQueryPagination" />
+      </profile>
+      <profile default="false" name="Annotation profile for PrimaryKeyIdentityStrategy" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="PrimaryKeyIdentityStrategy" />
+      </profile>
+      <profile default="false" name="Annotation profile for JPQLCustomFunction" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="JPQLCustomFunction" />
+      </profile>
+      <profile default="false" name="Annotation profile for AssociationUnidirectionalOneToMany" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="AssociationUnidirectionalOneToMany" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="2ndLevelCache" target="1.8" />
+      <module name="AccessHibernateApi" target="1.8" />
+      <module name="AssociationBidirectionalManyToMany" target="1.8" />
+      <module name="AssociationBidirectionalManyToOne" target="1.8" />
+      <module name="AssociationBidirectionalOneToOne" target="1.8" />
+      <module name="AssociationsWithAttributes" target="1.8" />
+      <module name="AssociationUnidirectionalManyToMany" target="1.8" />
+      <module name="AssociationUnidirectionalManyToOne" target="1.8" />
+      <module name="AssociationUnidirectionalOneToMany" target="1.8" />
+      <module name="AssociationUnidirectionalOneToOne" target="1.8" />
+      <module name="AttributeConverterForDateAndTime" target="1.8" />
+      <module name="CheckSQLStatementCount" target="1.8" />
+      <module name="CommentSQLStatements" target="1.8" />
+      <module name="CriteriaConstructor" target="1.8" />
+      <module name="CriteriaCustomFunction" target="1.8" />
+      <module name="CriteriaDelete" target="1.8" />
+      <module name="CriteriaQuery" target="1.8" />
+      <module name="CriteriaQueryPagination" target="1.8" />
+      <module name="CriteriaStandardFunction" target="1.8" />
+      <module name="CriteriaTuples" target="1.8" />
+      <module name="CriteriaUpdate" target="1.8" />
+      <module name="CustomEnumerationsMapping" target="1.8" />
+      <module name="CustomSequence" target="1.8" />
+      <module name="DatabaseViews" target="1.8" />
+      <module name="DateAndTime" target="1.8" />
+      <module name="DefineTableAndSchemaName" target="1.8" />
+      <module name="DerivedPrimaryKey" target="1.8" />
+      <module name="EntityGraph" target="1.8" />
+      <module name="Formula" target="1.8" />
+      <module name="HibernateBootstrapping" target="1.8" />
+      <module name="HibernateJoinUnassociatedEntities" target="1.8" />
+      <module name="HibernateMultipleId" target="1.8" />
+      <module name="HibernateNaturalId" target="1.8" />
+      <module name="HibernateTips" target="1.8" />
+      <module name="InheritanceJoined" target="1.8" />
+      <module name="InheritanceMappedSuperclass" target="1.8" />
+      <module name="InheritanceSingleTable" target="1.8" />
+      <module name="InheritanceTablePerClass" target="1.8" />
+      <module name="JoinFetch" target="1.8" />
+      <module name="JPABootstrapping" target="1.8" />
+      <module name="JPAMetamodel" target="1.8" />
+      <module name="JPQLAdHocQuery" target="1.8" />
+      <module name="JPQLConstructorExpression" target="1.8" />
+      <module name="JPQLCustomFunction" target="1.8" />
+      <module name="JPQLDelete" target="1.8" />
+      <module name="JPQLNamedQuery" target="1.8" />
+      <module name="JPQLScalarValues" target="1.8" />
+      <module name="JpqlStandardFunction" target="1.8" />
+      <module name="JPQLUpdate" target="1.8" />
+      <module name="LogSQLStatements" target="1.8" />
+      <module name="MapBasicAttributes" target="1.8" />
+      <module name="MapEnumerations" target="1.8" />
+      <module name="MapGeneratedColumns" target="1.8" />
+      <module name="MapNativeQueryToEntity" target="1.8" />
+      <module name="MapNativeQueryToPojo" target="1.8" />
+      <module name="MapOptionalAssociations" target="1.8" />
+      <module name="MapUtilDate" target="1.8" />
+      <module name="NamedNativeQuery" target="1.8" />
+      <module name="NativeQuery" target="1.8" />
+      <module name="OrderRelationships" target="1.8" />
+      <module name="PrePersistLifecycleEvent" target="1.8" />
+      <module name="PrimaryKey" target="1.8" />
+      <module name="PrimaryKeyIdentityStrategy" target="1.8" />
+      <module name="PrimaryKeyTableStrategy" target="1.8" />
+      <module name="PrimaryKeyUUID" target="1.8" />
+      <module name="QueryCache" target="1.8" />
+      <module name="QueryPagination" target="1.8" />
+      <module name="QueryTimeout" target="1.8" />
+      <module name="ResultsAsStreams" target="1.8" />
+      <module name="SpringBootBootstrapping" target="1.8" />
+      <module name="StoredProcedureQuery" target="1.8" />
+      <module name="TransientAttributes" target="1.8" />
+      <module name="Treat" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/2ndLevelCache" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AccessHibernateApi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AssociationBidirectionalManyToMany" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AssociationBidirectionalManyToOne" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AssociationBidirectionalOneToOne" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AssociationUnidirectionalManyToMany" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AssociationUnidirectionalManyToOne" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AssociationUnidirectionalOneToMany" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AssociationUnidirectionalOneToOne" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AssociationsWithAttributes" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AttributeConverterForDateAndTime" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CheckSQLStatementCount" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CommentSQLStatements" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CriteriaConstructor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CriteriaCustomFunction" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CriteriaDelete" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CriteriaQuery" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CriteriaQueryPagination" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CriteriaStandardFunction" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CriteriaTuples" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CriteriaUpdate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CustomEnumerationsMapping" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CustomSequence" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DatabaseViews" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DateAndTime" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DefineTableAndSchemaName" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DerivedPrimaryKey" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/EntityGraph" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Formula" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HibernateBootstrapping" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HibernateJoinUnassociatedEntities" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HibernateMultipleId" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HibernateNaturalId" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/InheritanceJoined" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/InheritanceMappedSuperclass" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/InheritanceSingleTable" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/InheritanceTablePerClass" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JPABootstrapping" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JPAMetamodel" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JPQLAdHocQuery" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JPQLConstructorExpression" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JPQLCustomFunction" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JPQLDelete" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JPQLNamedQuery" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JPQLScalarValues" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JPQLUpdate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JoinFetch" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JpqlStandardFunction" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/LogSQLStatements" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MapBasicAttributes" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MapEnumerations" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MapGeneratedColumns" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MapNativeQueryToEntity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MapNativeQueryToPojo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MapOptionalAssociations" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MapUtilDate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NamedNativeQuery" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/NativeQuery" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OrderRelationships" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/PrePersistLifecycleEvent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/PrimaryKey" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/PrimaryKeyIdentityStrategy" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/PrimaryKeyTableStrategy" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/PrimaryKeyUUID" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/QueryCache" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/QueryPagination" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/QueryTimeout" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ResultsAsStreams" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBootBootstrapping" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/StoredProcedureQuery" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/TransientAttributes" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Treat" charset="UTF-8" />
+  </component>
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="InspectionProjectProfileManager">
+    <profile version="1.0">
+      <option name="myName" value="Project Default" />
+      <option name="myLocal" value="true" />
+      <inspection_tool class="AutoUnboxing" enabled="true" level="WARNING" enabled_by_default="true" />
+      <inspection_tool class="CheckDtdRefs" enabled="false" level="ERROR" enabled_by_default="false" />
+      <inspection_tool class="CheckEmptyScriptTag" enabled="false" level="WARNING" enabled_by_default="false" />
+      <inspection_tool class="CheckImageSize" enabled="false" level="WARNING" enabled_by_default="false" />
+      <inspection_tool class="CheckTagEmptyBody" enabled="false" level="WARNING" enabled_by_default="false" />
+      <inspection_tool class="CheckValidXmlInScriptTagBody" enabled="false" level="ERROR" enabled_by_default="false" />
+      <inspection_tool class="CheckXmlFileWithXercesValidator" enabled="false" level="ERROR" enabled_by_default="false" />
+      <inspection_tool class="ConditionSignal" enabled="true" level="WARNING" enabled_by_default="true" />
+      <inspection_tool class="EmptyWebServiceClass" enabled="false" level="WARNING" enabled_by_default="false" />
+      <inspection_tool class="EqualsAndHashcode" enabled="true" level="WARNING" enabled_by_default="true" />
+      <inspection_tool class="EqualsCalledOnEnumConstant" enabled="true" level="WARNING" enabled_by_default="true" />
+      <inspection_tool class="HtmlExtraClosingTag" enabled="false" level="ERROR" enabled_by_default="false" />
+      <inspection_tool class="HtmlUnknownAttribute" enabled="false" level="WARNING" enabled_by_default="false">
+        <option name="myValues">
+          <value>
+            <list size="5">
+              <item index="0" class="java.lang.String" itemvalue="type" />
+              <item index="1" class="java.lang.String" itemvalue="wmode" />
+              <item index="2" class="java.lang.String" itemvalue="src" />
+              <item index="3" class="java.lang.String" itemvalue="width" />
+              <item index="4" class="java.lang.String" itemvalue="height" />
+            </list>
+          </value>
+        </option>
+        <option name="myCustomValuesEnabled" value="true" />
+      </inspection_tool>
+      <inspection_tool class="HtmlUnknownTag" enabled="false" level="WARNING" enabled_by_default="false">
+        <option name="myValues">
+          <value>
+            <list size="5">
+              <item index="0" class="java.lang.String" itemvalue="embed" />
+              <item index="1" class="java.lang.String" itemvalue="nobr" />
+              <item index="2" class="java.lang.String" itemvalue="noembed" />
+              <item index="3" class="java.lang.String" itemvalue="comment" />
+              <item index="4" class="java.lang.String" itemvalue="script" />
+            </list>
+          </value>
+        </option>
+        <option name="myCustomValuesEnabled" value="true" />
+      </inspection_tool>
+      <inspection_tool class="ImplicitNumericConversion" enabled="true" level="WARNING" enabled_by_default="true">
+        <option name="ignoreWideningConversions" value="false" />
+        <option name="ignoreCharConversions" value="false" />
+        <option name="ignoreConstantConversions" value="false" />
+      </inspection_tool>
+      <inspection_tool class="IntegerMultiplicationImplicitCastToLong" enabled="true" level="WARNING" enabled_by_default="true">
+        <option name="ignoreNonOverflowingCompileTimeConstants" value="true" />
+      </inspection_tool>
+      <inspection_tool class="LongLiteralsEndingWithLowercaseL" enabled="true" level="WARNING" enabled_by_default="true" />
+      <inspection_tool class="MissingOverrideAnnotation" enabled="true" level="WARNING" enabled_by_default="true">
+        <option name="ignoreObjectMethods" value="true" />
+        <option name="ignoreAnonymousClassMethods" value="false" />
+      </inspection_tool>
+      <inspection_tool class="MisspelledEquals" enabled="true" level="WARNING" enabled_by_default="true" />
+      <inspection_tool class="ObjectEquality" enabled="true" level="WARNING" enabled_by_default="true">
+        <option name="m_ignoreEnums" value="true" />
+        <option name="m_ignoreClassObjects" value="false" />
+        <option name="m_ignorePrivateConstructors" value="false" />
+      </inspection_tool>
+      <inspection_tool class="ObjectNotify" enabled="true" level="WARNING" enabled_by_default="true" />
+      <inspection_tool class="RequiredAttributes" enabled="false" level="WARNING" enabled_by_default="false">
+        <option name="myAdditionalRequiredHtmlAttributes" value="" />
+      </inspection_tool>
+      <inspection_tool class="ReuseOfLocalVariable" enabled="true" level="WARNING" enabled_by_default="true" />
+      <inspection_tool class="SimplifiableJUnitAssertion" enabled="true" level="WARNING" enabled_by_default="true" />
+      <inspection_tool class="SleepWhileHoldingLock" enabled="true" level="WARNING" enabled_by_default="true" />
+      <inspection_tool class="StringEqualsEmptyString" enabled="true" level="WARNING" enabled_by_default="true" />
+      <inspection_tool class="SystemRunFinalizersOnExit" enabled="true" level="WARNING" enabled_by_default="true" />
+      <inspection_tool class="ThreadRun" enabled="true" level="WARNING" enabled_by_default="true" />
+      <inspection_tool class="ThreadStartInConstruction" enabled="true" level="WARNING" enabled_by_default="true" />
+      <inspection_tool class="ThreadStopSuspendResume" enabled="true" level="WARNING" enabled_by_default="true" />
+      <inspection_tool class="ThreadYield" enabled="true" level="WARNING" enabled_by_default="true" />
+      <inspection_tool class="ThrowableInstanceNeverThrown" enabled="false" level="WARNING" enabled_by_default="false" />
+      <inspection_tool class="UnnecessaryLocalVariable" enabled="false" level="WARNING" enabled_by_default="false">
+        <option name="m_ignoreImmediatelyReturnedVariables" value="false" />
+        <option name="m_ignoreAnnotatedVariables" value="false" />
+      </inspection_tool>
+      <inspection_tool class="UnnecessaryUnboxing" enabled="false" level="WARNING" enabled_by_default="false" />
+      <inspection_tool class="ValidExternallyBoundObject" enabled="true" level="WARNING" enabled_by_default="true" />
+      <inspection_tool class="XmlWrongRootElement" enabled="false" level="ERROR" enabled_by_default="false" />
+    </profile>
+    <option name="PROJECT_PROFILE" value="Project Default" />
+    <option name="USE_PROJECT_PROFILE" value="true" />
+    <version value="1.0" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/EntityGraph/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/2ndLevelCache/2ndLevelCache.iml" filepath="$PROJECT_DIR$/2ndLevelCache/2ndLevelCache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AccessHibernateApi/AccessHibernateApi.iml" filepath="$PROJECT_DIR$/AccessHibernateApi/AccessHibernateApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AssociationBidirectionalManyToMany/AssociationBidirectionalManyToMany.iml" filepath="$PROJECT_DIR$/AssociationBidirectionalManyToMany/AssociationBidirectionalManyToMany.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AssociationBidirectionalManyToOne/AssociationBidirectionalManyToOne.iml" filepath="$PROJECT_DIR$/AssociationBidirectionalManyToOne/AssociationBidirectionalManyToOne.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AssociationBidirectionalOneToOne/AssociationBidirectionalOneToOne.iml" filepath="$PROJECT_DIR$/AssociationBidirectionalOneToOne/AssociationBidirectionalOneToOne.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AssociationUnidirectionalManyToMany/AssociationUnidirectionalManyToMany.iml" filepath="$PROJECT_DIR$/AssociationUnidirectionalManyToMany/AssociationUnidirectionalManyToMany.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AssociationUnidirectionalManyToOne/AssociationUnidirectionalManyToOne.iml" filepath="$PROJECT_DIR$/AssociationUnidirectionalManyToOne/AssociationUnidirectionalManyToOne.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AssociationUnidirectionalOneToMany/AssociationUnidirectionalOneToMany.iml" filepath="$PROJECT_DIR$/AssociationUnidirectionalOneToMany/AssociationUnidirectionalOneToMany.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AssociationUnidirectionalOneToOne/AssociationUnidirectionalOneToOne.iml" filepath="$PROJECT_DIR$/AssociationUnidirectionalOneToOne/AssociationUnidirectionalOneToOne.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AssociationsWithAttributes/AssociationsWithAttributes.iml" filepath="$PROJECT_DIR$/AssociationsWithAttributes/AssociationsWithAttributes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AttributeConverterForDateAndTime/AttributeConverterForDateAndTime.iml" filepath="$PROJECT_DIR$/AttributeConverterForDateAndTime/AttributeConverterForDateAndTime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CheckSQLStatementCount/CheckSQLStatementCount.iml" filepath="$PROJECT_DIR$/CheckSQLStatementCount/CheckSQLStatementCount.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommentSQLStatements/CommentSQLStatements.iml" filepath="$PROJECT_DIR$/CommentSQLStatements/CommentSQLStatements.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CriteriaConstructor/CriteriaConstructor.iml" filepath="$PROJECT_DIR$/CriteriaConstructor/CriteriaConstructor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CriteriaCustomFunction/CriteriaCustomFunction.iml" filepath="$PROJECT_DIR$/CriteriaCustomFunction/CriteriaCustomFunction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CriteriaDelete/CriteriaDelete.iml" filepath="$PROJECT_DIR$/CriteriaDelete/CriteriaDelete.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CriteriaQuery/CriteriaQuery.iml" filepath="$PROJECT_DIR$/CriteriaQuery/CriteriaQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CriteriaQueryPagination/CriteriaQueryPagination.iml" filepath="$PROJECT_DIR$/CriteriaQueryPagination/CriteriaQueryPagination.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CriteriaStandardFunction/CriteriaStandardFunction.iml" filepath="$PROJECT_DIR$/CriteriaStandardFunction/CriteriaStandardFunction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CriteriaTuples/CriteriaTuples.iml" filepath="$PROJECT_DIR$/CriteriaTuples/CriteriaTuples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CriteriaUpdate/CriteriaUpdate.iml" filepath="$PROJECT_DIR$/CriteriaUpdate/CriteriaUpdate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CustomEnumerationsMapping/CustomEnumerationsMapping.iml" filepath="$PROJECT_DIR$/CustomEnumerationsMapping/CustomEnumerationsMapping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CustomSequence/CustomSequence.iml" filepath="$PROJECT_DIR$/CustomSequence/CustomSequence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DatabaseViews/DatabaseViews.iml" filepath="$PROJECT_DIR$/DatabaseViews/DatabaseViews.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DateAndTime/DateAndTime.iml" filepath="$PROJECT_DIR$/DateAndTime/DateAndTime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DefineTableAndSchemaName/DefineTableAndSchemaName.iml" filepath="$PROJECT_DIR$/DefineTableAndSchemaName/DefineTableAndSchemaName.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DerivedPrimaryKey/DerivedPrimaryKey.iml" filepath="$PROJECT_DIR$/DerivedPrimaryKey/DerivedPrimaryKey.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EntityGraph/EntityGraph.iml" filepath="$PROJECT_DIR$/EntityGraph/EntityGraph.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Formula/Formula.iml" filepath="$PROJECT_DIR$/Formula/Formula.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HibernateBootstrapping/HibernateBootstrapping.iml" filepath="$PROJECT_DIR$/HibernateBootstrapping/HibernateBootstrapping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HibernateJoinUnassociatedEntities/HibernateJoinUnassociatedEntities.iml" filepath="$PROJECT_DIR$/HibernateJoinUnassociatedEntities/HibernateJoinUnassociatedEntities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HibernateMultipleId/HibernateMultipleId.iml" filepath="$PROJECT_DIR$/HibernateMultipleId/HibernateMultipleId.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HibernateNaturalId/HibernateNaturalId.iml" filepath="$PROJECT_DIR$/HibernateNaturalId/HibernateNaturalId.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HibernateTips.iml" filepath="$PROJECT_DIR$/HibernateTips.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InheritanceJoined/InheritanceJoined.iml" filepath="$PROJECT_DIR$/InheritanceJoined/InheritanceJoined.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InheritanceMappedSuperclass/InheritanceMappedSuperclass.iml" filepath="$PROJECT_DIR$/InheritanceMappedSuperclass/InheritanceMappedSuperclass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InheritanceSingleTable/InheritanceSingleTable.iml" filepath="$PROJECT_DIR$/InheritanceSingleTable/InheritanceSingleTable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InheritanceTablePerClass/InheritanceTablePerClass.iml" filepath="$PROJECT_DIR$/InheritanceTablePerClass/InheritanceTablePerClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JPABootstrapping/JPABootstrapping.iml" filepath="$PROJECT_DIR$/JPABootstrapping/JPABootstrapping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JPAMetamodel/JPAMetamodel.iml" filepath="$PROJECT_DIR$/JPAMetamodel/JPAMetamodel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JPQLAdHocQuery/JPQLAdHocQuery.iml" filepath="$PROJECT_DIR$/JPQLAdHocQuery/JPQLAdHocQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JPQLConstructorExpression/JPQLConstructorExpression.iml" filepath="$PROJECT_DIR$/JPQLConstructorExpression/JPQLConstructorExpression.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JPQLCustomFunction/JPQLCustomFunction.iml" filepath="$PROJECT_DIR$/JPQLCustomFunction/JPQLCustomFunction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JPQLDelete/JPQLDelete.iml" filepath="$PROJECT_DIR$/JPQLDelete/JPQLDelete.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JPQLNamedQuery/JPQLNamedQuery.iml" filepath="$PROJECT_DIR$/JPQLNamedQuery/JPQLNamedQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JPQLScalarValues/JPQLScalarValues.iml" filepath="$PROJECT_DIR$/JPQLScalarValues/JPQLScalarValues.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JPQLUpdate/JPQLUpdate.iml" filepath="$PROJECT_DIR$/JPQLUpdate/JPQLUpdate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JoinFetch/JoinFetch.iml" filepath="$PROJECT_DIR$/JoinFetch/JoinFetch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JpqlStandardFunction/JpqlStandardFunction.iml" filepath="$PROJECT_DIR$/JpqlStandardFunction/JpqlStandardFunction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LogSQLStatements/LogSQLStatements.iml" filepath="$PROJECT_DIR$/LogSQLStatements/LogSQLStatements.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MapBasicAttributes/MapBasicAttributes.iml" filepath="$PROJECT_DIR$/MapBasicAttributes/MapBasicAttributes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MapEnumerations/MapEnumerations.iml" filepath="$PROJECT_DIR$/MapEnumerations/MapEnumerations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MapGeneratedColumns/MapGeneratedColumns.iml" filepath="$PROJECT_DIR$/MapGeneratedColumns/MapGeneratedColumns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MapNativeQueryToEntity/MapNativeQueryToEntity.iml" filepath="$PROJECT_DIR$/MapNativeQueryToEntity/MapNativeQueryToEntity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MapNativeQueryToPojo/MapNativeQueryToPojo.iml" filepath="$PROJECT_DIR$/MapNativeQueryToPojo/MapNativeQueryToPojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MapOptionalAssociations/MapOptionalAssociations.iml" filepath="$PROJECT_DIR$/MapOptionalAssociations/MapOptionalAssociations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MapUtilDate/MapUtilDate.iml" filepath="$PROJECT_DIR$/MapUtilDate/MapUtilDate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NamedNativeQuery/NamedNativeQuery.iml" filepath="$PROJECT_DIR$/NamedNativeQuery/NamedNativeQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NativeQuery/NativeQuery.iml" filepath="$PROJECT_DIR$/NativeQuery/NativeQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OrderRelationships/OrderRelationships.iml" filepath="$PROJECT_DIR$/OrderRelationships/OrderRelationships.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrePersistLifecycleEvent/PrePersistLifecycleEvent.iml" filepath="$PROJECT_DIR$/PrePersistLifecycleEvent/PrePersistLifecycleEvent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrimaryKey/PrimaryKey.iml" filepath="$PROJECT_DIR$/PrimaryKey/PrimaryKey.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrimaryKeyIdentityStrategy/PrimaryKeyIdentityStrategy.iml" filepath="$PROJECT_DIR$/PrimaryKeyIdentityStrategy/PrimaryKeyIdentityStrategy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrimaryKeyTableStrategy/PrimaryKeyTableStrategy.iml" filepath="$PROJECT_DIR$/PrimaryKeyTableStrategy/PrimaryKeyTableStrategy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrimaryKeyUUID/PrimaryKeyUUID.iml" filepath="$PROJECT_DIR$/PrimaryKeyUUID/PrimaryKeyUUID.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QueryCache/QueryCache.iml" filepath="$PROJECT_DIR$/QueryCache/QueryCache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QueryPagination/QueryPagination.iml" filepath="$PROJECT_DIR$/QueryPagination/QueryPagination.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QueryTimeout/QueryTimeout.iml" filepath="$PROJECT_DIR$/QueryTimeout/QueryTimeout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ResultsAsStreams/ResultsAsStreams.iml" filepath="$PROJECT_DIR$/ResultsAsStreams/ResultsAsStreams.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBootBootstrapping/SpringBootBootstrapping.iml" filepath="$PROJECT_DIR$/SpringBootBootstrapping/SpringBootBootstrapping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StoredProcedureQuery/StoredProcedureQuery.iml" filepath="$PROJECT_DIR$/StoredProcedureQuery/StoredProcedureQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TransientAttributes/TransientAttributes.iml" filepath="$PROJECT_DIR$/TransientAttributes/TransientAttributes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Treat/Treat.iml" filepath="$PROJECT_DIR$/Treat/Treat.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" assert-keyword="true" jdk-15="true" project-jdk-name="1.8 (1)" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+  </component>
+  <component name="libraryTable">
+    <library name="Maven: antlr:antlr:2.7.7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.7/antlr-2.7.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.7/antlr-2.7.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.7/antlr-2.7.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: ch.qos.logback:logback-classic:1.1.11">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.1.11/logback-classic-1.1.11-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: ch.qos.logback:logback-core:1.1.11">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-core/1.1.11/logback-core-1.1.11-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.fasterxml:classmate:1.3.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/classmate/1.3.0/classmate-1.3.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/classmate/1.3.0/classmate-1.3.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/classmate/1.3.0/classmate-1.3.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.jayway.jsonpath:json-path:2.2.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.oracle:ojdbc6:11.2.0.3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/oracle/ojdbc6/11.2.0.3/ojdbc6-11.2.0.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/oracle/ojdbc6/11.2.0.3/ojdbc6-11.2.0.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/oracle/ojdbc6/11.2.0.3/ojdbc6-11.2.0.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.vaadin.external.google:android-json:0.0.20131108.vaadin1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: dom4j:dom4j:1.6.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/dom4j/dom4j/1.6.1/dom4j-1.6.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: javax.transaction:javax.transaction-api:1.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: junit:junit:4.11">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: junit:junit:4.12">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: log4j:log4j:1.2.17">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.bytebuddy:byte-buddy:1.6.6">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy/1.6.6/byte-buddy-1.6.6.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy/1.6.6/byte-buddy-1.6.6-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy/1.6.6/byte-buddy-1.6.6-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.minidev:accessors-smart:1.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/minidev/accessors-smart/1.1/accessors-smart-1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/net/minidev/accessors-smart/1.1/accessors-smart-1.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/minidev/accessors-smart/1.1/accessors-smart-1.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.minidev:json-smart:2.2.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/minidev/json-smart/2.2.1/json-smart-2.2.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/net/minidev/json-smart/2.2.1/json-smart-2.2.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/minidev/json-smart/2.2.1/json-smart-2.2.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.sf.ehcache:ehcache-core:2.6.11">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache-core/2.6.11/ehcache-core-2.6.11.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache-core/2.6.11/ehcache-core-2.6.11-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache-core/2.6.11/ehcache-core-2.6.11-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: net.sf.ehcache:ehcache:2.10.3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache/2.10.3/ehcache-2.10.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache/2.10.3/ehcache-2.10.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache/2.10.3/ehcache-2.10.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.tomcat:tomcat-jdbc:8.5.11">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-jdbc/8.5.11/tomcat-jdbc-8.5.11.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-jdbc/8.5.11/tomcat-jdbc-8.5.11-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-jdbc/8.5.11/tomcat-jdbc-8.5.11-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.apache.tomcat:tomcat-juli:8.5.11">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-juli/8.5.11/tomcat-juli-8.5.11.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-juli/8.5.11/tomcat-juli-8.5.11-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-juli/8.5.11/tomcat-juli-8.5.11-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.aspectj:aspectjweaver:1.8.9">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.8.9/aspectjweaver-1.8.9-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.assertj:assertj-core:2.6.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/2.6.0/assertj-core-2.6.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/2.6.0/assertj-core-2.6.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/2.6.0/assertj-core-2.6.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hamcrest:hamcrest-core:1.3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hamcrest:hamcrest-library:1.3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate.common:hibernate-commons-annotations:5.0.1.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate:hibernate-core:5.0.12.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.12.Final/hibernate-core-5.0.12.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.12.Final/hibernate-core-5.0.12.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.0.12.Final/hibernate-core-5.0.12.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate:hibernate-core:5.2.8.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.8.Final/hibernate-core-5.2.8.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.8.Final/hibernate-core-5.2.8.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.8.Final/hibernate-core-5.2.8.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate:hibernate-ehcache:5.2.8.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-ehcache/5.2.8.Final/hibernate-ehcache-5.2.8.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-ehcache/5.2.8.Final/hibernate-ehcache-5.2.8.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-ehcache/5.2.8.Final/hibernate-ehcache-5.2.8.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate:hibernate-entitymanager:5.0.12.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/5.0.12.Final/hibernate-entitymanager-5.0.12.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/5.0.12.Final/hibernate-entitymanager-5.0.12.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/5.0.12.Final/hibernate-entitymanager-5.0.12.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate:hibernate-entitymanager:5.2.8.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/5.2.8.Final/hibernate-entitymanager-5.2.8.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/5.2.8.Final/hibernate-entitymanager-5.2.8.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/5.2.8.Final/hibernate-entitymanager-5.2.8.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.hibernate:hibernate-jpamodelgen:5.2.8.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-jpamodelgen/5.2.8.Final/hibernate-jpamodelgen-5.2.8.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-jpamodelgen/5.2.8.Final/hibernate-jpamodelgen-5.2.8.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-jpamodelgen/5.2.8.Final/hibernate-jpamodelgen-5.2.8.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.javassist:javassist:3.20.0-GA">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.javassist:javassist:3.21.0-GA">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.jboss.logging:jboss-logging:3.3.0.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:1.0.1.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.1.Final/jboss-transaction-api_1.2_spec-1.0.1.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.1.Final/jboss-transaction-api_1.2_spec-1.0.1.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.1.Final/jboss-transaction-api_1.2_spec-1.0.1.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.jboss:jandex:2.0.0.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.jboss:jandex:2.0.3.Final">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/jandex/2.0.3.Final/jandex-2.0.3.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/jandex/2.0.3.Final/jandex-2.0.3.Final-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/jboss/jandex/2.0.3.Final/jandex-2.0.3.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.mockito:mockito-core:1.10.19">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.objenesis:objenesis:2.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/objenesis/objenesis/2.1/objenesis-2.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/objenesis/objenesis/2.1/objenesis-2.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/objenesis/objenesis/2.1/objenesis-2.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.ow2.asm:asm:5.0.3">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm/5.0.3/asm-5.0.3-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm/5.0.3/asm-5.0.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.postgresql:postgresql:9.4.1208">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/9.4.1208/postgresql-9.4.1208.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/9.4.1208/postgresql-9.4.1208-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/9.4.1208/postgresql-9.4.1208-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.postgresql:postgresql:9.4.1212.jre7">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/9.4.1212.jre7/postgresql-9.4.1212.jre7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/9.4.1212.jre7/postgresql-9.4.1212.jre7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/9.4.1212.jre7/postgresql-9.4.1212.jre7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.skyscreamer:jsonassert:1.4.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/skyscreamer/jsonassert/1.4.0/jsonassert-1.4.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/skyscreamer/jsonassert/1.4.0/jsonassert-1.4.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/skyscreamer/jsonassert/1.4.0/jsonassert-1.4.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:jcl-over-slf4j:1.7.24">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/jcl-over-slf4j/1.7.24/jcl-over-slf4j-1.7.24.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/jcl-over-slf4j/1.7.24/jcl-over-slf4j-1.7.24-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/jcl-over-slf4j/1.7.24/jcl-over-slf4j-1.7.24-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:jul-to-slf4j:1.7.24">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/jul-to-slf4j/1.7.24/jul-to-slf4j-1.7.24.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/jul-to-slf4j/1.7.24/jul-to-slf4j-1.7.24-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/jul-to-slf4j/1.7.24/jul-to-slf4j-1.7.24-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:log4j-over-slf4j:1.7.24">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/log4j-over-slf4j/1.7.24/log4j-over-slf4j-1.7.24.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/log4j-over-slf4j/1.7.24/log4j-over-slf4j-1.7.24-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/log4j-over-slf4j/1.7.24/log4j-over-slf4j-1.7.24-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:slf4j-api:1.7.16">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.16/slf4j-api-1.7.16.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.16/slf4j-api-1.7.16-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.16/slf4j-api-1.7.16-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:slf4j-api:1.7.24">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.24/slf4j-api-1.7.24.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.24/slf4j-api-1.7.24-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.24/slf4j-api-1.7.24-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:slf4j-log4j12:1.7.16">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.7.16/slf4j-log4j12-1.7.16.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.7.16/slf4j-log4j12-1.7.16-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.7.16/slf4j-log4j12-1.7.16-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.slf4j:slf4j-log4j12:1.7.24">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.7.24/slf4j-log4j12-1.7.24.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.7.24/slf4j-log4j12-1.7.24-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.7.24/slf4j-log4j12-1.7.24-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-autoconfigure:1.5.2.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.2.RELEASE/spring-boot-autoconfigure-1.5.2.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.2.RELEASE/spring-boot-autoconfigure-1.5.2.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.2.RELEASE/spring-boot-autoconfigure-1.5.2.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-starter-aop:1.5.2.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-aop/1.5.2.RELEASE/spring-boot-starter-aop-1.5.2.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-aop/1.5.2.RELEASE/spring-boot-starter-aop-1.5.2.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-aop/1.5.2.RELEASE/spring-boot-starter-aop-1.5.2.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-starter-data-jpa:1.5.2.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-data-jpa/1.5.2.RELEASE/spring-boot-starter-data-jpa-1.5.2.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-data-jpa/1.5.2.RELEASE/spring-boot-starter-data-jpa-1.5.2.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-data-jpa/1.5.2.RELEASE/spring-boot-starter-data-jpa-1.5.2.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-starter-jdbc:1.5.2.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-jdbc/1.5.2.RELEASE/spring-boot-starter-jdbc-1.5.2.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-jdbc/1.5.2.RELEASE/spring-boot-starter-jdbc-1.5.2.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-jdbc/1.5.2.RELEASE/spring-boot-starter-jdbc-1.5.2.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-starter-logging:1.5.2.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-logging/1.5.2.RELEASE/spring-boot-starter-logging-1.5.2.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-logging/1.5.2.RELEASE/spring-boot-starter-logging-1.5.2.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-logging/1.5.2.RELEASE/spring-boot-starter-logging-1.5.2.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-starter-test:1.5.2.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-test/1.5.2.RELEASE/spring-boot-starter-test-1.5.2.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-test/1.5.2.RELEASE/spring-boot-starter-test-1.5.2.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-test/1.5.2.RELEASE/spring-boot-starter-test-1.5.2.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-starter:1.5.2.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter/1.5.2.RELEASE/spring-boot-starter-1.5.2.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter/1.5.2.RELEASE/spring-boot-starter-1.5.2.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter/1.5.2.RELEASE/spring-boot-starter-1.5.2.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-test-autoconfigure:1.5.2.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-test-autoconfigure/1.5.2.RELEASE/spring-boot-test-autoconfigure-1.5.2.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-test-autoconfigure/1.5.2.RELEASE/spring-boot-test-autoconfigure-1.5.2.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-test-autoconfigure/1.5.2.RELEASE/spring-boot-test-autoconfigure-1.5.2.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot-test:1.5.2.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-test/1.5.2.RELEASE/spring-boot-test-1.5.2.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-test/1.5.2.RELEASE/spring-boot-test-1.5.2.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-test/1.5.2.RELEASE/spring-boot-test-1.5.2.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.boot:spring-boot:1.5.2.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.2.RELEASE/spring-boot-1.5.2.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.2.RELEASE/spring-boot-1.5.2.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.2.RELEASE/spring-boot-1.5.2.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.data:spring-data-commons:1.13.1.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.13.1.RELEASE/spring-data-commons-1.13.1.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.13.1.RELEASE/spring-data-commons-1.13.1.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.13.1.RELEASE/spring-data-commons-1.13.1.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework.data:spring-data-jpa:1.11.1.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/1.11.1.RELEASE/spring-data-jpa-1.11.1.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/1.11.1.RELEASE/spring-data-jpa-1.11.1.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/1.11.1.RELEASE/spring-data-jpa-1.11.1.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-aop:4.3.7.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-aspects:4.3.7.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aspects/4.3.7.RELEASE/spring-aspects-4.3.7.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aspects/4.3.7.RELEASE/spring-aspects-4.3.7.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aspects/4.3.7.RELEASE/spring-aspects-4.3.7.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-beans:4.3.7.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.7.RELEASE/spring-beans-4.3.7.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.7.RELEASE/spring-beans-4.3.7.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.7.RELEASE/spring-beans-4.3.7.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-context:4.3.7.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.7.RELEASE/spring-context-4.3.7.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.7.RELEASE/spring-context-4.3.7.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.7.RELEASE/spring-context-4.3.7.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-core:4.3.7.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-expression:4.3.7.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-expression/4.3.7.RELEASE/spring-expression-4.3.7.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-expression/4.3.7.RELEASE/spring-expression-4.3.7.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-expression/4.3.7.RELEASE/spring-expression-4.3.7.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-jdbc:4.3.7.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.7.RELEASE/spring-jdbc-4.3.7.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.7.RELEASE/spring-jdbc-4.3.7.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.7.RELEASE/spring-jdbc-4.3.7.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-orm:4.3.7.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.3.7.RELEASE/spring-orm-4.3.7.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.3.7.RELEASE/spring-orm-4.3.7.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-orm/4.3.7.RELEASE/spring-orm-4.3.7.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-test:4.3.7.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.7.RELEASE/spring-test-4.3.7.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.7.RELEASE/spring-test-4.3.7.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.7.RELEASE/spring-test-4.3.7.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-tx:4.3.7.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.yaml:snakeyaml:1.17">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.17/snakeyaml-1.17.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.17/snakeyaml-1.17-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.17/snakeyaml-1.17-sources.jar!/" />
+      </SOURCES>
+    </library>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>MariaDB JDBC Driver</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8 (1)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8 (1)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
