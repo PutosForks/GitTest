@@ -1,1 +1,0 @@
-INSERT INTO book (id, title, version) VALUES (1, 'Hibernate Tips', 0);

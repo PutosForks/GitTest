@@ -1,1 +1,0 @@
-INSERT INTO author(id, firstname, lastname, version) VALUES (1, 'Thorben', 'Janssen', 0)
