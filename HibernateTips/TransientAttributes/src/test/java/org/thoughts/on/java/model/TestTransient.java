@@ -34,7 +34,7 @@ public class TestTransient {
 		em.getTransaction().begin();
 
 		Author a = em.find(Author.class, 1L);
-		Assert.assertEquals(43, a.getAge());
+		Assert.assertEquals(44, a.getAge());
 		log.info(a.getFirstName() + " " + a.getLastName() + " is " + a.getAge() + " years old.");
 		
 		em.getTransaction().commit();
@@ -49,7 +49,7 @@ public class TestTransient {
 		em.getTransaction().begin();
 
 		Author a = em.find(Author.class, 1L);
-		Assert.assertEquals(43, a.getCalculatedAge());
+		Assert.assertEquals(44, a.getCalculatedAge());
 		log.info(a.getFirstName() + " " + a.getLastName() + " is " + a.getCalculatedAge() + " years old.");
 		
 		em.getTransaction().commit();
@@ -64,7 +64,7 @@ public class TestTransient {
 		em.getTransaction().begin();
 
 		Author a = em.createQuery("SELECT a FROM Author a WHERE a.id = 1", Author.class).getSingleResult();
-		Assert.assertEquals(43, a.getAge());
+		Assert.assertEquals(44, a.getAge());
 		log.info(a.getFirstName() + " " + a.getLastName() + " is " + a.getAge() + " years old.");
 		
 		em.getTransaction().commit();

@@ -8,13 +8,14 @@
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
 
 		<properties>
-			<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
 			<property name="hibernate.generate_statistics" value="true" />
-			<property name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
-			<property name="hibernate.connection.url" value="jdbc:oracle:thin:@localhost:1521/PDB"/>
+			<property name="hibernate.format_sql" value="true" />
 
-			<property name="hibernate.connection.username" value ="recepies"/>
-			<property name="hibernate.connection.password" value ="recepies"/>
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/recipes" />
+			<property name="javax.persistence.jdbc.user" value="postgres" />
+			<property name="javax.persistence.jdbc.password" value="postgres" />
             <property name="javax.persistence.schema-generation.database.action" value="drop-and-create" />
 		</properties>
 	</persistence-unit>

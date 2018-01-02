@@ -1,24 +1,13 @@
 package org.thoughts.on.java.model;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
-import javax.persistence.Version;
-
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-public class Publication {
+public class  Publication {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -31,7 +20,7 @@ public class Publication {
 	private String title;
 
 	private LocalDate publishingDate;
-	
+
 	@ManyToMany
 	@JoinTable(
 		      name="PublicationAuthor",
@@ -62,7 +51,7 @@ public class Publication {
 	public void setPublishingDate(LocalDate publishingDate) {
 		this.publishingDate = publishingDate;
 	}
-	
+
 	public Set<Author> getAuthors() {
 		return authors;
 	}

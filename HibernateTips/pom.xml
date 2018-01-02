@@ -45,6 +45,7 @@
 			<dependency>
 				<groupId>org.postgresql</groupId>
 				<artifactId>postgresql</artifactId>
+				<version>9.4.1208</version>
 				<scope>test</scope>
 			</dependency>
 			<dependency>
@@ -105,7 +106,7 @@
 		<module>Treat</module>
 		<module>CriteriaTuples</module>
 		<module>CriteriaUpdate</module>
-		<module>Formula</module>
+		<!--<module>Formula</module>-->
 		<module>QueryTimeout</module>
 		<module>CheckSQLStatementCount</module>
 		<module>AccessHibernateApi</module>
