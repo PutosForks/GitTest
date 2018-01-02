@@ -1,43 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ClientPropertiesManager">
-    <properties class="javax.swing.AbstractButton">
-      <property name="hideActionText" class="java.lang.Boolean" />
-    </properties>
-    <properties class="javax.swing.JComponent">
-      <property name="html.disable" class="java.lang.Boolean" />
-    </properties>
-    <properties class="javax.swing.JEditorPane">
-      <property name="JEditorPane.w3cLengthUnits" class="java.lang.Boolean" />
-      <property name="JEditorPane.honorDisplayProperties" class="java.lang.Boolean" />
-      <property name="charset" class="java.lang.String" />
-    </properties>
-    <properties class="javax.swing.JList">
-      <property name="List.isFileList" class="java.lang.Boolean" />
-    </properties>
-    <properties class="javax.swing.JPasswordField">
-      <property name="JPasswordField.cutCopyAllowed" class="java.lang.Boolean" />
-    </properties>
-    <properties class="javax.swing.JSlider">
-      <property name="Slider.paintThumbArrowShape" class="java.lang.Boolean" />
-      <property name="JSlider.isFilled" class="java.lang.Boolean" />
-    </properties>
-    <properties class="javax.swing.JTable">
-      <property name="Table.isFileList" class="java.lang.Boolean" />
-      <property name="JTable.autoStartsEdit" class="java.lang.Boolean" />
-      <property name="terminateEditOnFocusLost" class="java.lang.Boolean" />
-    </properties>
-    <properties class="javax.swing.JToolBar">
-      <property name="JToolBar.isRollover" class="java.lang.Boolean" />
-    </properties>
-    <properties class="javax.swing.JTree">
-      <property name="JTree.lineStyle" class="java.lang.String" />
-    </properties>
-    <properties class="javax.swing.text.JTextComponent">
-      <property name="caretAspectRatio" class="java.lang.Double" />
-      <property name="caretWidth" class="java.lang.Integer" />
-    </properties>
-  </component>
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" value="Javac" />
     <resourceExtensions />
@@ -283,13 +245,6 @@
         <processorPath useClasspath="true" />
         <module name="AssociationBidirectionalManyToOne" />
       </profile>
-      <profile default="false" name="Annotation profile for EntityGraph" enabled="true">
-        <sourceOutputDir name="target\generated-sources\annotations" />
-        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="EntityGraph" />
-      </profile>
       <profile default="false" name="Annotation profile for HibernateNaturalId" enabled="true">
         <sourceOutputDir name="target\generated-sources\annotations" />
         <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
@@ -354,7 +309,6 @@
       <module name="DateAndTime" target="1.8" />
       <module name="DefineTableAndSchemaName" target="1.8" />
       <module name="DerivedPrimaryKey" target="1.8" />
-      <module name="EntityGraph" target="1.8" />
       <module name="Formula" target="1.8" />
       <module name="HibernateBootstrapping" target="1.8" />
       <module name="HibernateJoinUnassociatedEntities" target="1.8" />
@@ -431,7 +385,6 @@
     <file url="file://$PROJECT_DIR$/DateAndTime" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DefineTableAndSchemaName" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DerivedPrimaryKey" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/EntityGraph" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Formula" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/HibernateBootstrapping" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/HibernateJoinUnassociatedEntities" charset="UTF-8" />
@@ -573,7 +526,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/EntityGraph/pom.xml" />
       </list>
     </option>
   </component>
@@ -616,7 +568,6 @@
       <module fileurl="file://$PROJECT_DIR$/DateAndTime/DateAndTime.iml" filepath="$PROJECT_DIR$/DateAndTime/DateAndTime.iml" />
       <module fileurl="file://$PROJECT_DIR$/DefineTableAndSchemaName/DefineTableAndSchemaName.iml" filepath="$PROJECT_DIR$/DefineTableAndSchemaName/DefineTableAndSchemaName.iml" />
       <module fileurl="file://$PROJECT_DIR$/DerivedPrimaryKey/DerivedPrimaryKey.iml" filepath="$PROJECT_DIR$/DerivedPrimaryKey/DerivedPrimaryKey.iml" />
-      <module fileurl="file://$PROJECT_DIR$/EntityGraph/EntityGraph.iml" filepath="$PROJECT_DIR$/EntityGraph/EntityGraph.iml" />
       <module fileurl="file://$PROJECT_DIR$/Formula/Formula.iml" filepath="$PROJECT_DIR$/Formula/Formula.iml" />
       <module fileurl="file://$PROJECT_DIR$/HibernateBootstrapping/HibernateBootstrapping.iml" filepath="$PROJECT_DIR$/HibernateBootstrapping/HibernateBootstrapping.iml" />
       <module fileurl="file://$PROJECT_DIR$/HibernateJoinUnassociatedEntities/HibernateJoinUnassociatedEntities.iml" filepath="$PROJECT_DIR$/HibernateJoinUnassociatedEntities/HibernateJoinUnassociatedEntities.iml" />
@@ -668,7 +619,7 @@
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="" vcs="" />
   </component>
   <component name="libraryTable">
     <library name="Maven: antlr:antlr:2.7.7">
@@ -724,17 +675,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: com.oracle:ojdbc6:11.2.0.3">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/oracle/ojdbc6/11.2.0.3/ojdbc6-11.2.0.3.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/oracle/ojdbc6/11.2.0.3/ojdbc6-11.2.0.3-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/oracle/ojdbc6/11.2.0.3/ojdbc6-11.2.0.3-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: com.vaadin.external.google:android-json:0.0.20131108.vaadin1">
@@ -1474,56 +1414,5 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.17/snakeyaml-1.17-sources.jar!/" />
       </SOURCES>
     </library>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>MariaDB JDBC Driver</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8 (1)</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8 (1)</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
