@@ -10,9 +10,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.stream.Collectors;
 
-//  to get jsonDoc  http://localhost:8090/jsondoc-ui.html
-
-
 @RestController
 @RequestMapping(value = "bookings")
 @Api(name = "Hotel Booking API", description = "Application for booking hotels", stage= ApiStage.PRE_ALPHA)
@@ -41,7 +38,7 @@ public class BookingController {
 
     @RequestMapping(value = "/create", method = RequestMethod.POST)
     @ApiMethod(description = "Creates a new booking")
-    public List<HotelBooking> create(@RequestBody HotelBooking hotelBooking) {
+    public List<HotelBooking> create(@ApiPathParam(name="hotelbooking") @RequestBody HotelBooking hotelBooking) {
         bookingRepository.save(hotelBooking);
         return bookingRepository.findAll();
     }
@@ -49,7 +46,7 @@ public class BookingController {
 
     @RequestMapping(value="/delete/{id}", method = RequestMethod.POST)
     @ApiMethod(description = "Removes a booking")
-    public List<HotelBooking> remove(@ApiPathParam(name="id") @PathVariable Long id) {
+    public List<HotelBooking> remove(@PathVariable Long id) {
         bookingRepository.delete(id);
         return bookingRepository.findAll();
     }

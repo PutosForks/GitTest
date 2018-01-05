@@ -41,6 +41,8 @@ public class HotelBooking {
         return nbOfNights;
     }
 
+    public long getId() {return id;}
+
     public double getTotalPrice() {
         return pricePerNight * nbOfNights;
     }

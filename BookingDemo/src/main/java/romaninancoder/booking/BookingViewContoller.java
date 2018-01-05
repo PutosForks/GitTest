@@ -11,26 +11,26 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.Date;
 
 @Controller
-public class ViewContoller {
+public class BookingViewContoller {
 
     /*
     @Value("${app-mode}")
     private String appMode;
     */
-
     private String appMode;
 
 
     @Autowired
-    ViewContoller(Environment environment) {
+    BookingViewContoller(Environment environment) {
         appMode = environment.getProperty("app-mode");
     }
 
     @RequestMapping("/")
-    public String index(Model model) {
+    public String booking(Model model) {
         model.addAttribute("datetime", new Date());
         model.addAttribute("username", "Marko Ziza");
         model.addAttribute("mode", appMode);
-        return "index";
+        return "booking";
     }
+
 }
