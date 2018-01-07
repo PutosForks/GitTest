@@ -16,7 +16,7 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Hotel Booking Production</a>
+                <h2 th:text="#{title.application}">Application Title</h2>
             </div>
             <p class="navbar-text navbar-right" th:text="'Singned in as '+ ${username}" style="margin-right: 10px;">
                 Signed in as Anonymus</p>
@@ -39,7 +39,7 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <th>Hotel</th>
+                    <th th:text ="#{title.hotel}"/>
                     <th>Nights</th>
                     <th>Price/Night</th>
                     <th>Total Price</th>
