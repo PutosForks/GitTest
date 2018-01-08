@@ -51,7 +51,7 @@
                 <td>
                     <!-- ⑤ -->
                     <form th:action="@{/players/{id}(id=*{id})}" th:method="delete">
-                        <input class="btn btn-danger btn-xs" type="submit" value="Delete"/>
+                        <input class="btn btn-danger btn-xs" type="submit" value="TestDelete" th:attr="value=#{delete}"/>
                     </form>
                 </td>
             </tr>
