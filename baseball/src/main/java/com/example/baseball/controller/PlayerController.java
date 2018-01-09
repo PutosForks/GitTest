@@ -1,5 +1,5 @@
 package com.example.baseball.controller;
-import javax.validation.Valid;
+
 
 import com.example.baseball.domain.Player;
 import com.example.baseball.service.PlayerService;
@@ -35,7 +35,7 @@ public class PlayerController {
     public String edit(@PathVariable Long id, Model model) { // ⑤
         Player player = playerService.findOne(id);
         model.addAttribute("player", player);
-        return "players/edit";
+        return "players/new";
     }
 
     @GetMapping("{id}")
