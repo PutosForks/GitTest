@@ -1,24 +1,16 @@
 package com.example.baseball.controller;
+import javax.validation.Valid;
 
-import java.util.List;
-
+import com.example.baseball.domain.Player;
+import com.example.baseball.service.PlayerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-
-import com.example.baseball.domain.Player;
-import com.example.baseball.service.PlayerService;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @Controller
 @RequestMapping("/players") // ①
@@ -53,9 +45,9 @@ public class PlayerController {
         return "players/show";
     }
 
-    @PostMapping
+    @RequestMapping(method = RequestMethod.POST)
     public String create(@Valid @ModelAttribute Player player, BindingResult bindingResult) {
-        if(bindingResult.hasErrors()) return "players/new";
+        if (bindingResult.hasErrors()) return "players/new";
         playerService.save(player);
         return "redirect:/players"; // ⑦
     }
