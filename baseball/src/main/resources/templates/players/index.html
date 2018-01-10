@@ -5,11 +5,11 @@
 <head>
     <meta charset="utf-8"/>
     <title>Listing Players - baseball</title>
-<script type="text/javascript" src="../../static/js/jquery.js" th:src="@{js/jquery.js}"></script>
-<link rel="stylesheet" href="../../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}"/>
-<link href="../static/css/core.css"
-      th:href="@{/css/core.css}"
-      rel="stylesheet" media="screen" />
+    <script type="text/javascript" src="../../static/js/jquery.js" th:src="@{js/jquery.js}"></script>
+    <link rel="stylesheet" href="../../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}"/>
+    <link href="../static/css/core.css"
+          th:href="@{/css/core.css}"
+          rel="stylesheet" media="screen"/>
 
 </head>
 
@@ -17,7 +17,10 @@
 <section layout:fragment="content">
     <div class="row">
         <div class="col-lg-offset-2 col-lg-8">
-            <h2 th:text="#{player.list}">Application Title</h2>
+            <div class="input">
+                <input type="text" name="search" id="search" th:value="${search}"/>
+                <input type="submit" value="Search"/>
+            </div>
             <table class="table">
                 <thead>
                 <tr>
