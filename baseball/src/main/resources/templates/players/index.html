@@ -1,69 +1,67 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layouts/layout">
 
-
-<script type="text/javascript" src="../../static/js/jquery.js" th:src="@{js/jquery.js}"></script>
-<link rel="stylesheet" href="../../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}"/>
 <head>
     <meta charset="utf-8"/>
     <title>Listing Players - baseball</title>
+<script type="text/javascript" src="../../static/js/jquery.js" th:src="@{js/jquery.js}"></script>
+<link rel="stylesheet" href="../../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}"/>
+<link href="../static/css/core.css"
+      th:href="@{/css/core.css}"
+      rel="stylesheet" media="screen" />
+
 </head>
-<header>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <h2 th:text="#{title.application}">Application Title</h2>
-            </div>
-            <p class="navbar-text navbar-right" th:text="'Singned in as Marko'" style="margin-right: 10px;">
-                Signed in as Anonymus</p>
-        </div>
-    </nav>
-</header>
 
 <body>
-<div class="row">
-    <div class="col-lg-offset-2 col-lg-8">
-        <h2 th:text="#{player.list}">Application Title</h2>
-        <table class="table">
-            <thead>
-            <tr>
-                <th th:text="#{player.id}"/>
-                <th th:text="#{player.name}"/>
-                <th th:text="#{player.age}"/>
-                <th th:text="#{player.team}"/>
-                <th th:text="#{player.position}"/>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-            </thead>
-            <tbody>
-            <!-- ② -->
-            <tr th:each="player:${players}" th:object="${player}">
-                <!-- ③ -->
-                <td th:text="*{id}"></td>
-                <td th:text="*{name}"></td>
-                <td th:text="*{age}"></td>
-                <td th:text="*{team}"></td>
-                <td th:text="*{position}"></td>
-                <!-- ④ -->
-                <td><a class="btn btn-default btn-xs" th:href="@{/players/{id}(id=*{id})}" th:text="#{view}">参照</a></td>
-                <td><a class="btn btn-default btn-xs" th:href="@{/players/{id}/edit(id=*{id})}" th:text="#{edit}">編集</a></td>
-                <td>
-                    <!-- ⑤ -->
-                    <form th:action="@{/players/{id}(id=*{id})}" th:method="delete">
-                        <input class="btn btn-danger btn-xs" type="submit" value="TestDelete" th:attr="value=#{delete}"/>
-                    </form>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-        <div class="col-lg-offset-5">
-            <a class="btn btn-info icon-plus pull-right" href="/players/new">
-                <th th:text="#{player.new}"/>
-            </a>
+<section layout:fragment="content">
+    <div class="row">
+        <div class="col-lg-offset-2 col-lg-8">
+            <h2 th:text="#{player.list}">Application Title</h2>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th th:text="#{player.id}"/>
+                    <th th:text="#{player.name}"/>
+                    <th th:text="#{player.age}"/>
+                    <th th:text="#{player.team}"/>
+                    <th th:text="#{player.position}"/>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- ② -->
+                <tr th:each="player:${players}" th:object="${player}">
+                    <!-- ③ -->
+                    <td th:text="*{id}"></td>
+                    <td th:text="*{name}"></td>
+                    <td th:text="*{age}"></td>
+                    <td th:text="*{team}"></td>
+                    <td th:text="*{position}"></td>
+                    <!-- ④ -->
+                    <td><a class="btn btn-default btn-xs" th:href="@{/players/{id}(id=*{id})}" th:text="#{view}">参照</a>
+                    </td>
+                    <td><a class="btn btn-default btn-xs" th:href="@{/players/{id}/edit(id=*{id})}"
+                           th:text="#{edit}">編集</a></td>
+                    <td>
+                        <!-- ⑤ -->
+                        <form th:action="@{/players/{id}(id=*{id})}" th:method="delete">
+                            <input class="btn btn-danger btn-xs" type="submit" value="TestDelete"
+                                   th:attr="value=#{delete}"/>
+                        </form>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="col-lg-offset-5">
+                <a class="btn btn-info icon-plus pull-right" href="/players/new">
+                    <th th:text="#{player.new}"/>
+                </a>
+            </div>
         </div>
     </div>
-</div>
+</section>
 </body>
 </html>

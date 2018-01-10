@@ -19,10 +19,10 @@ public class PlayerController {
     private PlayerService playerService;
 
     @GetMapping
-    public String index(Model model) { // ②
+    public String index(Model model) {
         List<Player> players = playerService.findall();
-        model.addAttribute("players", players); // ③
-        return "players/index"; // ④
+        model.addAttribute("players", players);
+        return "players/index";
     }
 
     @GetMapping("new")
@@ -32,7 +32,7 @@ public class PlayerController {
     }
 
     @GetMapping("{id}/edit")
-    public String edit(@PathVariable Long id, Model model) { // ⑤
+    public String edit(@PathVariable Long id, Model model) {
         Player player = playerService.findOne(id);
         model.addAttribute("player", player);
         return "players/new";
@@ -49,7 +49,7 @@ public class PlayerController {
     public String create(@Valid @ModelAttribute Player player, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) return "players/new";
         playerService.save(player);
-        return "redirect:/players"; // ⑦
+        return "redirect:/players"; //
     }
 
     @PutMapping("{id}")
