@@ -3,6 +3,8 @@ package com.example.baseball.controller;
 
 import com.example.baseball.domain.Player;
 import com.example.baseball.service.PlayerService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,14 +17,15 @@ import java.util.List;
 @Controller
 @RequestMapping("/players") // ①
 public class PlayerController {
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
     @Autowired
     private PlayerService playerService;
 
     @GetMapping
     public String index(Model model) {
         List<Player> players = playerService.findall();
-        model.addAttribute("players", players);
-        return "players/index";
+        model.addAttribute("players", players); // ③
+        return "players/index"; // ④
     }
 
     @GetMapping("new")
