@@ -26,7 +26,7 @@ public class Player {
     private Integer age;
 
     @Size(min = 2, max = 20)
-private String team;
+    private String team;
 
 
     private String position;
