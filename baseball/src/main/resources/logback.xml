@@ -43,7 +43,7 @@
         <appender-ref ref="RollingFile-Appender"/>
     </appender>
 
-    <logger name="org.hibernate" level="TRACE">
+    <logger name="org.hibernate" level="off">
         <appender-ref ref="hibernate-sql"/>
     </logger>
 
@@ -54,8 +54,7 @@
         <appender-ref ref="Async-Appender"/>
     </logger>
 
-    <root level="off">
-        <appender-ref ref="Console-Appender"/>
+    <root level="info" additivity="false">
         <appender-ref ref="hibernate-sql"/>
     </root>
 </configuration>

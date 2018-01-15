@@ -2,14 +2,17 @@ package com.example.baseball.controller;
 
 
 import com.example.baseball.domain.Player;
+import com.example.baseball.service.PlayerExceptionClass;
 import com.example.baseball.service.PlayerService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.web.ErrorAttributes;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
 import java.util.List;
@@ -20,6 +23,8 @@ public class PlayerController {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
     @Autowired
     private PlayerService playerService;
+    @Autowired
+    private ErrorAttributes errorAttributes;
 
     @GetMapping
     public String index(Model model) {
@@ -49,10 +54,17 @@ public class PlayerController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public String create(@Valid @ModelAttribute Player player, BindingResult bindingResult) {
-        if (bindingResult.hasErrors()) return "players/new";
-        playerService.save(player);
-        return "redirect:/players"; //
+    @ExceptionHandler({PlayerExceptionClass.class})
+    public ModelAndView create(Model model, @Valid @ModelAttribute Player player, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) return new ModelAndView("players/new");
+        try {
+            playerService.save(player);
+            ModelAndView modelAndView = new ModelAndView("players/index");
+            modelAndView.addObject("players", playerService.findall());
+            return modelAndView;
+        } catch (Exception e) {
+            return new ModelAndView("players/new", "error", e.getMessage());
+        }
     }
 
     @PutMapping("{id}")

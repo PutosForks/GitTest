@@ -11,6 +11,7 @@
 <body>
 <div class="container">
     <h1>New Player</h1>
+    <p class="alert alert-danger" th:if="${error != null}" th:text="${error}"></p>
 
     <form action="#" th:action="@{/players}" th:object="${player}" th:method="post">
         <input class="form-control" type="hidden" th:field="*{id}" />

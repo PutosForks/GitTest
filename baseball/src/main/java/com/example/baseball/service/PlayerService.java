@@ -5,6 +5,7 @@ import com.example.baseball.domain.Player;
 import com.example.baseball.repository.PlayerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import java.util.List;
 
@@ -23,14 +24,15 @@ public class PlayerService {
         return playerRepository.findOne(id);
     }
 
-
+    @ExceptionHandler(PlayerExceptionClass.class)
     public Player save(Player player) {
+        if (player.getAge() < 2) {
+            throw new PlayerExceptionClass("Kids don't work!");
+        }
         return playerRepository.save(player);
     }
 
     public void delete(Long id) {
         playerRepository.delete(id);
     }
-
-
 }
