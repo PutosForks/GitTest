@@ -5,8 +5,10 @@ import org.jsondoc.core.annotation.ApiMethod;
 import org.jsondoc.core.annotation.ApiPathParam;
 import org.jsondoc.core.pojo.ApiStage;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -36,11 +38,18 @@ public class BookingController {
         return bookingRepository.findByPricePerNightLessThanEqual(price);
     }
 
-    @RequestMapping(value = "/create", method = RequestMethod.POST)
-    @ApiMethod(description = "Creates a new booking")
-    public List<HotelBooking> create(@ApiPathParam(name="hotelbooking") @RequestBody HotelBooking hotelBooking) {
+//    @RequestMapping(value = "/create", method = RequestMethod.POST)
+//    @ApiMethod(description = "Creates a new booking")
+//    public List<HotelBooking> create(@ApiPathParam(name="hotelbooking") @RequestBody HotelBooking hotelBooking) {
+//        bookingRepository.save(hotelBooking);
+//        return bookingRepository.findAll();
+//    }
+
+    @RequestMapping(method = RequestMethod.POST)
+    public String create(@Valid @ModelAttribute HotelBooking hotelBooking, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) return "players/new";
         bookingRepository.save(hotelBooking);
-        return bookingRepository.findAll();
+        return "redirect:/booking";
     }
 
 
