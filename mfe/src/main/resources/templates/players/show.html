@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layouts/layout">
+<head>
+    <meta charset="utf-8" />
+    <title>Show Player - baseball</title>
+    <script type="text/javascript" src="../../static/js/jquery.js" th:src="@{/js/jquery.js}"></script>
+    <link rel="stylesheet" href="../../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}"/>
+    <link href="../static/css/core.css"
+          th:href="@{/css/core.css}"
+          rel="stylesheet" media="screen" />
+</head>
+<body>
+
+<section layout:fragment="content">
+<div class="container">
+    <h1>Show Player</h1>
+    <div th:object="${player}">
+        <div>
+            <label>ID</label>
+            <p th:text="*{id}"></p>
+        </div>
+        <div>
+            <label><th th:text="#{player.name}"/></label>
+            <p th:text="*{name}"></p>
+        </div>
+        <div>
+            <label><th th:text="#{player.age}"/></label>
+            <p th:text="*{age}"></p>
+        </div>
+        <div>
+            <label><th th:text="#{player.team}"/></label>
+            <p th:text="*{team}"></p>
+        </div>
+        <div>
+            <label><th th:text="#{player.position}"/></label>
+            <p th:text="*{position}"></p>
+        </div>
+    </div>
+    <div>
+        <a class="btn btn-default" th:href="@{/players/{id}/edit(id=*{id})}">編集</a>
+    </div>
+    <div class="pull-right">
+        <a class="btn btn-link" href="/players">一覧画面へ</a>
+    </div>
+</div>
+</section>
+</body>
+</html>
