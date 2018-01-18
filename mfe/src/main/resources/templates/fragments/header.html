@@ -2,19 +2,14 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <script type="text/javascript" src="../../static/js/jquery.js" th:src="@{/js/jquery.js}"></script>
-    <link rel="stylesheet" href="../../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}"/>
-    <link href="../../static/css/core.css"
-          th:href="@{/css/core.css}"
-          rel="stylesheet" media="screen" />
 </head>
 <body>
 
 <!-- Navbar -->
-<div class="navbar navbar-inverse navbar-fixed-top" th:fragment="header">
+<div class="navbar navbar-fixed-top" th:fragment="header">
     <div class="container-fluid">
-        <div class="navbar-header">
-            <h2 th:text="#{title.application}">Application Title</h2>
+        <div class="navbar-left">
+            <h3 class= "navbar-text" th:text="#{title.application}">Application Title</h3>
         </div>
         <p class="navbar-text navbar-right" th:text="'Singned in as Marko'" style="margin-right: 10px;">
             Signed in as Anonymus</p>

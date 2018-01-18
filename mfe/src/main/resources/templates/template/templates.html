@@ -5,31 +5,29 @@
 <head>
     <meta charset="utf-8"/>
     <title th:text="#{template.title}">Template title</title>
-    <script type="text/javascript" src="../../static/js/jquery.js" th:src="@{js/jquery.js}"></script>
+    <script type="text/javascript" src="../../static/js/jquery-3.2.1.js" th:src="@{/js/jquery-3.2.1.js}"></script>
     <link rel="stylesheet" href="../../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}"/>
-    <link href="../static/css/core.css"
-          th:href="@{/css/core.css}"
-          rel="stylesheet" media="screen"/>
-
+    <link rel="stylesheet" href="../static/css/core.css" th:href="@{/css/core.css}"  media="screen"/>
+    <link rel="stylesheet" href="../static/css/main.css" th:href="@{/css/main.css}"  media="screen"/>
+    <link rel="stylesheet" href="../static/css/util.css" th:href="@{/css/util.css}"  media="screen"/>
+    <link rel="stylesheet" href="../static/fonts/font-awesome-4.7.0/css/font-awesome.min.css" th:href="@{/fonts/font-awesome-4.7.0/css/font-awesome.min.css}"  media="screen"/>
 </head>
 
 <body>
+<hr>
+
+</hr>
 <section layout:fragment="content">
-    <div class="row">
-        <div class="col-lg-offset-2 col-lg-8">
-            <div class="input">
-                <input type="text" class="col-xs-5 col-lg-offset-3" name="search" id="search" th:value="${search}"/>
-                <input type="submit" value="Search"/>
-            </div>
-            <table class="table">
-                <thead>
+    <div class="container">
+        <div class="row custyle">
+            <table class="table table-striped custab table-sm">
+                <thead class="th-style">
                 <tr>
-                    <th th:text="#{template.id}"/>
-                    <th th:text="#{template.name}"/>
-                    <th th:text="#{template.shortName}"/>
-                    <th th:text="#{template.description}"/>
-                    <th th:text="#{template.defaultTemplate}"/>
-                    <th></th>
+                    <th class="th-style" th:text="#{template.id}"/>
+                    <th class="th-style" th:text="#{template.name}"/>
+                    <th class="th-style" th:text="#{template.shortName}"/>
+                    <th class="th-style"  th:text="#{template.description}"/>
+                    <th class="th-style"  th:text="#{template.defaultTemplate}"/>
                     <th></th>
                     <th></th>
                 </tr>
@@ -44,8 +42,7 @@
                     <td th:text="*{description}"></td>
                     <td th:text="*{defaultTemplate}"></td>
 
-                    <td><a class="btn btn-default btn-xs" th:href="@{/players/{id}(id=*{id})}" th:text="#{view}">参照</a>
-                    </td>
+
                     <td><a class="btn btn-default btn-xs" th:href="@{/template/edit/{id}(id=*{id})}"
                            th:text="#{edit}">Edit</a></td>
                     <td>
@@ -57,30 +54,14 @@
                 </tr>
                 </tbody>
             </table>
-            <div th:fragment='paginationbar'>
-                <ul>
-                    <li th:class="${page.first} ? 'disabled':''" style="display:inline">
-                        <span th:if="${page.first}">←先頭</span>
-                        <a th:if="${not page.first}" th:href="@{${url}(page=0)}">←先頭</a>
-                    </li>
-                    <li th:each='i : ${#numbers.sequence(0, page.totalPages-1)}' th:class="(${i}==${page.number})? 'active' : ''" style="display:inline">
-                        <span th:if='${i}==${page.number}' th:text='${i+1}'>1</span>
-                        <a th:if='${i}!=${page.number}' th:href="@{${url}(page=${i})}">
-                            <span th:text='${i+1}'>1</span>
-                        </a>
-                    </li>
-                    <li th:class="${page.last} ? 'disabled':''" style="display:inline">
-                        <span th:if="${page.last}">末尾➝</span>
-                        <a th:if="${not page.last}" th:href="@{${url}(page=(${page.totalPages}-1))}">末尾➝</a>
-                    </li>
-                </ul>
+            <div th:replace="fragments/paginationbar :: paginationbar">Pagination
             </div>
-           <!-- <div th:replace="fragments/paginationbar :: paginationbar">Pagination</div>-->
             <div class="col-lg-offset-5">
                 <a class="btn btn-info icon-plus pull-right" href="/template/new">
                     <th th:text="#{new}"/>
                 </a>
             </div>
+
         </div>
     </div>
 </section>

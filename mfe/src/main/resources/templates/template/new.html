@@ -1,66 +1,71 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-
-<script type="text/javascript" src="../../static/js/jquery.js" th:src="@{/js/jquery.js}"></script>
-<link rel="stylesheet" href="../../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}"/>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layouts/layout">
 
 <head>
+    <link rel="stylesheet" href="../../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}"/>
+    <link rel="stylesheet" href="../static/css/core.css" th:href="@{/css/core.css}"  media="screen"/>
+    <link rel="stylesheet" href="../static/css/form.css" th:href="@{/css/form.css}"  media="screen"/>
     <meta charset="utf-8"/>
     <title>New Template</title>
 </head>
 <body>
-<div class="container">
-    <h1>New Template</h1>
-    <p class="alert alert-danger" th:if="${error != null}" th:text="${error}"></p>
+<section layout:fragment="content">
+    <div class="container col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+        <h1 class="text-center">New Template</h1>
+        <p class="alert alert-danger" th:if="${error != null}" th:text="${error}"></p>
 
-    <form action="#" th:action="@{/template}" th:object="${template}" th:method="post">
-        <input class="form-control" type="hidden" th:field="*{id}"/>
-        <div class="form-group">
-            <label class="control-label">
-                <th th:text="#{template.name}"/>
-            </label>
-            <input class="form-control" type="text" th:field="*{name}"/>
-            <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</td>
+        <form action="#" th:action="@{/template}" th:object="${template}" th:method="post">
+            <input class="form-control" type="hidden" th:field="*{id}"/>
+            <div class="form-group">
+                <label class="control-label">
+                    <th th:text="#{template.name}"/>
+                </label>
+                <input class="form-control" type="text" th:field="*{name}"/>
+                <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</td>
+            </div>
+            <div class="form-group">
+                <label class="control-label">
+                    <th th:text="#{template.shortName}"/>
+                </label>
+                <input class="form-control" type="text" th:field="*{shortName}"/>
+                <td th:if="${#fields.hasErrors('shortName')}" th:errors="*{shortName}">Age Error</td>
+            </div>
+            <div class="form-group">
+                <label class="control-label">
+                    <th th:text="#{template.description}"/>
+                </label>
+                <textarea class="form-control" style="overflow:hidden;"  rows = "5" th:field = "*{description}"/>
+                <td th:if="${#fields.hasErrors('description')}" th:errors="*{description}">Team Error</td>
+            </div>
+            <div class="form-group">
+                <label class="control-label">
+                    <th th:text="#{template.defaultTemplate}"/>
+                </label>
+                <input class="form-control" type="text" th:field="*{defaultTemplate}"/>m
+                <td th:if="${#fields.hasErrors('defaultTemplate')}" th:errors="*{defaultTemplate}">Team Error</td>
+            </div>
+            <div class="form-group">
+                <label class="control-label">
+                    <th th:text="#{template.valid}"/>
+                </label>
+                <input class="form-control" type="number" th:field="*{valid}"/>
+                <td th:if="${#fields.hasErrors('valid')}" th:errors="*{valid}">Team Error</td>
+            </div>
+            <div class="col-lg-offset-5">
+                <button class="btn btn-default pull-right" type="submit">
+                    <th th:text="#{save}"/>
+                </button>
+            </div>
+        </form>
+        <div class="mycontent-left">
         </div>
-        <div class="form-group">
-            <label class="control-label">
-                <th th:text="#{template.shortName}"/>
-            </label>
-            <input class="form-control" type="text" th:field="*{shortName}"/>
-            <td th:if="${#fields.hasErrors('shortName')}" th:errors="*{shortName}">Age Error</td>
+        <div class="pull-right">
+            <a class="btn btn-link" href="/template">
+                <th th:text="#{return}"/>
+            </a>
         </div>
-        <div class="form-group">
-            <label class="control-label">
-                <th th:text="#{template.description}"/>
-            </label>
-            <input class="form-control" type="text" th:field="*{description}"/>
-            <td th:if="${#fields.hasErrors('description')}" th:errors="*{description}">Team Error</td>
-        </div>
-        <div class="form-group">
-            <label class="control-label">
-                <th th:text="#{template.defaultTemplate}"/>
-            </label>
-            <input class="form-control" type="text" th:field="*{defaultTemplate}"/>
-            <td th:if="${#fields.hasErrors('defaultTemplate')}" th:errors="*{defaultTemplate}">Team Error</td>
-        </div>
-        <div class="form-group">
-            <label class="control-label">
-                <th th:text="#{template.valid}"/>
-            </label>
-            <input class="form-control" type="number" th:field="*{valid}"/>
-            <td th:if="${#fields.hasErrors('valid')}" th:errors="*{valid}">Team Error</td>
-        </div>
-        <div class="col-lg-offset-5">
-            <button class="btn btn-default pull-right" type="submit">
-                <th th:text="#{save}"/>
-            </button>
-        </div>
-    </form>
-    <div class="pull-right">
-        <a class="btn btn-link" href="/template">
-            <th th:text="#{return}"/>
-        </a>
     </div>
-</div>
+</section>
 </body>
 </html>

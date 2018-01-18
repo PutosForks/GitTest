@@ -1,0 +1,22 @@
+.container{
+    height: 100%;
+    font-family: Times, serif;
+}
+
+.form-group {
+    display: block;
+}
+
+.control-label {
+    font-weight: normal;
+    font-family: Times, serif;
+    font-size: 16px;
+}
+
+.form-control {
+    font-family: Times, serif;
+}
+
+.mycontent-left {
+    border-right: 1px dashed #333;
+}
