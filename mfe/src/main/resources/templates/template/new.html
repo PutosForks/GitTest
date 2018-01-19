@@ -22,35 +22,35 @@
                     <th th:text="#{template.name}"/>
                 </label>
                 <input class="form-control" type="text" th:field="*{name}"/>
-                <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</td>
+                <p th:errorclass="form-field-error" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</p>
             </div>
             <div class="form-group">
                 <label class="control-label">
                     <th th:text="#{template.shortName}"/>
                 </label>
                 <input class="form-control" type="text" th:field="*{shortName}"/>
-                <td th:if="${#fields.hasErrors('shortName')}" th:errors="*{shortName}">Age Error</td>
+                <p th:errorclass="form-field-error" th:if="${#fields.hasErrors('shortName')}" th:errors="*{shortName}">Short Name Error</p>
             </div>
             <div class="form-group">
                 <label class="control-label">
                     <th th:text="#{template.description}"/>
                 </label>
                 <textarea class="form-control" style="overflow:hidden;"  rows = "5" th:field = "*{description}"/>
-                <td th:if="${#fields.hasErrors('description')}" th:errors="*{description}">Team Error</td>
+                <p th:errorclass="form-field-error" th:if="${#fields.hasErrors('description')}" th:errors="*{description}">Team Error</p>
             </div>
             <div class="form-group">
                 <label class="control-label">
                     <th th:text="#{template.defaultTemplate}"/>
                 </label>
                 <input class="form-control" type="text" th:field="*{defaultTemplate}"/>m
-                <td th:if="${#fields.hasErrors('defaultTemplate')}" th:errors="*{defaultTemplate}">Team Error</td>
+                <p th:errorclass="form-field-error" th:if="${#fields.hasErrors('defaultTemplate')}" th:errors="*{defaultTemplate}">Team Error</p>
             </div>
             <div class="form-group">
                 <label class="control-label">
                     <th th:text="#{template.valid}"/>
                 </label>
                 <input class="form-control" type="number" th:field="*{valid}"/>
-                <td th:if="${#fields.hasErrors('valid')}" th:errors="*{valid}">Team Error</td>
+                <p th:errorclass="form-field-error" th:if="${#fields.hasErrors('valid')}" th:errors="*{valid}">Team Error</p>
             </div>
             <div class="col-lg-offset-5">
                 <button class="btn btn-default pull-right" type="submit">

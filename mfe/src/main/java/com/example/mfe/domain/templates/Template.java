@@ -1,18 +1,14 @@
-package com.example.mfe.domain;
+package com.example.mfe.domain.templates;
 
-
-import com.example.mfe.enumeration.EnvironmentEnum;
-import com.example.mfe.enumeration.MfeStatusEnum;
-import org.omg.CORBA.Environment;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.time.LocalDateTime;
-import java.util.Date;
 
 @Entity
+@Table(name = "CON_TEMPLATE", schema = "HIBERNATE",
+       uniqueConstraints = {@UniqueConstraint(columnNames = {"SHORT_NAME"})}
+        )
 public class Template {
 
     @Id
@@ -27,6 +23,7 @@ public class Template {
 
     @Size(max = 250, min = 1)
     @NotNull
+    @Column(name = "SHORT_NAME")
     private String shortName;
 
     @Column
@@ -42,6 +39,11 @@ public class Template {
 
     @OneToOne(mappedBy = "idTemplate")
     private TemplateStatus templateStatus;
+//
+//    @OneToOne
+//    @JoinColumn(name = "ID_CURRENT_VER", referencedColumnName = "ID_TEMPLATE_VER")
+//    private TemplateVer idCurrentVer;
+
 
     public Long getId() {
         return id;
@@ -98,4 +100,12 @@ public class Template {
     public void setTemplateStatus(TemplateStatus templateStatus) {
         this.templateStatus = templateStatus;
     }
+//
+//    public TemplateVer getIdCurrentVer() {
+//        return idCurrentVer;
+//    }
+//
+//    public void setIdCurrentVer(TemplateVer idCurrentVer) {
+//        this.idCurrentVer = idCurrentVer;
+//    }
 }

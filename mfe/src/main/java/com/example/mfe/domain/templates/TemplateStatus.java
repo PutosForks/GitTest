@@ -1,4 +1,4 @@
-package com.example.mfe.domain;
+package com.example.mfe.domain.templates;
 
 import com.example.mfe.enumeration.EnvironmentEnum;
 import com.example.mfe.enumeration.MfeStatusEnum;
@@ -7,6 +7,7 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
+@Table(name = "CON_TEMPLATE_STATUS", schema = "HIBERNATE")
 public class TemplateStatus {
 
     @Id
@@ -105,11 +106,11 @@ public class TemplateStatus {
         this.updatedBy = updatedBy;
     }
 
-    public Template getIdTemplate() {
-        return idTemplate;
-    }
-
-    public void setIdTemplate(Template idTemplate) {
-        this.idTemplate = idTemplate;
-    }
+//    public Template getIdTemplate() {
+//        return idTemplate;
+//    }
+//
+//    public void setIdTemplate(Template idTemplate) {
+//        this.idTemplate = idTemplate;
+//    }
 }

@@ -20,14 +20,14 @@
                 <th th:text="#{player.name}"/>
             </label>
             <input class="form-control" type="text" th:field="*{name}"/>
-            <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</td>
+            <td class="errmsg" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</td>
         </div>
         <div class="form-group">
             <label class="control-label">
                 <th th:text="#{player.age}"/>
             </label>
             <input class="form-control" type="number" th:field="*{age}"/>
-            <td th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age Error</td>
+            <td class="errmsg"  th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age Error</td>
         </div>
         <div class="form-group">
             <label class="control-label">

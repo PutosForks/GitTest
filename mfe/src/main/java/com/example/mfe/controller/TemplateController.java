@@ -1,13 +1,17 @@
 package com.example.mfe.controller;
 
-import com.example.mfe.domain.Template;
+import com.example.mfe.component.Messages;
+import com.example.mfe.domain.templates.Template;
 import com.example.mfe.service.TemplateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/template")
@@ -15,6 +19,9 @@ public class TemplateController {
 
     @Autowired
     TemplateService templateService;
+
+    @Autowired
+    Messages messages;
 
     @RequestMapping(method = RequestMethod.GET)
     public String getTemplates(Model model, Pageable pageable) {
@@ -46,7 +53,11 @@ public class TemplateController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public String saveTemplate(Template template) {
+    public String saveTemplate(@Valid @ModelAttribute Template template, BindingResult bindingResult) {
+        if (templateService.shortNameExists(template)) {
+            bindingResult.rejectValue("shortName", "shortName", messages.get("template.shortName.exists"));
+        }
+        if (bindingResult.hasErrors()) return "template/new";
         templateService.save(template);
         return "redirect:template";
     }

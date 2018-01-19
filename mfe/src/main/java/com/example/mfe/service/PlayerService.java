@@ -19,10 +19,10 @@ public class PlayerService {
         return playerRepository.findAll();
     }
 
-
     public Player findOne(Long id) {
         return playerRepository.findOne(id);
     }
+
 
     @ExceptionHandler(PlayerExceptionClass.class)
     public Player save(Player player) {
@@ -35,4 +35,7 @@ public class PlayerService {
     public void delete(Long id) {
         playerRepository.delete(id);
     }
+
+
+
 }

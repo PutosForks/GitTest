@@ -20,3 +20,7 @@
 .mycontent-left {
     border-right: 1px dashed #333;
 }
+
+.form-field-error {
+    color: #ff0f1d;
+}
