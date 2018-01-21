@@ -1,13 +1,16 @@
 package com.example.mfe.service;
 
+import com.example.mfe.component.Messages;
 import com.example.mfe.domain.templates.Template;
 import com.example.mfe.repository.TemplateRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
+import org.springframework.context.MessageSource;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import java.util.List;
 
@@ -17,6 +20,10 @@ public class TemplateService {
 
     @Autowired
     TemplateRepository templateRepository;
+
+    @Autowired
+    Messages messages;
+
 
     public Page<Template> findById(Pageable pageable) {
         return templateRepository.findById(pageable);
@@ -46,7 +53,13 @@ public class TemplateService {
         return false;
     }
 
+    @ExceptionHandler(TemplateExceptionClass.class)
     public void save(Template template) {
+        Template template1 = templateRepository.findOne(template.getId());
+        if (template1.getDefaultTemplate() == "1" && template.getDefaultTemplate() == "0") {
+            throw new TemplateExceptionClass(messages.get("template.defaultTemplate.unique"));
+        }
+
         templateRepository.save(template);
     }
 
