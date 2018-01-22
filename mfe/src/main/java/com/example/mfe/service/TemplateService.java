@@ -17,13 +17,11 @@ import java.util.List;
 @Service
 public class TemplateService {
 
-
     @Autowired
     TemplateRepository templateRepository;
 
     @Autowired
     Messages messages;
-
 
     public Page<Template> findById(Pageable pageable) {
         return templateRepository.findById(pageable);

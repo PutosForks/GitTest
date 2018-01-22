@@ -34,9 +34,8 @@ public class Template {
     @NotNull
     private boolean defaultTemplate;
 
-    @Column
-    // @Size(max = 1)
-    private Integer valid;
+    @NotNull
+    private boolean valid;
 
     @OneToOne(mappedBy = "idTemplate")
     private TemplateStatus templateStatus;
@@ -86,11 +85,11 @@ public class Template {
         this.defaultTemplate = defaultTemplate;
     }
 
-    public Integer getValid() {
+    public boolean getValid() {
         return valid;
     }
 
-    public void setValid(Integer valid) {
+    public void setValid(boolean valid) {
         this.valid = valid;
     }
 

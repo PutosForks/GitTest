@@ -41,9 +41,9 @@ public class TemplateServiceTest {
         Template t = new Template();
         t.setName("templtexxx");
         t.setShortName(shortName);
-        t.setDefaultTemplate(0);
+        t.setDefaultTemplate(false);
         t.setDescription("0");
-        t.setValid(0);
+        t.setValid(false);
 
         Mockito.when(templateRepository.findByShortName(t.getName()))
                 .thenReturn(t);
