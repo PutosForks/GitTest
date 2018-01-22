@@ -38,12 +38,11 @@
                 <textarea class="form-control" style="overflow:hidden;"  rows = "5" th:field = "*{description}"/>
                 <p th:errorclass="form-field-error" th:if="${#fields.hasErrors('description')}" th:errors="*{description}">Team Error</p>
             </div>
-            <div class="form-group">
-                <label class="control-label">
+            <div class="form-check">
+                <label class="checkbox-inline">
                     <th th:text="#{template.defaultTemplate}"/>
                 </label>
-                <input class="form-control" type="text" th:field="*{defaultTemplate}"/>m
-                <p th:errorclass="form-field-error" th:if="${#fields.hasErrors('defaultTemplate')}" th:errors="*{defaultTemplate}">Team Error</p>
+                    <input class="checkbox-inline" type="checkbox" th:field="*{defaultTemplate}"/>
             </div>
             <div class="form-group">
                 <label class="control-label">

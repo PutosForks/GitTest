@@ -7,8 +7,8 @@ import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "CON_TEMPLATE", schema = "HIBERNATE",
-       uniqueConstraints = {@UniqueConstraint(columnNames = {"SHORT_NAME"})}
-        )
+        uniqueConstraints = {@UniqueConstraint(columnNames = {"SHORT_NAME"})}
+)
 public class Template {
 
     @Id
@@ -31,7 +31,8 @@ public class Template {
     @NotNull
     private String description;
 
-    private String  defaultTemplate;
+    @NotNull
+    private boolean defaultTemplate;
 
     @Column
     // @Size(max = 1)
@@ -77,11 +78,11 @@ public class Template {
         this.description = description;
     }
 
-    public String getDefaultTemplate() {
+    public boolean getDefaultTemplate() {
         return defaultTemplate;
     }
 
-    public void setDefaultTemplate(String defaultTemplate) {
+    public void setDefaultTemplate(boolean defaultTemplate) {
         this.defaultTemplate = defaultTemplate;
     }
 

@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="../static/css/util.css" th:href="@{/css/util.css}"  media="screen"/>
     <link rel="stylesheet" href="../static/fonts/font-awesome-4.7.0/css/font-awesome.min.css" th:href="@{/fonts/font-awesome-4.7.0/css/font-awesome.min.css}"  media="screen"/>
 </head>
-
 <body>
 <hr>
 
@@ -35,13 +34,11 @@
                 <tbody>
 
                 <tr th:each="template:${templates}" th:object="${template}">
-
                     <td th:text="*{id}"></td>
                     <td th:text="*{name}"></td>
                     <td th:text="*{shortName}"></td>
                     <td th:text="*{description}"></td>
                     <td th:text="*{defaultTemplate}"></td>
-
 
                     <td><a class="btn btn-default btn-xs" th:href="@{/template/edit/{id}(id=*{id})}"
                            th:text="#{edit}">Edit</a></td>
@@ -61,7 +58,6 @@
                     <th th:text="#{new}"/>
                 </a>
             </div>
-
         </div>
     </div>
 </section>

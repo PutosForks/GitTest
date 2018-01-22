@@ -55,8 +55,7 @@ public class TemplateService {
 
     @ExceptionHandler(TemplateExceptionClass.class)
     public void save(Template template) {
-        Template template1 = templateRepository.findOne(template.getId());
-        if (template1.getDefaultTemplate() == "1" && template.getDefaultTemplate() == "0") {
+        if (template.getId() == null && template.getDefaultTemplate()) {
             throw new TemplateExceptionClass(messages.get("template.defaultTemplate.unique"));
         }
 
