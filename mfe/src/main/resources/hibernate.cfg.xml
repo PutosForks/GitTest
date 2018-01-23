@@ -15,7 +15,6 @@
     <property name="hibernate.format_sql">true</property>
     <mapping class="com.example.mfe.domain.templates.Template"/>
     <mapping class="com.example.mfe.domain.templates.TemplateStatus"/>
-    <mapping class="com.example.mfe.domain.Player"/>
 
 
   </session-factory>
