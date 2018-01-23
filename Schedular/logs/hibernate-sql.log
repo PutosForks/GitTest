@@ -1,0 +1,529 @@
+20:10:39.116 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1625040: startup date [Mon Jan 15 20:10:39 CET 2018]; root of context hierarchy
+20:10:40.406 [restartedMain] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'managementServletContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcHypermediaManagementContextConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcAutoConfiguration.class]]
+20:10:41.627 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8092 (http)
+20:10:41.636 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:10:41.637 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+20:10:41.769 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:10:41.769 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2653 ms
+20:10:42.037 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+20:10:42.040 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+20:10:42.040 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+20:10:42.040 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20:10:42.040 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20:10:42.040 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+20:10:42.040 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+20:10:42.040 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+20:10:43.375 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+20:10:44.375 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:10:45.329 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1625040: startup date [Mon Jan 15 20:10:39 CET 2018]; root of context hierarchy
+20:10:45.339 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+20:10:45.414 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players],methods=[GET]}" onto public java.lang.String com.example.mfe.controller.PlayerController.index(org.springframework.ui.Model)
+20:10:45.415 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/{id}],methods=[PUT]}" onto public java.lang.String com.example.mfe.controller.PlayerController.update(java.lang.Long,com.example.mfe.domain.Player)
+20:10:45.418 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/{id}],methods=[DELETE]}" onto public java.lang.String com.example.mfe.controller.PlayerController.destroy(java.lang.Long)
+20:10:45.418 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.example.mfe.controller.PlayerController.create(org.springframework.ui.Model,com.example.mfe.domain.Player,org.springframework.validation.BindingResult)
+20:10:45.418 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/{id}/edit],methods=[GET]}" onto public java.lang.String com.example.mfe.controller.PlayerController.edit(java.lang.Long,org.springframework.ui.Model)
+20:10:45.418 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/{id}],methods=[GET]}" onto public java.lang.String com.example.mfe.controller.PlayerController.show(java.lang.Long,org.springframework.ui.Model)
+20:10:45.418 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/new],methods=[GET]}" onto public java.lang.String com.example.mfe.controller.PlayerController.newPlayer(org.springframework.ui.Model)
+20:10:45.420 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+20:10:45.420 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+20:10:45.465 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:10:45.465 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:10:45.465 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/docs/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:10:45.483 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected ResponseBodyAdvice implementation in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+20:10:45.510 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:10:46.007 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/docs],produces=[text/html]}" onto public java.lang.String org.springframework.boot.actuate.endpoint.mvc.DocsMvcEndpoint.redirect()
+20:10:46.008 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/docs/],produces=[text/html]}" onto public java.lang.String org.springframework.boot.actuate.endpoint.mvc.DocsMvcEndpoint.browse()
+20:10:46.008 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+20:10:46.008 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+20:10:46.009 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+20:10:46.009 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+20:10:46.010 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+20:10:46.010 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+20:10:46.010 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/actuator || /actuator.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.boot.actuate.endpoint.mvc.HalJsonMvcEndpoint.links()
+20:10:46.011 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+20:10:46.011 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+20:10:46.012 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+20:10:46.012 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+20:10:46.012 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+20:10:46.013 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+20:10:46.013 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+20:10:46.013 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+20:10:46.015 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+20:10:46.015 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+20:10:46.015 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+20:10:46.223 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+20:10:46.289 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+20:10:46.294 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+20:10:46.298 [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+20:10:46.300 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+20:10:46.313 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+20:10:46.328 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+20:10:46.332 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+20:10:46.334 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+20:10:46.336 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+20:10:46.339 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+20:10:46.345 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+20:10:46.347 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+20:10:46.349 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+20:10:46.351 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+20:10:46.353 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+20:10:46.368 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8092"]
+20:10:46.378 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8092"]
+20:10:46.390 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+20:10:46.409 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8092 (http)
+20:10:47.371 [http-nio-8092-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+20:10:47.371 [http-nio-8092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+20:10:47.392 [http-nio-8092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+20:10:47.700 [http-nio-8092-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+20:10:47.748 [http-nio-8092-exec-1] INFO  o.t.t.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+20:10:47.748 [http-nio-8092-exec-1] INFO  o.t.t.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+20:10:47.748 [http-nio-8092-exec-1] INFO  o.t.m.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+20:10:47.748 [http-nio-8092-exec-1] INFO  o.t.m.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+20:10:47.752 [http-nio-8092-exec-1] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+20:10:47.752 [http-nio-8092-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+09:02:37.734 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8a44d8: startup date [Tue Jan 16 09:02:37 CET 2018]; root of context hierarchy
+09:02:38.796 [restartedMain] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'managementServletContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcHypermediaManagementContextConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcAutoConfiguration.class]]
+09:02:39.981 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8092 (http)
+09:02:39.991 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:02:39.991 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+09:02:40.118 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:02:40.118 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2384 ms
+09:02:40.365 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+09:02:40.372 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+09:02:40.372 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+09:02:40.372 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+09:02:40.372 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+09:02:40.372 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+09:02:40.372 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+09:02:40.372 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+09:02:41.669 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+09:02:42.640 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:02:43.531 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8a44d8: startup date [Tue Jan 16 09:02:37 CET 2018]; root of context hierarchy
+09:02:43.545 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+09:02:43.615 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players],methods=[GET]}" onto public java.lang.String com.example.mfe.controller.PlayerController.index(org.springframework.ui.Model)
+09:02:43.615 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/{id}],methods=[PUT]}" onto public java.lang.String com.example.mfe.controller.PlayerController.update(java.lang.Long,com.example.mfe.domain.Player)
+09:02:43.616 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/{id}],methods=[DELETE]}" onto public java.lang.String com.example.mfe.controller.PlayerController.destroy(java.lang.Long)
+09:02:43.616 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.example.mfe.controller.PlayerController.create(org.springframework.ui.Model,com.example.mfe.domain.Player,org.springframework.validation.BindingResult)
+09:02:43.616 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/new],methods=[GET]}" onto public java.lang.String com.example.mfe.controller.PlayerController.newPlayer(org.springframework.ui.Model)
+09:02:43.616 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/{id}/edit],methods=[GET]}" onto public java.lang.String com.example.mfe.controller.PlayerController.edit(java.lang.Long,org.springframework.ui.Model)
+09:02:43.616 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/{id}],methods=[GET]}" onto public java.lang.String com.example.mfe.controller.PlayerController.show(java.lang.Long,org.springframework.ui.Model)
+09:02:43.617 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+09:02:43.618 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:02:43.659 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:02:43.659 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:02:43.659 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/docs/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:02:43.675 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected ResponseBodyAdvice implementation in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+09:02:43.699 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:02:44.169 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+09:02:44.169 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:02:44.169 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/actuator || /actuator.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.boot.actuate.endpoint.mvc.HalJsonMvcEndpoint.links()
+09:02:44.169 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:02:44.169 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:02:44.169 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+09:02:44.169 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+09:02:44.169 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:02:44.169 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:02:44.169 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:02:44.169 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+09:02:44.169 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:02:44.169 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/docs],produces=[text/html]}" onto public java.lang.String org.springframework.boot.actuate.endpoint.mvc.DocsMvcEndpoint.redirect()
+09:02:44.169 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/docs/],produces=[text/html]}" onto public java.lang.String org.springframework.boot.actuate.endpoint.mvc.DocsMvcEndpoint.browse()
+09:02:44.169 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:02:44.169 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+09:02:44.169 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+09:02:44.169 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:02:44.170 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+09:02:44.170 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:02:44.414 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+09:02:44.492 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+09:02:44.503 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+09:02:44.509 [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+09:02:44.512 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+09:02:44.531 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+09:02:44.541 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+09:02:44.545 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+09:02:44.556 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+09:02:44.566 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+09:02:44.569 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+09:02:44.575 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+09:02:44.578 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+09:02:44.581 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+09:02:44.583 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+09:02:44.585 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+09:02:44.607 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8092"]
+09:02:44.624 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8092"]
+09:02:44.630 [restartedMain] ERROR o.a.coyote.http11.Http11NioProtocol - Failed to start end point associated with ProtocolHandler ["http-nio-8092"]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.Net.bind(Net.java:428)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.example.mfe.BaseballApplication.main(BaseballApplication.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+09:02:44.631 [restartedMain] ERROR o.a.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-8092]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8092]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.example.mfe.BaseballApplication.main(BaseballApplication.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1031)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.Net.bind(Net.java:428)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 19 common frames omitted
+09:02:44.638 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8092"]
+09:02:44.638 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+09:02:44.652 [restartedMain] INFO  o.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+09:02:44.653 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8092"]
+09:02:44.653 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8092"]
+09:02:44.655 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+09:02:44.659 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8092 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8092, or configure this application to listen on another port.
+
+09:02:44.660 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8a44d8: startup date [Tue Jan 16 09:02:37 CET 2018]; root of context hierarchy
+09:02:44.662 [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+09:02:44.663 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans on shutdown
+09:02:44.663 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans
+09:02:44.663 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+09:02:44.664 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09:38:17.692 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1dec45d: startup date [Tue Jan 16 09:38:17 CET 2018]; root of context hierarchy
+09:38:18.842 [restartedMain] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'managementServletContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcHypermediaManagementContextConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcAutoConfiguration.class]]
+09:38:19.969 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8092 (http)
+09:38:19.978 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:38:19.979 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+09:38:20.103 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:38:20.103 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2412 ms
+09:38:20.340 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+09:38:20.343 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+09:38:20.343 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+09:38:20.343 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+09:38:20.343 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+09:38:20.343 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+09:38:20.343 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+09:38:20.343 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+09:38:21.583 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+09:38:22.440 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:38:23.327 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1dec45d: startup date [Tue Jan 16 09:38:17 CET 2018]; root of context hierarchy
+09:38:23.338 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+09:38:23.409 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players],methods=[GET]}" onto public java.lang.String com.example.mfe.controller.PlayerController.index(org.springframework.ui.Model)
+09:38:23.410 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/{id}],methods=[PUT]}" onto public java.lang.String com.example.mfe.controller.PlayerController.update(java.lang.Long,com.example.mfe.domain.Player)
+09:38:23.410 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/{id}],methods=[DELETE]}" onto public java.lang.String com.example.mfe.controller.PlayerController.destroy(java.lang.Long)
+09:38:23.410 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.example.mfe.controller.PlayerController.create(com.example.mfe.domain.Player,org.springframework.validation.BindingResult)
+09:38:23.410 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/new],methods=[GET]}" onto public java.lang.String com.example.mfe.controller.PlayerController.newPlayer(org.springframework.ui.Model)
+09:38:23.411 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/{id}/edit],methods=[GET]}" onto public java.lang.String com.example.mfe.controller.PlayerController.edit(java.lang.Long,org.springframework.ui.Model)
+09:38:23.411 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/{id}],methods=[GET]}" onto public java.lang.String com.example.mfe.controller.PlayerController.show(java.lang.Long,org.springframework.ui.Model)
+09:38:23.411 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/templates/findAll],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.mfe.controller.TemplateController.getTemplates()
+09:38:23.412 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+09:38:23.413 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:38:23.455 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:38:23.456 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:38:23.456 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/docs/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:38:23.472 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected ResponseBodyAdvice implementation in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+09:38:23.497 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:38:23.936 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+09:38:23.936 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:38:23.937 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+09:38:23.937 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:38:23.938 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:38:23.938 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:38:23.939 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+09:38:23.939 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:38:23.941 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+09:38:23.941 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+09:38:23.941 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:38:23.943 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+09:38:23.943 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:38:23.944 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:38:23.944 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+09:38:23.944 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:38:23.945 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/actuator || /actuator.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.boot.actuate.endpoint.mvc.HalJsonMvcEndpoint.links()
+09:38:23.945 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:38:23.946 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/docs],produces=[text/html]}" onto public java.lang.String org.springframework.boot.actuate.endpoint.mvc.DocsMvcEndpoint.redirect()
+09:38:23.946 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/docs/],produces=[text/html]}" onto public java.lang.String org.springframework.boot.actuate.endpoint.mvc.DocsMvcEndpoint.browse()
+09:38:24.174 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+09:38:24.222 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+09:38:24.227 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+09:38:24.231 [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+09:38:24.232 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+09:38:24.250 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+09:38:24.259 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+09:38:24.262 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+09:38:24.264 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+09:38:24.266 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+09:38:24.268 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+09:38:24.273 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+09:38:24.275 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+09:38:24.277 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+09:38:24.279 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+09:38:24.281 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+09:38:24.294 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8092"]
+09:38:24.303 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8092"]
+09:38:24.314 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+09:38:24.332 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8092 (http)
+09:38:39.323 [http-nio-8092-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+09:38:39.323 [http-nio-8092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+09:38:39.341 [http-nio-8092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+09:38:39.552 [http-nio-8092-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+09:38:39.592 [http-nio-8092-exec-1] INFO  o.t.t.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+09:38:39.592 [http-nio-8092-exec-1] INFO  o.t.t.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+09:38:39.592 [http-nio-8092-exec-1] INFO  o.t.m.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+09:38:39.592 [http-nio-8092-exec-1] INFO  o.t.m.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+09:38:39.595 [http-nio-8092-exec-1] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+09:38:39.596 [http-nio-8092-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+09:39:07.019 [Thread-2] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1dec45d: startup date [Tue Jan 16 09:38:17 CET 2018]; root of context hierarchy
+09:39:07.020 [Thread-2] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+09:39:07.021 [Thread-2] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans on shutdown
+09:39:07.021 [Thread-2] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans
+09:39:07.022 [Thread-2] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+09:39:07.023 [Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09:39:07.341 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8aa690: startup date [Tue Jan 16 09:39:07 CET 2018]; root of context hierarchy
+09:39:08.042 [restartedMain] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'managementServletContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcHypermediaManagementContextConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcAutoConfiguration.class]]
+09:39:08.272 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8092 (http)
+09:39:08.272 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:39:08.272 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+09:39:08.298 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:39:08.298 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 957 ms
+09:39:08.369 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+09:39:08.370 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+09:39:08.370 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+09:39:08.370 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+09:39:08.370 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+09:39:08.370 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+09:39:08.370 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+09:39:08.370 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+09:39:09.377 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+09:39:09.546 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:39:09.807 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8aa690: startup date [Tue Jan 16 09:39:07 CET 2018]; root of context hierarchy
+09:39:09.825 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+09:39:09.825 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players],methods=[GET]}" onto public java.lang.String com.example.mfe.controller.PlayerController.index(org.springframework.ui.Model)
+09:39:09.825 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/{id}],methods=[PUT]}" onto public java.lang.String com.example.mfe.controller.PlayerController.update(java.lang.Long,com.example.mfe.domain.Player)
+09:39:09.825 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/{id}],methods=[DELETE]}" onto public java.lang.String com.example.mfe.controller.PlayerController.destroy(java.lang.Long)
+09:39:09.825 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.example.mfe.controller.PlayerController.create(com.example.mfe.domain.Player,org.springframework.validation.BindingResult)
+09:39:09.825 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/new],methods=[GET]}" onto public java.lang.String com.example.mfe.controller.PlayerController.newPlayer(org.springframework.ui.Model)
+09:39:09.825 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/{id}/edit],methods=[GET]}" onto public java.lang.String com.example.mfe.controller.PlayerController.edit(java.lang.Long,org.springframework.ui.Model)
+09:39:09.825 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/{id}],methods=[GET]}" onto public java.lang.String com.example.mfe.controller.PlayerController.show(java.lang.Long,org.springframework.ui.Model)
+09:39:09.825 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/templates/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.mfe.controller.TemplateController.getTemplates()
+09:39:09.825 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+09:39:09.825 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:39:09.834 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:39:09.834 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:39:09.834 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/docs/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:39:09.843 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected ResponseBodyAdvice implementation in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+09:39:09.850 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:39:09.982 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+09:39:09.982 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:39:09.982 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:39:09.983 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+09:39:09.983 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+09:39:09.983 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+09:39:09.983 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:39:09.984 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:39:09.984 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:39:09.985 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:39:09.985 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+09:39:09.985 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:39:09.986 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+09:39:09.986 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:39:09.986 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/actuator || /actuator.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.boot.actuate.endpoint.mvc.HalJsonMvcEndpoint.links()
+09:39:09.987 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:39:09.987 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+09:39:09.987 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:39:09.988 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/docs],produces=[text/html]}" onto public java.lang.String org.springframework.boot.actuate.endpoint.mvc.DocsMvcEndpoint.redirect()
+09:39:09.988 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/docs/],produces=[text/html]}" onto public java.lang.String org.springframework.boot.actuate.endpoint.mvc.DocsMvcEndpoint.browse()
+09:39:10.063 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+09:39:10.121 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+09:39:10.125 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+09:39:10.127 [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+09:39:10.127 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+09:39:10.130 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+09:39:10.132 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+09:39:10.134 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+09:39:10.136 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+09:39:10.137 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+09:39:10.139 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+09:39:10.142 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+09:39:10.143 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+09:39:10.145 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+09:39:10.146 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+09:39:10.148 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+09:39:10.153 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8092"]
+09:39:10.154 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8092"]
+09:39:10.155 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+09:39:10.159 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8092 (http)
+09:39:11.655 [http-nio-8092-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+09:39:11.655 [http-nio-8092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+09:39:11.660 [http-nio-8092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 5 ms
+09:40:11.755 [Thread-11] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@8aa690: startup date [Tue Jan 16 09:39:07 CET 2018]; root of context hierarchy
+09:40:11.755 [Thread-11] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+09:40:11.755 [Thread-11] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans on shutdown
+09:40:11.755 [Thread-11] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans
+09:40:11.755 [Thread-11] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+09:40:11.755 [Thread-11] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09:40:14.581 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b7aaa7: startup date [Tue Jan 16 09:40:14 CET 2018]; root of context hierarchy
+09:40:15.221 [restartedMain] INFO  o.s.b.f.s.DefaultListableBeanFactory - Overriding bean definition for bean 'managementServletContext' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcHypermediaManagementContextConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration; factoryMethodName=managementServletContext; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/EndpointWebMvcAutoConfiguration.class]]
+09:40:15.440 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8092 (http)
+09:40:15.440 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:40:15.441 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+09:40:15.466 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:40:15.466 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 886 ms
+09:40:15.533 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+09:40:15.533 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'metricsFilter' to: [/*]
+09:40:15.533 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+09:40:15.534 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+09:40:15.534 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+09:40:15.534 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+09:40:15.534 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+09:40:15.534 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'applicationContextIdFilter' to: [/*]
+09:40:16.551 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+09:40:16.711 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:40:16.980 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b7aaa7: startup date [Tue Jan 16 09:40:14 CET 2018]; root of context hierarchy
+09:40:16.986 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Detected ResponseBodyAdvice bean in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+09:40:16.993 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players],methods=[GET]}" onto public java.lang.String com.example.mfe.controller.PlayerController.index(org.springframework.ui.Model)
+09:40:16.993 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/{id}],methods=[PUT]}" onto public java.lang.String com.example.mfe.controller.PlayerController.update(java.lang.Long,com.example.mfe.domain.Player)
+09:40:16.993 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/{id}],methods=[DELETE]}" onto public java.lang.String com.example.mfe.controller.PlayerController.destroy(java.lang.Long)
+09:40:16.993 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.example.mfe.controller.PlayerController.create(com.example.mfe.domain.Player,org.springframework.validation.BindingResult)
+09:40:16.993 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/new],methods=[GET]}" onto public java.lang.String com.example.mfe.controller.PlayerController.newPlayer(org.springframework.ui.Model)
+09:40:16.993 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/{id}/edit],methods=[GET]}" onto public java.lang.String com.example.mfe.controller.PlayerController.edit(java.lang.Long,org.springframework.ui.Model)
+09:40:16.993 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/players/{id}],methods=[GET]}" onto public java.lang.String com.example.mfe.controller.PlayerController.show(java.lang.Long,org.springframework.ui.Model)
+09:40:16.994 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/templates/],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.example.mfe.controller.TemplateController.getTemplates()
+09:40:16.995 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+09:40:16.995 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:40:17.012 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:40:17.013 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:40:17.013 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/docs/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:40:17.024 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected ResponseBodyAdvice implementation in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcHypermediaManagementContextConfiguration$ActuatorEndpointLinksAdvice
+09:40:17.031 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:40:17.180 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+09:40:17.180 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+09:40:17.180 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:40:17.181 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:40:17.182 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+09:40:17.182 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+09:40:17.182 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:40:17.183 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/docs],produces=[text/html]}" onto public java.lang.String org.springframework.boot.actuate.endpoint.mvc.DocsMvcEndpoint.redirect()
+09:40:17.183 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/docs/],produces=[text/html]}" onto public java.lang.String org.springframework.boot.actuate.endpoint.mvc.DocsMvcEndpoint.browse()
+09:40:17.183 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/actuator || /actuator.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.hateoas.ResourceSupport org.springframework.boot.actuate.endpoint.mvc.HalJsonMvcEndpoint.links()
+09:40:17.184 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:40:17.184 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:40:17.184 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:40:17.184 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:40:17.185 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+09:40:17.185 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+09:40:17.186 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+09:40:17.186 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:40:17.186 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:40:17.186 [restartedMain] INFO  o.s.b.a.e.mvc.EndpointHandlerMapping - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+09:40:17.250 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+09:40:17.307 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+09:40:17.311 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Registering beans for JMX exposure on startup
+09:40:17.312 [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+09:40:17.313 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+09:40:17.316 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+09:40:17.317 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+09:40:17.319 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+09:40:17.320 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+09:40:17.321 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+09:40:17.323 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+09:40:17.325 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+09:40:17.326 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+09:40:17.328 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+09:40:17.329 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+09:40:17.330 [restartedMain] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+09:40:17.336 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8092"]
+09:40:17.336 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8092"]
+09:40:17.337 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+09:40:17.341 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8092 (http)
