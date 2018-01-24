@@ -1,6 +1,7 @@
 package com.example.mfe.domain.templates;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -17,6 +18,11 @@ public class TemplateVer {
 
     @OneToOne(mappedBy = "idCurrentVer")
     Template template;
+
+//    @OneToMany
+//    @JoinColumn(name = "ID_TEMPLATE_VER", referencedColumnName = "ID_TEMPLATE_VER")
+//    List<TemplateVerStatus> templateVerStatus;
+
 
     public long getIdTemplate() {
         return idTemplate;
@@ -42,6 +48,14 @@ public class TemplateVer {
     public void setTemplate(Template template) {
         this.template = template;
     }
+
+//    public List<TemplateVerStatus> getTemplateVerStatus() {
+//        return templateVerStatus;
+//    }
+//
+//    public void setTemplateVerStatus(List<TemplateVerStatus> templateVerStatus) {
+//        this.templateVerStatus = templateVerStatus;
+//    }
 
     @Override
     public boolean equals(Object o) {

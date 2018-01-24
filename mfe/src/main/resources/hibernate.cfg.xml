@@ -16,7 +16,7 @@
       <mapping class="com.example.mfe.domain.templates.Template"/>
     <mapping class="com.example.mfe.domain.templates.TemplateStatus"/>
       <mapping class="com.example.mfe.domain.templates.TemplateVer"/>
-      <mapping class="com.example.mfe.domain.templates.ConTemplateVerStatus"/>
+      <mapping class="com.example.mfe.domain.templates.TemplateVerStatus"/>
 
 
   </session-factory>

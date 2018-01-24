@@ -1,16 +1,17 @@
 package com.example.mfe.domain.templates;
 
 import com.example.mfe.enumeration.EnvironmentEnum;
+import com.example.mfe.enumeration.MfeStatusEnum;
 
 import javax.persistence.Column;
 import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class ConTemplateVerStatusPK implements Serializable {
+public class TemplateVerStatusPK implements Serializable {
     private long idTemplateVer;
     private EnvironmentEnum enviroment;
-    private String status;
+    private MfeStatusEnum status;
 
     @Column(name = "ID_TEMPLATE_VER", nullable = false, precision = 0)
     @Id
@@ -34,11 +35,11 @@ public class ConTemplateVerStatusPK implements Serializable {
 
     @Column(name = "STATUS", nullable = false, length = 15)
     @Id
-    public String getStatus() {
+    public MfeStatusEnum getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(MfeStatusEnum status) {
         this.status = status;
     }
 
@@ -46,7 +47,7 @@ public class ConTemplateVerStatusPK implements Serializable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ConTemplateVerStatusPK that = (ConTemplateVerStatusPK) o;
+        TemplateVerStatusPK that = (TemplateVerStatusPK) o;
         return idTemplateVer == that.idTemplateVer &&
                 Objects.equals(enviroment, that.enviroment) &&
                 Objects.equals(status, that.status);

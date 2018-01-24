@@ -4,11 +4,13 @@ import com.example.mfe.component.Messages;
 import com.example.mfe.domain.templates.Template;
 import com.example.mfe.domain.templates.TemplateStatus;
 import com.example.mfe.domain.templates.TemplateVer;
+import com.example.mfe.domain.templates.TemplateVerStatus;
 import com.example.mfe.enumeration.EnvironmentEnum;
 import com.example.mfe.enumeration.MfeStatusEnum;
 import com.example.mfe.repository.TemplateRepository;
 import com.example.mfe.repository.TemplateStatusRepository;
 import com.example.mfe.repository.TemplateVerRepository;
+import com.example.mfe.repository.TemplateVerStatusRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
 import org.springframework.context.MessageSource;
@@ -31,6 +33,10 @@ public class TemplateService {
 
     @Autowired
     TemplateStatusRepository templateStatusRepository;
+
+
+    @Autowired
+    TemplateVerStatusRepository templateVerStatusRepository;
 
     @Autowired
     Messages messages;
@@ -80,6 +86,17 @@ public class TemplateService {
             templateVer.setIdTemplate(template.getId());
             templateVerRepository.save(templateVer);
             template.setIdCurrentVer(templateVer);
+
+            //zakladni stav verze
+            TemplateVerStatus templateVerStatus = new TemplateVerStatus();
+            templateVerStatus.setEnviroment(EnvironmentEnum.MFE);
+            templateVerStatus.setStatus(MfeStatusEnum.EDITED);
+            templateVerStatus.setIdTemplateVer(templateVer.getIdTemplateVer());
+            templateVerStatusRepository.save(templateVerStatus);
+            //templateVer.setTemplateVerStatus();
+            templateVerRepository.save(templateVer);
+
+
 
             // nastaven template statusu
             templateStatus = new TemplateStatus();

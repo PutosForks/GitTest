@@ -1,28 +1,29 @@
 package com.example.mfe.domain.templates;
 
 import com.example.mfe.enumeration.EnvironmentEnum;
+import com.example.mfe.enumeration.MfeStatusEnum;
 
 import javax.persistence.*;
-import java.sql.Time;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
 @Entity
 @Table(name = "CON_TEMPLATE_VER_STATUS", schema = "HIBERNATE", catalog = "")
-@IdClass(ConTemplateVerStatusPK.class)
+@IdClass(TemplateVerStatusPK.class)
 
-public class ConTemplateVerStatus {
+public class TemplateVerStatus {
     @Id
     @Column(name = "ID_TEMPLATE_VER", nullable = false, precision = 0)
-    private long idTemplateVer;
+    private Long idTemplateVer;
 
     @Id
     @Column(name = "ENVIROMENT", nullable = false, length = 15)
-    private String enviroment;
+    private EnvironmentEnum enviroment;
 
-    @Id
-    @Column(name = "STATUS", nullable = false, length = 15)
-    private String status;
+
+    @Column(name = "STATUS", nullable = true)
+    @Enumerated(EnumType.STRING)
+    private MfeStatusEnum status;
 
     @Basic
     @Column(name = "CREATED_AT", nullable = true)
@@ -42,11 +43,24 @@ public class ConTemplateVerStatus {
     private String updatedBy;
 
 
-    public long getIdTemplateVer() {
+
+
+    @PrePersist
+    private void initialize() {
+        if (this.getIdTemplateVer() == null) {
+            this.setCreatedAt(LocalDateTime.now());
+        } else {
+            this.setUpdatedAt(LocalDateTime.now());
+        }
+    }
+
+
+
+    public Long getIdTemplateVer() {
         return idTemplateVer;
     }
 
-    public void setIdTemplateVer(long idTemplateVer) {
+    public void setIdTemplateVer(Long idTemplateVer) {
         this.idTemplateVer = idTemplateVer;
     }
 
@@ -54,24 +68,24 @@ public class ConTemplateVerStatus {
         return enviroment;
     }
 
-    public void setEnviroment(String enviroment) {
+    public void setEnviroment(EnvironmentEnum enviroment) {
         this.enviroment = enviroment;
     }
 
 
-    public String getStatus() {
+    public MfeStatusEnum getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(MfeStatusEnum status) {
         this.status = status;
     }
 
-    public Time getCreatedAt() {
+    public LocalDateTime getCreatedAt() {
         return createdAt;
     }
 
-    public void setCreatedAt(Time createdAt) {
+    public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
     }
 
@@ -85,11 +99,11 @@ public class ConTemplateVerStatus {
     }
 
 
-    public Time getUpdatedAt() {
+    public LocalDateTime getUpdatedAt() {
         return updatedAt;
     }
 
-    public void setUpdatedAt(Time updatedAt) {
+    public void setUpdatedAt(LocalDateTime updatedAt) {
         this.updatedAt = updatedAt;
     }
 
@@ -106,7 +120,7 @@ public class ConTemplateVerStatus {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ConTemplateVerStatus that = (ConTemplateVerStatus) o;
+        TemplateVerStatus that = (TemplateVerStatus) o;
         return idTemplateVer == that.idTemplateVer &&
                 Objects.equals(enviroment, that.enviroment) &&
                 Objects.equals(status, that.status) &&
