@@ -2,7 +2,13 @@ package com.example.mfe.service;
 
 import com.example.mfe.component.Messages;
 import com.example.mfe.domain.templates.Template;
+import com.example.mfe.domain.templates.TemplateStatus;
+import com.example.mfe.domain.templates.TemplateVer;
+import com.example.mfe.enumeration.EnvironmentEnum;
+import com.example.mfe.enumeration.MfeStatusEnum;
 import com.example.mfe.repository.TemplateRepository;
+import com.example.mfe.repository.TemplateStatusRepository;
+import com.example.mfe.repository.TemplateVerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
 import org.springframework.context.MessageSource;
@@ -21,6 +27,12 @@ public class TemplateService {
     TemplateRepository templateRepository;
 
     @Autowired
+    TemplateVerRepository templateVerRepository;
+
+    @Autowired
+    TemplateStatusRepository templateStatusRepository;
+
+    @Autowired
     Messages messages;
 
     public Page<Template> findById(Pageable pageable) {
@@ -30,7 +42,6 @@ public class TemplateService {
     public Template findOne(long id) {
         return templateRepository.findOne(id);
     }
-
 
     public Template findByShortName(String shortName) {
         return templateRepository.findByShortName(shortName);
@@ -57,7 +68,34 @@ public class TemplateService {
             throw new TemplateExceptionClass(messages.get("template.defaultTemplate.unique"));
         }
 
-        templateRepository.save(template);
+        TemplateVer templateVer;
+        TemplateStatus templateStatus;
+
+
+        if (template.getId() == null) {
+            templateRepository.save(template);
+
+            // provazani s verzi
+            templateVer = new TemplateVer();
+            templateVer.setIdTemplate(template.getId());
+            templateVerRepository.save(templateVer);
+            template.setIdCurrentVer(templateVer);
+
+            // nastaven template statusu
+            templateStatus = new TemplateStatus();
+            templateStatus.setMfeStatus(MfeStatusEnum.EDITED);
+            templateStatus.setEnvironment(EnvironmentEnum.MFE);
+            templateStatusRepository.save(templateStatus);
+
+            template.setTemplateStatus(templateStatus);
+            templateRepository.save(template);
+        } else {
+            templateVer = templateRepository.getOne(template.getId()).getIdCurrentVer();
+            templateStatus = templateRepository.getOne(template.getId()).getTemplateStatus();
+            template.setIdCurrentVer(templateVer);
+            template.setTemplateStatus(templateStatus);
+            templateRepository.save(template);
+        }
     }
 
     public void delete(Long id) {

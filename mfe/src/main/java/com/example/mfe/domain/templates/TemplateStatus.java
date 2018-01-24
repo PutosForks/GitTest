@@ -12,6 +12,7 @@ public class TemplateStatus {
 
     @Id
     @Column(name = "ID_TEMPALTE_STATUS")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @Column(name = "MFE_STATUS")
@@ -29,12 +30,10 @@ public class TemplateStatus {
     private LocalDateTime updatedAt;
 
     @Column(name = "CREATED_BY")
-    private
-    String createdBy;
+    private String createdBy;
 
     @Column(name = "UPDATED_BY")
-    private
-    String updatedBy;
+    private String updatedBy;
 
     @OneToOne
     @JoinColumn(name = "ID_TEMPLATE", referencedColumnName = "ID_TEMPLATE")

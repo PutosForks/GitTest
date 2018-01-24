@@ -39,10 +39,10 @@ public class Template {
 
     @OneToOne(mappedBy = "idTemplate")
     private TemplateStatus templateStatus;
-//
-//    @OneToOne
-//    @JoinColumn(name = "ID_CURRENT_VER", referencedColumnName = "ID_TEMPLATE_VER")
-//    private TemplateVer idCurrentVer;
+
+    @OneToOne
+    @JoinColumn(name = "ID_CURRENT_VER", referencedColumnName = "ID_TEMPLATE_VER")
+    private TemplateVer idCurrentVer;
 
 
     public Long getId() {
@@ -100,12 +100,12 @@ public class Template {
     public void setTemplateStatus(TemplateStatus templateStatus) {
         this.templateStatus = templateStatus;
     }
-//
-//    public TemplateVer getIdCurrentVer() {
-//        return idCurrentVer;
-//    }
-//
-//    public void setIdCurrentVer(TemplateVer idCurrentVer) {
-//        this.idCurrentVer = idCurrentVer;
-//    }
+
+    public TemplateVer getIdCurrentVer() {
+        return idCurrentVer;
+    }
+
+    public void setIdCurrentVer(TemplateVer idCurrentVer) {
+        this.idCurrentVer = idCurrentVer;
+    }
 }
