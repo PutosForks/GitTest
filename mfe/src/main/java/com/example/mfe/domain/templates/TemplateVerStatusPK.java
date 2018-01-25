@@ -9,18 +9,18 @@ import java.io.Serializable;
 import java.util.Objects;
 
 public class TemplateVerStatusPK implements Serializable {
-    private long idTemplateVer;
+    private long id;
     private EnvironmentEnum enviroment;
     private MfeStatusEnum status;
 
     @Column(name = "ID_TEMPLATE_VER", nullable = false, precision = 0)
     @Id
-    public long getIdTemplateVer() {
-        return idTemplateVer;
+    public long getid() {
+        return id;
     }
 
-    public void setIdTemplateVer(long idTemplateVer) {
-        this.idTemplateVer = idTemplateVer;
+    public void setid(long id) {
+        this.id = id;
     }
 
     @Column(name = "ENVIROMENT", nullable = false, length = 15)
@@ -48,7 +48,7 @@ public class TemplateVerStatusPK implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         TemplateVerStatusPK that = (TemplateVerStatusPK) o;
-        return idTemplateVer == that.idTemplateVer &&
+        return id == that.id &&
                 Objects.equals(enviroment, that.enviroment) &&
                 Objects.equals(status, that.status);
     }
@@ -56,6 +56,6 @@ public class TemplateVerStatusPK implements Serializable {
     @Override
     public int hashCode() {
 
-        return Objects.hash(idTemplateVer, enviroment, status);
+        return Objects.hash(id, enviroment, status);
     }
 }

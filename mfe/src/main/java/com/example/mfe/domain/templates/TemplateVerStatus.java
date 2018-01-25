@@ -13,14 +13,15 @@ import java.util.Objects;
 
 public class TemplateVerStatus {
     @Id
-    @Column(name = "ID_TEMPLATE_VER", nullable = false, precision = 0)
-    private Long idTemplateVer;
+    @Column(name = "ID", nullable = false, updatable = false, precision = 0)
+    private Long id;
 
     @Id
     @Column(name = "ENVIROMENT", nullable = false, length = 15)
     private EnvironmentEnum enviroment;
 
 
+    @Id
     @Column(name = "STATUS", nullable = true)
     @Enumerated(EnumType.STRING)
     private MfeStatusEnum status;
@@ -43,11 +44,9 @@ public class TemplateVerStatus {
     private String updatedBy;
 
 
-
-
     @PrePersist
     private void initialize() {
-        if (this.getIdTemplateVer() == null) {
+        if (this.getId() == null) {
             this.setCreatedAt(LocalDateTime.now());
         } else {
             this.setUpdatedAt(LocalDateTime.now());
@@ -55,13 +54,12 @@ public class TemplateVerStatus {
     }
 
 
-
-    public Long getIdTemplateVer() {
-        return idTemplateVer;
+    public Long getId() {
+        return id;
     }
 
-    public void setIdTemplateVer(Long idTemplateVer) {
-        this.idTemplateVer = idTemplateVer;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public EnvironmentEnum getEnviroment() {
@@ -121,7 +119,7 @@ public class TemplateVerStatus {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         TemplateVerStatus that = (TemplateVerStatus) o;
-        return idTemplateVer == that.idTemplateVer &&
+        return id == that.id &&
                 Objects.equals(enviroment, that.enviroment) &&
                 Objects.equals(status, that.status) &&
                 Objects.equals(createdAt, that.createdAt) &&
@@ -133,6 +131,6 @@ public class TemplateVerStatus {
     @Override
     public int hashCode() {
 
-        return Objects.hash(idTemplateVer, enviroment, status, createdAt, createdBy, updatedAt, updatedBy);
+        return Objects.hash(id, enviroment, status, createdAt, createdBy, updatedAt, updatedBy);
     }
 }

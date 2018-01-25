@@ -81,6 +81,15 @@ public class TemplateService {
         if (template.getId() == null) {
             templateRepository.save(template);
 
+            // nastaven template statusu
+            templateStatus = new TemplateStatus();
+            templateStatus.setMfeStatus(MfeStatusEnum.EDITED);
+            templateStatus.setEnvironment(EnvironmentEnum.MFE);
+            templateStatusRepository.save(templateStatus);
+
+            template.setTemplateStatus(templateStatus);
+
+
             // provazani s verzi
             templateVer = new TemplateVer();
             templateVer.setIdTemplate(template.getId());
@@ -91,20 +100,14 @@ public class TemplateService {
             TemplateVerStatus templateVerStatus = new TemplateVerStatus();
             templateVerStatus.setEnviroment(EnvironmentEnum.MFE);
             templateVerStatus.setStatus(MfeStatusEnum.EDITED);
-            templateVerStatus.setIdTemplateVer(templateVer.getIdTemplateVer());
+            templateVerStatus.setId(templateVer.getIdTemplateVer());
             templateVerStatusRepository.save(templateVerStatus);
             //templateVer.setTemplateVerStatus();
             templateVerRepository.save(templateVer);
 
 
 
-            // nastaven template statusu
-            templateStatus = new TemplateStatus();
-            templateStatus.setMfeStatus(MfeStatusEnum.EDITED);
-            templateStatus.setEnvironment(EnvironmentEnum.MFE);
-            templateStatusRepository.save(templateStatus);
 
-            template.setTemplateStatus(templateStatus);
             templateRepository.save(template);
         } else {
             templateVer = templateRepository.getOne(template.getId()).getIdCurrentVer();

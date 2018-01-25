@@ -19,9 +19,9 @@ public class TemplateVer {
     @OneToOne(mappedBy = "idCurrentVer")
     Template template;
 
-//    @OneToMany
-//    @JoinColumn(name = "ID_TEMPLATE_VER", referencedColumnName = "ID_TEMPLATE_VER")
-//    List<TemplateVerStatus> templateVerStatus;
+    @OneToMany
+    @JoinColumn(name = "ID_TEMPLATE_VER", referencedColumnName = "ID_TEMPLATE_VER")
+    List<TemplateVerStatus> templateVerStatus;
 
 
     public long getIdTemplate() {
@@ -49,13 +49,13 @@ public class TemplateVer {
         this.template = template;
     }
 
-//    public List<TemplateVerStatus> getTemplateVerStatus() {
-//        return templateVerStatus;
-//    }
-//
-//    public void setTemplateVerStatus(List<TemplateVerStatus> templateVerStatus) {
-//        this.templateVerStatus = templateVerStatus;
-//    }
+    public List<TemplateVerStatus> getTemplateVerStatus() {
+        return templateVerStatus;
+    }
+
+    public void setTemplateVerStatus(List<TemplateVerStatus> templateVerStatus) {
+        this.templateVerStatus = templateVerStatus;
+    }
 
     @Override
     public boolean equals(Object o) {

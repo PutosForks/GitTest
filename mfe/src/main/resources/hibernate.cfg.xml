@@ -17,6 +17,8 @@
     <mapping class="com.example.mfe.domain.templates.TemplateStatus"/>
       <mapping class="com.example.mfe.domain.templates.TemplateVer"/>
       <mapping class="com.example.mfe.domain.templates.TemplateVerStatus"/>
+      <mapping class="com.example.mfe.domain.groups.GroupModel"/>
+      <mapping class="com.example.mfe.domain.templates.LoanObject2TplVer"/>
 
 
   </session-factory>
