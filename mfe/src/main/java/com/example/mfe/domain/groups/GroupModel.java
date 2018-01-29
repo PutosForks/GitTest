@@ -7,7 +7,7 @@ import java.util.Objects;
 
 @Entity
 @Data
-@Table(name = "CON_GROUP_MODEL", schema = "HIBERNATE", catalog = "")
+@Table(name = "CON_GROUP_MODEL")
 public class GroupModel {
 
     @Id

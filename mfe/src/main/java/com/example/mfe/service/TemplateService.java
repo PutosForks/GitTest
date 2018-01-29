@@ -7,6 +7,7 @@ import com.example.mfe.domain.templates.TemplateVer;
 import com.example.mfe.domain.templates.TemplateVerStatus;
 import com.example.mfe.enumeration.EnvironmentEnum;
 import com.example.mfe.enumeration.MfeStatusEnum;
+import com.example.mfe.pojo.template.templateVerStatusList;
 import com.example.mfe.repository.TemplateRepository;
 import com.example.mfe.repository.TemplateStatusRepository;
 import com.example.mfe.repository.TemplateVerRepository;
@@ -20,6 +21,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -61,6 +63,10 @@ public class TemplateService {
         return templateRepository.findAll(pageable);
     }
 
+    public List<templateVerStatusList> getTemplateVerStatusList(Long idTemplate) {
+        return templateVerStatusRepository.getTemplateVerStatusList(idTemplate);
+    }
+
     public boolean shortNameExists(Template template) {
         if (template.getId() == null && templateRepository.findByShortName(template.getShortName()) != null) {
             return true;
@@ -100,9 +106,10 @@ public class TemplateService {
             TemplateVerStatus templateVerStatus = new TemplateVerStatus();
             templateVerStatus.setEnviroment(EnvironmentEnum.MFE);
             templateVerStatus.setStatus(MfeStatusEnum.EDITED);
-            templateVerStatus.setId(templateVer.getIdTemplateVer());
             templateVerStatusRepository.save(templateVerStatus);
-            //templateVer.setTemplateVerStatus();
+            List<TemplateVerStatus> templateVerStatuses = new ArrayList<>();
+            templateVerStatuses.add(templateVerStatus);
+            templateVer.setTemplateVerStatus(templateVerStatuses);
             templateVerRepository.save(templateVer);
 
 

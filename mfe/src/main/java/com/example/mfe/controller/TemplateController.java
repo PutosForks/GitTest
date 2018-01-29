@@ -27,6 +27,7 @@ public class TemplateController {
     public String getTemplates(Model model, Pageable pageable) {
         Page<Template> templatePage = templateService.findAll(pageable);
         PageWrapper<Template> page = new PageWrapper<>(templatePage, "template");
+
         model.addAttribute("page", page);
         model.addAttribute("templates", page.getContent());
 
@@ -43,6 +44,7 @@ public class TemplateController {
     public String editTemplate(Model model, @PathVariable Long id) {
         Template t = templateService.findOne(id);
         model.addAttribute("template", templateService.findOne(id));
+        model.addAttribute("templateVerStatusList", templateService.getTemplateVerStatusList(t.getId()));
         return "template/new";
     }
 

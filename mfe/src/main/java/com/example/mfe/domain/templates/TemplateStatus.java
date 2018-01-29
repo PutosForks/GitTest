@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Data
-@Table(name = "CON_TEMPLATE_STATUS", schema = "HIBERNATE")
+@Table(name = "CON_TEMPLATE_STATUS")
 public class TemplateStatus {
 
     @Id

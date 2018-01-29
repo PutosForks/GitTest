@@ -8,7 +8,7 @@ import java.util.Objects;
 
 @Entity
 @Data
-@Table(name = "CON_TEMPLATE_VER", schema = "HIBERNATE", catalog = "")
+@Table(name = "CON_TEMPLATE_VER")
 public class TemplateVer {
 
     @Id

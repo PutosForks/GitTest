@@ -10,27 +10,26 @@ import java.util.Objects;
 
 @Entity
 @Data
-@Table(name = "CON_TEMPLATE_VER_STATUS", schema = "HIBERNATE", catalog = "")
-@IdClass(TemplateVerStatusPK.class)
+@Table(name = "CON_TEMPLATE_VER_STATUS",
+        uniqueConstraints = {@UniqueConstraint(columnNames = {"ID", "ENVIROMENT", "STATUS"})}
+)
 
 public class TemplateVerStatus {
     @Id
-    @Column(nullable = false, updatable = false, precision = 0)
+    @Column(name = "ID", nullable = false, updatable = false, precision = 0)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Id
-    @Column(nullable = false, length = 15)
+    @Column(name = "ENVIROMENT")
+    @Enumerated(EnumType.STRING)
     private EnvironmentEnum enviroment;
 
-
-    @Id
-    @Column(nullable = true)
+    @Column(name = "STATUS")
     @Enumerated(EnumType.STRING)
     private MfeStatusEnum status;
 
     @Column(nullable = true)
     private LocalDateTime createdAt;
-
 
 
     @Column(nullable = true, length = 10)
@@ -53,7 +52,6 @@ public class TemplateVerStatus {
             this.setUpdatedAt(LocalDateTime.now());
         }
     }
-
 
 
 }

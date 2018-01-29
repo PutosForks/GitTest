@@ -4,8 +4,11 @@
 
 <head>
     <link rel="stylesheet" href="../../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}"/>
-    <link rel="stylesheet" href="../static/css/core.css" th:href="@{/css/core.css}"  media="screen"/>
-    <link rel="stylesheet" href="../static/css/form.css" th:href="@{/css/form.css}"  media="screen"/>
+    <link rel="stylesheet" href="../static/css/core.css" th:href="@{/css/core.css}" media="screen"/>
+    <link rel="stylesheet" href="../static/css/main.css" th:href="@{/css/main.css}" media="screen"/>
+    <link rel="stylesheet" href="../static/css/util.css" th:href="@{/css/util.css}" media="screen"/>
+    <link rel="stylesheet" href="../static/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+          th:href="@{/fonts/font-awesome-4.7.0/css/font-awesome.min.css}" media="screen"/>
     <meta charset="utf-8"/>
     <title>New Template</title>
 </head>
@@ -66,6 +69,34 @@
             </a>
         </div>
     </div>
+
+    <div class="container">
+        <div class="row custyle">
+            <table class="table table-striped custab table-sm">
+                <thead class="th-style">
+                <tr>
+                    <th class="th-style" th:text="id"/>
+                    <th class="th-style" th:text="MFE"/>
+                    <th class="th-style" th:text="TEST"/>
+                    <th class="th-style" th:text="LIVE"/>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr th:each="templateVerStatus: ${templateVerStatusList}" th:object="${templateVerStatusList}">
+                    <td th:text="${templateVerStatus.id}"></td>
+                    <td th:text="${templateVerStatus.mfeStatus}"></td>
+                    <td th:text="${templateVerStatus.testStatus}"></td>
+                    <td th:text="${templateVerStatus.liveStatus}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
 </section>
 </body>
 </html>

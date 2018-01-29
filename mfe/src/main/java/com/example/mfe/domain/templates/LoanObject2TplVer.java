@@ -7,7 +7,7 @@ import java.util.Objects;
 
 @Entity
 @Data
-@Table(name = "CON_LOAN_OBJECT2TPL_VER", schema = "HIBERNATE", catalog = "")
+@Table(name = "CON_LOAN_OBJECT2TPL_VER")
 public class LoanObject2TplVer {
 
     @Id

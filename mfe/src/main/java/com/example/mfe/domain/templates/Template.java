@@ -8,7 +8,7 @@ import javax.validation.constraints.Size;
 
 @Entity
 @Data
-@Table(name = "CON_TEMPLATE", schema = "HIBERNATE",
+@Table(name = "CON_TEMPLATE",
         uniqueConstraints = {@UniqueConstraint(columnNames = {"SHORT_NAME"})}
 )
 public class Template {
