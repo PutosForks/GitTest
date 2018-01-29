@@ -2,11 +2,13 @@ package com.example.mfe.domain.templates;
 
 import com.example.mfe.enumeration.EnvironmentEnum;
 import com.example.mfe.enumeration.MfeStatusEnum;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
+@Data
 @Table(name = "CON_TEMPLATE_STATUS", schema = "HIBERNATE")
 public class TemplateStatus {
 
@@ -15,24 +17,24 @@ public class TemplateStatus {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "MFE_STATUS")
+    @Column
     @Enumerated(EnumType.STRING)
     private MfeStatusEnum mfeStatus;
 
-    @Column(name = "ENVIROMENT")
+    @Column
     @Enumerated(EnumType.STRING)
     private EnvironmentEnum environment;
 
-    @Column(name = "CREATED_AT")
+    @Column
     private LocalDateTime createdAt;
 
-    @Column(name = "UPDATED_AT")
+    @Column
     private LocalDateTime updatedAt;
 
-    @Column(name = "CREATED_BY")
+    @Column
     private String createdBy;
 
-    @Column(name = "UPDATED_BY")
+    @Column
     private String updatedBy;
 
     @OneToOne
@@ -48,68 +50,4 @@ public class TemplateStatus {
         }
     }
 
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public MfeStatusEnum getMfeStatus() {
-        return mfeStatus;
-    }
-
-    public void setMfeStatus(MfeStatusEnum mfeStatus) {
-        this.mfeStatus = mfeStatus;
-    }
-
-    public EnvironmentEnum getEnvironment() {
-        return environment;
-    }
-
-    public void setEnvironment(EnvironmentEnum environment) {
-        this.environment = environment;
-    }
-
-    public LocalDateTime getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(LocalDateTime createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public LocalDateTime getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public void setUpdatedAt(LocalDateTime updatedAt) {
-        this.updatedAt = updatedAt;
-    }
-
-    public String getCreatedBy() {
-        return createdBy;
-    }
-
-    public void setCreatedBy(String createdBy) {
-        this.createdBy = createdBy;
-    }
-
-    public String getUpdatedBy() {
-        return updatedBy;
-    }
-
-    public void setUpdatedBy(String updatedBy) {
-        this.updatedBy = updatedBy;
-    }
-
-//    public Template getIdTemplate() {
-//        return idTemplate;
-//    }
-//
-//    public void setIdTemplate(Template idTemplate) {
-//        this.idTemplate = idTemplate;
-//    }
 }

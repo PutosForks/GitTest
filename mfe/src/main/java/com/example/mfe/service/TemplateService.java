@@ -70,7 +70,7 @@ public class TemplateService {
 
     @ExceptionHandler(TemplateExceptionClass.class)
     public void save(Template template) {
-        if (template.getId() == null && template.getDefaultTemplate()) {
+        if (template.getId() == null && template.isDefaultTemplate()) {
             throw new TemplateExceptionClass(messages.get("template.defaultTemplate.unique"));
         }
 
@@ -104,8 +104,6 @@ public class TemplateService {
             templateVerStatusRepository.save(templateVerStatus);
             //templateVer.setTemplateVerStatus();
             templateVerRepository.save(templateVer);
-
-
 
 
             templateRepository.save(template);

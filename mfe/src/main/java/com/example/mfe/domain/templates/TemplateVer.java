@@ -1,10 +1,13 @@
 package com.example.mfe.domain.templates;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.util.List;
 import java.util.Objects;
 
 @Entity
+@Data
 @Table(name = "CON_TEMPLATE_VER", schema = "HIBERNATE", catalog = "")
 public class TemplateVer {
 
@@ -23,40 +26,6 @@ public class TemplateVer {
     @JoinColumn(name = "ID_TEMPLATE_VER", referencedColumnName = "ID_TEMPLATE_VER")
     List<TemplateVerStatus> templateVerStatus;
 
-
-    public long getIdTemplate() {
-        return idTemplate;
-    }
-
-    public void setIdTemplate(long idTemplate) {
-        this.idTemplate = idTemplate;
-    }
-
-    public long getIdTemplateVer() {
-        return idTemplateVer;
-    }
-
-    public void setIdTemplateVer(long idTemplateVer) {
-        this.idTemplateVer = idTemplateVer;
-    }
-
-
-    public Template getTemplate() {
-        return template;
-    }
-
-    public void setTemplate(Template template) {
-        this.template = template;
-    }
-
-    public List<TemplateVerStatus> getTemplateVerStatus() {
-        return templateVerStatus;
-    }
-
-    public void setTemplateVerStatus(List<TemplateVerStatus> templateVerStatus) {
-        this.templateVerStatus = templateVerStatus;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -66,9 +35,5 @@ public class TemplateVer {
                 idTemplate == that.idTemplate;
     }
 
-    @Override
-    public int hashCode() {
 
-        return Objects.hash(idTemplateVer, idTemplate);
-    }
 }

@@ -64,6 +64,13 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
+        <!-- and the 'Project Lombok'  -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
         <!-- and the 'Thymeleaf Layout Dialect'  -->
         <dependency>
             <groupId>nz.net.ultraq.thymeleaf</groupId>
