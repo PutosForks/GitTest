@@ -16,23 +16,17 @@ public class templateVerStatusList {
     EnvironmentEnum testEnvironment;
     EnvironmentEnum liveEnvironment;
 
-    public templateVerStatusList(Long id, MfeStatusEnum mfeStatus, MfeStatusEnum testStatus, MfeStatusEnum liveStatus) {
+
+
+    public templateVerStatusList(Long id, MfeStatusEnum mfeStatus, MfeStatusEnum testStatus, MfeStatusEnum liveStatus, EnvironmentEnum mfeEnvironment, EnvironmentEnum testEnvironment, EnvironmentEnum liveEnvironment) {
         this.id = id;
-        this.testStatus = testStatus;
         this.mfeStatus = mfeStatus;
+        this.testStatus = testStatus;
         this.liveStatus = liveStatus;
+        this.mfeEnvironment = mfeEnvironment;
+        this.testEnvironment = testEnvironment;
+        this.liveEnvironment = liveEnvironment;
     }
-
-
-//    public templateVerStatusList(Long id, MfeStatusEnum mfeStatus, MfeStatusEnum testStatus, MfeStatusEnum liveStatus, EnvironmentEnum mfeEnvironment, EnvironmentEnum testEnvironment, EnvironmentEnum liveEnvironment) {
-//        this.id = id;
-//        this.mfeStatus = mfeStatus;
-//        this.testStatus = testStatus;
-//        this.liveStatus = liveStatus;
-//        this.mfeEnvironment = mfeEnvironment;
-//        this.testEnvironment = testEnvironment;
-//        this.liveEnvironment = liveEnvironment;
-//    }
 
     public EnvironmentEnum getMfeEnvironment() {
         return mfeEnvironment;
