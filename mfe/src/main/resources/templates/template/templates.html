@@ -39,7 +39,7 @@
                     <td th:text="*{id}"></td>
                     <td th:text="*{name}"></td>
                     <td th:text="*{shortName}"></td>
-                    <td th:text="*{description}"></td>
+                    <td th:utext="*{description}"></td>
                     <div th:switch="${template.defaultTemplate}">
                         <td th:case='true'>Ano</td>
                         <td th:case='false'>Ne</td>

@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 public class TemplateStatus {
 
     @Id
-    @Column(name = "ID_TEMPALTE_STATUS")
+    @Column(name = "ID_TEMPLATE_STATUS")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
