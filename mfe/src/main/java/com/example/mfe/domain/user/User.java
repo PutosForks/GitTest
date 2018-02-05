@@ -28,13 +28,11 @@ public class User {
 
     @Size(max = 20)
     @NotNull
-    private String usrLastname;
+    private String usrSurname;
 
     @NotNull
     private boolean active;
 
-    @ManyToMany (mappedBy = "users")
-    private List<Role> roles;
 
 
 }

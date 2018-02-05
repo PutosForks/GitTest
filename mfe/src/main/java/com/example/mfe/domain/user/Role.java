@@ -15,10 +15,4 @@ public class Role {
     private String name;
     private String title;
 
-    @ManyToMany
-    @JoinTable(name = "mfe_user2role",
-            joinColumns = {@JoinColumn(name = "role")},
-            inverseJoinColumns = {@JoinColumn(name = "user_")})
-    private List<User> users;
-
 }
