@@ -23,7 +23,7 @@ public class TemplateRepositoryTest {
     TemplateRepository templateRepository;
 
     @Test
-    public void whenFindByShortName_thenReturnEmployee() {
+    public void whenFindByShortName_thenReturnTemplate() {
 
         String shortName = "templtexxx";
 
