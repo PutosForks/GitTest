@@ -4,3 +4,4 @@
 **.ipr
 **/gemlUtils.iml
 *.jar
+*.log

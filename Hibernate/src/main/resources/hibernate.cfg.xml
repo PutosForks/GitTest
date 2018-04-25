@@ -4,12 +4,10 @@
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
     <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
-    <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521/PDB</property>
+    <property name="hibernate.connection.url">jdbc:oracle:thin:@//localhost:1521/pdb</property>
     <!-- <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:XE</property> -->
     <property name="hbm2ddl.auto">create</property>
     <property name="hibernate.hbm2ddl.import_files">import.sql</property>
-    <property name="hibernate.connection.username">hibernate</property>
-    <property name="hibernate.connection.password">hibernate</property>
     <!-- Enable Hibernate's automatic session context management -->
     <property name="current_session_context_class">thread</property>
     <!-- Disable the second-level cache  -->
@@ -27,6 +25,7 @@
     <mapping class="hibernate.model.JsCustomer"/>
     <mapping class="hibernate.model.one2one.Person"/>
     <mapping class="hibernate.model.one2one.PersonAddress"/>
+    <mapping class="hibernate.model.LoanObject2TplVer"/>
 
   </session-factory>
 </hibernate-configuration>
