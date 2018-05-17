@@ -1,0 +1,4257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@cmd_mfe">
+  <database-model serializer="dbm" rdbms="ORACLE" format-version="4.7">
+    <root id="1"/>
+    <schema id="2" parent="1" name="CMD_MFE">
+      <ObjectId>229</ObjectId>
+      <IntrospectionTimestamp>2018-01-18.18:00:40</IntrospectionTimestamp>
+      <CreatedTimestamp>2018-01-18.17:37:37</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:19</ModifiedTimestamp>
+      <CommentsHash>1385229176050397</CommentsHash>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="PUBLIC">
+      <ObjectId>1</ObjectId>
+    </schema>
+    <schema id="4" parent="1" name="SYS">
+      <ObjectId>0</ObjectId>
+    </schema>
+    <schema id="5" parent="1" name="AUDSYS">
+      <ObjectId>7</ObjectId>
+    </schema>
+    <schema id="6" parent="1" name="SYSTEM">
+      <ObjectId>8</ObjectId>
+    </schema>
+    <schema id="7" parent="1" name="OUTLN">
+      <ObjectId>13</ObjectId>
+    </schema>
+    <schema id="8" parent="1" name="GSMADMIN_INTERNAL">
+      <ObjectId>21</ObjectId>
+    </schema>
+    <schema id="9" parent="1" name="GSMUSER">
+      <ObjectId>22</ObjectId>
+    </schema>
+    <schema id="10" parent="1" name="DIP">
+      <ObjectId>23</ObjectId>
+    </schema>
+    <schema id="11" parent="1" name="ORACLE_OCM">
+      <ObjectId>36</ObjectId>
+    </schema>
+    <schema id="12" parent="1" name="DBSNMP">
+      <ObjectId>48</ObjectId>
+    </schema>
+    <schema id="13" parent="1" name="APPQOSSYS">
+      <ObjectId>49</ObjectId>
+    </schema>
+    <schema id="14" parent="1" name="XDB">
+      <ObjectId>50</ObjectId>
+    </schema>
+    <schema id="15" parent="1" name="ANONYMOUS">
+      <ObjectId>51</ObjectId>
+    </schema>
+    <schema id="16" parent="1" name="GSMCATUSER">
+      <ObjectId>61</ObjectId>
+    </schema>
+    <schema id="17" parent="1" name="WMSYS">
+      <ObjectId>62</ObjectId>
+    </schema>
+    <schema id="18" parent="1" name="OJVMSYS">
+      <ObjectId>70</ObjectId>
+    </schema>
+    <schema id="19" parent="1" name="CTXSYS">
+      <ObjectId>73</ObjectId>
+    </schema>
+    <schema id="20" parent="1" name="ORDSYS">
+      <ObjectId>75</ObjectId>
+    </schema>
+    <schema id="21" parent="1" name="ORDDATA">
+      <ObjectId>76</ObjectId>
+    </schema>
+    <schema id="22" parent="1" name="ORDPLUGINS">
+      <ObjectId>77</ObjectId>
+    </schema>
+    <schema id="23" parent="1" name="SI_INFORMTN_SCHEMA">
+      <ObjectId>78</ObjectId>
+    </schema>
+    <schema id="24" parent="1" name="MDSYS">
+      <ObjectId>79</ObjectId>
+    </schema>
+    <schema id="25" parent="1" name="OLAPSYS">
+      <ObjectId>82</ObjectId>
+    </schema>
+    <schema id="26" parent="1" name="MDDATA">
+      <ObjectId>85</ObjectId>
+    </schema>
+    <schema id="27" parent="1" name="SPATIAL_WFS_ADMIN_USR">
+      <ObjectId>87</ObjectId>
+    </schema>
+    <schema id="28" parent="1" name="SPATIAL_CSW_ADMIN_USR">
+      <ObjectId>90</ObjectId>
+    </schema>
+    <schema id="29" parent="1" name="LBACSYS">
+      <ObjectId>92</ObjectId>
+    </schema>
+    <schema id="30" parent="1" name="FLOWS_FILES">
+      <ObjectId>94</ObjectId>
+    </schema>
+    <schema id="31" parent="1" name="APEX_PUBLIC_USER">
+      <ObjectId>95</ObjectId>
+    </schema>
+    <schema id="32" parent="1" name="APEX_040200">
+      <ObjectId>98</ObjectId>
+    </schema>
+    <schema id="33" parent="1" name="DVF">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="34" parent="1" name="PDBADMIN">
+      <ObjectId>102</ObjectId>
+    </schema>
+    <schema id="35" parent="1" name="HR">
+      <ObjectId>103</ObjectId>
+    </schema>
+    <schema id="36" parent="1" name="OE">
+      <ObjectId>104</ObjectId>
+    </schema>
+    <schema id="37" parent="1" name="PM">
+      <ObjectId>105</ObjectId>
+    </schema>
+    <schema id="38" parent="1" name="IX">
+      <ObjectId>106</ObjectId>
+    </schema>
+    <schema id="39" parent="1" name="SH">
+      <ObjectId>107</ObjectId>
+    </schema>
+    <schema id="40" parent="1" name="BI">
+      <ObjectId>108</ObjectId>
+    </schema>
+    <schema id="41" parent="1" name="SCOTT">
+      <ObjectId>109</ObjectId>
+    </schema>
+    <schema id="42" parent="1" name="PDB">
+      <ObjectId>110</ObjectId>
+    </schema>
+    <schema id="43" parent="1" name="DEV_MDS">
+      <ObjectId>117</ObjectId>
+    </schema>
+    <schema id="44" parent="1" name="DEV_WLS">
+      <ObjectId>118</ObjectId>
+    </schema>
+    <schema id="45" parent="1" name="DEV_WLS_RUNTIME">
+      <ObjectId>119</ObjectId>
+    </schema>
+    <schema id="46" parent="1" name="DEV_STB">
+      <ObjectId>120</ObjectId>
+    </schema>
+    <schema id="47" parent="1" name="DEV_IAU_APPEND">
+      <ObjectId>122</ObjectId>
+    </schema>
+    <schema id="48" parent="1" name="DEV_IAU_VIEWER">
+      <ObjectId>123</ObjectId>
+    </schema>
+    <schema id="49" parent="1" name="DEV_UMS">
+      <ObjectId>124</ObjectId>
+    </schema>
+    <schema id="50" parent="1" name="DEV_IAU">
+      <ObjectId>125</ObjectId>
+    </schema>
+    <schema id="51" parent="1" name="DEV_OPSS">
+      <ObjectId>126</ObjectId>
+    </schema>
+    <schema id="52" parent="1" name="REP_STB">
+      <ObjectId>127</ObjectId>
+    </schema>
+    <schema id="53" parent="1" name="REP_IAU_APPEND">
+      <ObjectId>128</ObjectId>
+    </schema>
+    <schema id="54" parent="1" name="REP_IAU_VIEWER">
+      <ObjectId>129</ObjectId>
+    </schema>
+    <schema id="55" parent="1" name="REP_IAU">
+      <ObjectId>130</ObjectId>
+    </schema>
+    <schema id="56" parent="1" name="REP_OPSS">
+      <ObjectId>131</ObjectId>
+    </schema>
+    <schema id="57" parent="1" name="HR_REMOTE">
+      <ObjectId>133</ObjectId>
+    </schema>
+    <schema id="58" parent="1" name="DEPLOYMENT">
+      <ObjectId>136</ObjectId>
+    </schema>
+    <schema id="59" parent="1" name="APEX_SOLUS">
+      <ObjectId>140</ObjectId>
+    </schema>
+    <schema id="60" parent="1" name="VBLCZ_BASE">
+      <ObjectId>142</ObjectId>
+    </schema>
+    <schema id="61" parent="1" name="APEX_HOVORY">
+      <ObjectId>173</ObjectId>
+    </schema>
+    <schema id="62" parent="1" name="APEX_IMPORT">
+      <ObjectId>174</ObjectId>
+    </schema>
+    <schema id="63" parent="1" name="APEX_IT">
+      <ObjectId>175</ObjectId>
+    </schema>
+    <schema id="64" parent="1" name="APEX_PORTAL">
+      <ObjectId>176</ObjectId>
+    </schema>
+    <schema id="65" parent="1" name="APEX_POSTIN">
+      <ObjectId>177</ObjectId>
+    </schema>
+    <schema id="66" parent="1" name="APEX_PRAVO">
+      <ObjectId>178</ObjectId>
+    </schema>
+    <schema id="67" parent="1" name="APEX_SAS">
+      <ObjectId>179</ObjectId>
+    </schema>
+    <schema id="68" parent="1" name="VBLCZ_INSTALL_200">
+      <ObjectId>180</ObjectId>
+    </schema>
+    <schema id="69" parent="1" name="VBLCZ_BASE_200">
+      <ObjectId>181</ObjectId>
+    </schema>
+    <schema id="70" parent="1" name="VBLCZ_APEX_200">
+      <ObjectId>182</ObjectId>
+    </schema>
+    <schema id="71" parent="1" name="APEX_PORTAL_200">
+      <ObjectId>183</ObjectId>
+    </schema>
+    <schema id="72" parent="1" name="APEX_SKLAD">
+      <ObjectId>184</ObjectId>
+    </schema>
+    <schema id="73" parent="1" name="GEMB_SKLAD">
+      <ObjectId>185</ObjectId>
+    </schema>
+    <schema id="74" parent="1" name="AVIEW">
+      <ObjectId>189</ObjectId>
+    </schema>
+    <schema id="75" parent="1" name="INSTCENT">
+      <ObjectId>190</ObjectId>
+    </schema>
+    <schema id="76" parent="1" name="LFIS">
+      <ObjectId>191</ObjectId>
+    </schema>
+    <schema id="77" parent="1" name="LLEAS">
+      <ObjectId>192</ObjectId>
+    </schema>
+    <schema id="78" parent="1" name="SCUSTOM">
+      <ObjectId>193</ObjectId>
+    </schema>
+    <schema id="79" parent="1" name="TAPP">
+      <ObjectId>194</ObjectId>
+    </schema>
+    <schema id="80" parent="1" name="TCOMM">
+      <ObjectId>195</ObjectId>
+    </schema>
+    <schema id="81" parent="1" name="TCONTCREDIT">
+      <ObjectId>196</ObjectId>
+    </schema>
+    <schema id="82" parent="1" name="TCONTLEAS">
+      <ObjectId>197</ObjectId>
+    </schema>
+    <schema id="83" parent="1" name="TCONTOPER">
+      <ObjectId>198</ObjectId>
+    </schema>
+    <schema id="84" parent="1" name="TCONTSUPP">
+      <ObjectId>199</ObjectId>
+    </schema>
+    <schema id="85" parent="1" name="TCUSTVB">
+      <ObjectId>200</ObjectId>
+    </schema>
+    <schema id="86" parent="1" name="TFACT">
+      <ObjectId>201</ObjectId>
+    </schema>
+    <schema id="87" parent="1" name="THIST">
+      <ObjectId>202</ObjectId>
+    </schema>
+    <schema id="88" parent="1" name="TINSUR">
+      <ObjectId>203</ObjectId>
+    </schema>
+    <schema id="89" parent="1" name="TLINK">
+      <ObjectId>204</ObjectId>
+    </schema>
+    <schema id="90" parent="1" name="TMAJ">
+      <ObjectId>205</ObjectId>
+    </schema>
+    <schema id="91" parent="1" name="TPLATBY">
+      <ObjectId>206</ObjectId>
+    </schema>
+    <schema id="92" parent="1" name="TPROVIZE">
+      <ObjectId>207</ObjectId>
+    </schema>
+    <schema id="93" parent="1" name="TREFI">
+      <ObjectId>208</ObjectId>
+    </schema>
+    <schema id="94" parent="1" name="TROZLIS">
+      <ObjectId>209</ObjectId>
+    </schema>
+    <schema id="95" parent="1" name="TSARA">
+      <ObjectId>210</ObjectId>
+    </schema>
+    <schema id="96" parent="1" name="TSMLW">
+      <ObjectId>211</ObjectId>
+    </schema>
+    <schema id="97" parent="1" name="TSTOCKFUND">
+      <ObjectId>212</ObjectId>
+    </schema>
+    <schema id="98" parent="1" name="TSYS">
+      <ObjectId>213</ObjectId>
+    </schema>
+    <schema id="99" parent="1" name="TTASK">
+      <ObjectId>214</ObjectId>
+    </schema>
+    <schema id="100" parent="1" name="TUCTO">
+      <ObjectId>215</ObjectId>
+    </schema>
+    <schema id="101" parent="1" name="TUPOM">
+      <ObjectId>216</ObjectId>
+    </schema>
+    <schema id="102" parent="1" name="TVBOFFERWF">
+      <ObjectId>217</ObjectId>
+    </schema>
+    <schema id="103" parent="1" name="TVTOOLS">
+      <ObjectId>218</ObjectId>
+    </schema>
+    <schema id="104" parent="1" name="TINTDOC">
+      <ObjectId>219</ObjectId>
+    </schema>
+    <schema id="105" parent="1" name="APEX_LISTENER">
+      <ObjectId>221</ObjectId>
+    </schema>
+    <schema id="106" parent="1" name="APEX_REST_PUBLIC_USER">
+      <ObjectId>222</ObjectId>
+    </schema>
+    <schema id="107" parent="1" name="CALC">
+      <ObjectId>223</ObjectId>
+    </schema>
+    <schema id="108" parent="1" name="DEVELOPER5">
+      <ObjectId>224</ObjectId>
+    </schema>
+    <schema id="109" parent="1" name="OOU">
+      <ObjectId>225</ObjectId>
+    </schema>
+    <schema id="110" parent="1" name="ST">
+      <ObjectId>226</ObjectId>
+    </schema>
+    <schema id="111" parent="1" name="HIBERNATE">
+      <ObjectId>227</ObjectId>
+    </schema>
+    <schema id="112" parent="1" name="RECEPIES">
+      <ObjectId>228</ObjectId>
+    </schema>
+    <schema id="113" parent="1" name="DVSYS">
+      <ObjectId>1279990</ObjectId>
+    </schema>
+    <schema id="114" parent="1" name="SYSBACKUP">
+      <ObjectId>2147483617</ObjectId>
+    </schema>
+    <schema id="115" parent="1" name="SYSDG">
+      <ObjectId>2147483618</ObjectId>
+    </schema>
+    <schema id="116" parent="1" name="SYSKM">
+      <ObjectId>2147483619</ObjectId>
+    </schema>
+    <schema id="117" parent="1" name="XS$NULL">
+      <ObjectId>2147483638</ObjectId>
+    </schema>
+    <sequence id="118" parent="2" name="SEQ_CON_CATEGORY">
+      <ObjectId>120712</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:12</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:12</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="119" parent="2" name="SEQ_CON_CHECK_MODEL">
+      <ObjectId>120713</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:12</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:12</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="120" parent="2" name="SEQ_CON_COND_MODEL">
+      <ObjectId>120714</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:13</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:13</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="121" parent="2" name="SEQ_CON_COND_MODEL_VER">
+      <ObjectId>120715</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:13</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:13</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="122" parent="2" name="SEQ_CON_COND_PROPS">
+      <ObjectId>120716</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:14</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:14</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="123" parent="2" name="SEQ_CON_DOC_TYPE">
+      <ObjectId>120717</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:14</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:14</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="124" parent="2" name="SEQ_CON_EXPR">
+      <ObjectId>120718</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:15</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:15</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="125" parent="2" name="SEQ_CON_EXPR_ELEMENT">
+      <ObjectId>120719</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:15</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:15</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="126" parent="2" name="SEQ_CON_FRAGMENT_MODEL">
+      <ObjectId>120720</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:15</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:15</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="127" parent="2" name="SEQ_CON_GROUP_MODEL">
+      <ObjectId>120721</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:16</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:16</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="128" parent="2" name="SEQ_CON_GROUP_MODEL_VER">
+      <ObjectId>120722</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:16</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:16</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="129" parent="2" name="SEQ_CON_LOAN_O2T">
+      <ObjectId>120723</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:17</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:17</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="130" parent="2" name="SEQ_CON_TEMPLATE">
+      <ObjectId>120724</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:17</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:17</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="131" parent="2" name="SEQ_CON_TEMPLATE_STATUS">
+      <ObjectId>120725</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:18</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:18</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="132" parent="2" name="SEQ_CON_TEMPLATE_VER">
+      <ObjectId>120726</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:18</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:18</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="133" parent="2" name="SEQ_CON_TERM_MODEL">
+      <ObjectId>120727</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:19</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:19</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="134" parent="2" name="SEQ_DOC_TYPE_CATEGORY">
+      <ObjectId>120728</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:19</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:19</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <table id="135" parent="2" name="CON_ASSISTANT">
+      <ObjectId>120570</ObjectId>
+      <Comment>Asistent</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:37</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:38</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="136" parent="2" name="CON_BB_GROUP">
+      <ObjectId>120574</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:38</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:38</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="137" parent="2" name="CON_CATEGORY">
+      <ObjectId>120576</ObjectId>
+      <Comment>Skupina/kategorie vzoru podmínky</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:38</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:39</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="138" parent="2" name="CON_CHECKLIST">
+      <ObjectId>120580</ObjectId>
+      <Comment>Typ checklistu</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:39</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:39</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="139" parent="2" name="CON_CHECK_MODEL">
+      <ObjectId>120583</ObjectId>
+      <Comment>Vzor checku</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:40</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="140" parent="2" name="CON_CHECK_MODEL2DOC_TYPE">
+      <ObjectId>120604</ObjectId>
+      <Comment>Vazba vzor checku na typ dokumentu</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:44</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:44</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="141" parent="2" name="CON_CHECK_MODEL2STATUS">
+      <ObjectId>120606</ObjectId>
+      <Comment>Stavy modelu statickych checklistu</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:45</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:45</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="142" parent="2" name="CON_CLIENT_COND">
+      <ObjectId>120618</ObjectId>
+      <Comment>Klientské podmínky</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:47</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:47</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="143" parent="2" name="CON_CM2GMV">
+      <ObjectId>120636</ObjectId>
+      <Comment>Vazebni tabulka mezi verzi vzoru skupiny a vzorem podminky</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:51</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:51</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="144" parent="2" name="CON_COND">
+      <ObjectId>120612</ObjectId>
+      <Comment>Instance podmínek k návrhu</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:46</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:47</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="145" parent="2" name="CON_COND_CHECK_MODEL">
+      <ObjectId>120597</ObjectId>
+      <Comment>Vazba vzoru podminky na model checklistu</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:43</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:43</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="146" parent="2" name="CON_COND_MODEL">
+      <ObjectId>120586</ObjectId>
+      <Comment>Vzor podmA­nky</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:41</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="147" parent="2" name="CON_COND_MODEL2BB_GROUP">
+      <ObjectId>120641</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:52</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:52</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="148" parent="2" name="CON_COND_MODEL_VER">
+      <ObjectId>120591</ObjectId>
+      <Comment>Verze vzoru podminky</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:41</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:42</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="149" parent="2" name="CON_COND_MODEL_VER_STATUS">
+      <ObjectId>120639</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:52</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:52</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="150" parent="2" name="CON_COND_PROPS">
+      <ObjectId>120594</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:42</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:42</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="151" parent="2" name="CON_COND_PROPS2DOC_TYPE">
+      <ObjectId>120642</ObjectId>
+      <Comment>Vazba podminky na typ dokumentu</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:53</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:53</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="152" parent="2" name="CON_COV_MODEL">
+      <ObjectId>120644</ObjectId>
+      <Comment>Vzor podmínky - specifické vlastnosti kovenant</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:53</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:53</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="153" parent="2" name="CON_CUSTOM_COND">
+      <ObjectId>120646</ObjectId>
+      <Comment>Vlastni podminka</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:54</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:54</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="154" parent="2" name="CON_DOC_TYPE">
+      <ObjectId>120602</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:44</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:44</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="155" parent="2" name="CON_DOC_TYPE_CATEGORY">
+      <ObjectId>120600</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:43</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:43</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="156" parent="2" name="CON_DOC_TYPE_CATEGORY_TMP2">
+      <ObjectId>120649</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:55</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:55</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="157" parent="2" name="CON_DOC_TYPE_ENV">
+      <ObjectId>120650</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:55</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:55</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="158" parent="2" name="CON_DOC_TYPE_STATUS">
+      <ObjectId>120651</ObjectId>
+      <Comment>Stav publikace typu dokumentu</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:55</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:56</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="159" parent="2" name="CON_EXPR">
+      <ObjectId>120626</ObjectId>
+      <Comment>Výrazy pro kalkulacky</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:49</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:49</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="160" parent="2" name="CON_EXPR_ELEMENT">
+      <ObjectId>120622</ObjectId>
+      <Comment>Elementy výrazu pro kalkulacky</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:48</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:49</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="161" parent="2" name="CON_EXPR_EL_VALUES">
+      <ObjectId>120653</ObjectId>
+      <Comment>Tabulka s mapováním atributu návrhu na konkrétní hodnoty z návrhu</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:56</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:57</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="162" parent="2" name="CON_FORB_COMB_CONDS">
+      <ObjectId>120655</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:57</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:57</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="163" parent="2" name="CON_FRAGMENT">
+      <ObjectId>120665</ObjectId>
+      <Comment>Instance fragmentu podmínky</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:59</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:59</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="164" parent="2" name="CON_FRAGMENT_MODEL">
+      <ObjectId>120660</ObjectId>
+      <Comment>Vzor fragmentu podmínky</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:58</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:59</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="165" parent="2" name="CON_FRAGMENT_MODEL_COV">
+      <ObjectId>120671</ObjectId>
+      <Comment>Vzor fragmentu textace podmínky - specifické vlastnosti fragmentu predstavujícího požadovanou hodnotu indikátoru.</Comment>
+      <CreatedTimestamp>2018-01-18.17:38:00</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:01</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="166" parent="2" name="CON_FULFILLMENT">
+      <ObjectId>120673</ObjectId>
+      <Comment>Plnení podmínky</Comment>
+      <CreatedTimestamp>2018-01-18.17:38:01</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:01</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="167" parent="2" name="CON_GEN_CONDS_ADD">
+      <ObjectId>120675</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:01</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:02</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="168" parent="2" name="CON_GROUP">
+      <ObjectId>120608</ObjectId>
+      <Comment>Skupina</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:45</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:46</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="169" parent="2" name="CON_GROUP_MODEL">
+      <ObjectId>120629</ObjectId>
+      <Comment>Vzor skupiny</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:49</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:50</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="170" parent="2" name="CON_GROUP_MODEL_VER">
+      <ObjectId>120633</ObjectId>
+      <Comment>Verze vzoru skupiny</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:50</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:51</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="171" parent="2" name="CON_GROUP_MODEL_VER_STATUS">
+      <ObjectId>120677</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:02</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:02</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="172" parent="2" name="CON_INDICATOR_ABBREV">
+      <ObjectId>120669</ObjectId>
+      <Comment>seznam moznych indikatoru</Comment>
+      <CreatedTimestamp>2018-01-18.17:38:00</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:00</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="173" parent="2" name="CON_LIST_CODE">
+      <ObjectId>120679</ObjectId>
+      <Comment>Seznam cisleniku</Comment>
+      <CreatedTimestamp>2018-01-18.17:38:02</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:03</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="174" parent="2" name="CON_LOAN_OBJECT2TPL_VER">
+      <ObjectId>120684</ObjectId>
+      <Comment>Vazba objektu uveru na sablonu</Comment>
+      <CreatedTimestamp>2018-01-18.17:38:04</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:04</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="175" parent="2" name="CON_PROP_ATTR">
+      <ObjectId>120620</ObjectId>
+      <Comment>Seznam atributu návrhu</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:48</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:48</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="176" parent="2" name="CON_PROP_CONTEXT">
+      <ObjectId>120687</ObjectId>
+      <Comment>Tabulka pro uložení dat návrhu pro kalkulacky (data se premazávají)</Comment>
+      <CreatedTimestamp>2018-01-18.17:38:04</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:05</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="177" parent="2" name="CON_SCHM2LOAN_OBJECT">
+      <ObjectId>120690</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:06</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:06</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="178" parent="2" name="CON_STATIC_CHECK_MODEL">
+      <ObjectId>120688</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:05</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:05</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="179" parent="2" name="CON_TEMPLATE">
+      <ObjectId>120692</ObjectId>
+      <Comment>Šablona</Comment>
+      <CreatedTimestamp>2018-01-18.17:38:06</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:07</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="180" parent="2" name="CON_TEMPLATE_STATUS">
+      <ObjectId>120695</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:07</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:07</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="181" parent="2" name="CON_TEMPLATE_VER">
+      <ObjectId>120681</ObjectId>
+      <Comment>Verze šalony</Comment>
+      <CreatedTimestamp>2018-01-18.17:38:03</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:03</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="182" parent="2" name="CON_TEMPLATE_VER_STATUS">
+      <ObjectId>120697</ObjectId>
+      <Comment>Stav verze šalony</Comment>
+      <CreatedTimestamp>2018-01-18.17:38:07</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:08</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="183" parent="2" name="CON_TERM_ACTION">
+      <ObjectId>120699</ObjectId>
+      <Comment>Akce vazici se na termin</Comment>
+      <CreatedTimestamp>2018-01-18.17:38:08</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:08</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="184" parent="2" name="CON_TERM_MODEL">
+      <ObjectId>120704</ObjectId>
+      <Comment>Vzor terminu</Comment>
+      <CreatedTimestamp>2018-01-18.17:38:10</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:10</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="185" parent="2" name="CON_TERM_MODEL_RULE">
+      <ObjectId>120707</ObjectId>
+      <Comment>Pravidla pro vzory terminu</Comment>
+      <CreatedTimestamp>2018-01-18.17:38:11</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:11</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="186" parent="2" name="CON_TERM_PERIOD_MODEL">
+      <ObjectId>120701</ObjectId>
+      <Comment>Frekvence opakovani, jenz lze zadat kovanantam do CON_TERM dle HCisFrekvenceOpakovaniPodm</Comment>
+      <CreatedTimestamp>2018-01-18.17:38:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:09</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="187" parent="2" name="CON_TPL_VER2GROUP_MODEL">
+      <ObjectId>120710</ObjectId>
+      <Comment>Vazba verze šablony na vzor skupiny</Comment>
+      <CreatedTimestamp>2018-01-18.17:38:11</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:12</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="188" parent="2" name="CON_VARIABLE">
+      <ObjectId>120657</ObjectId>
+      <Comment>Tabulka pro systémové hodnoty pro fragmenty</Comment>
+      <CreatedTimestamp>2018-01-18.17:37:57</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:58</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <column id="189" parent="135" name="ID_ASSISTANT">
+      <Position>1</Position>
+      <Comment>ID</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="190" parent="135" name="ID_PROP">
+      <Position>2</Position>
+      <Comment>ID navrhu</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="191" parent="135" name="ID_TEMPLATE">
+      <Position>3</Position>
+      <Comment>ID šablony</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="192" parent="135" name="COMMENT_TEXT">
+      <Position>4</Position>
+      <Comment>Komentár</Comment>
+      <DataType>VARCHAR2(2000)|0</DataType>
+    </column>
+    <index id="193" parent="135" name="PK_ASSISTANT_ID">
+      <ObjectId>120572</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:38</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:38</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_ASSISTANT</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="194" parent="135" name="CS_ASSISTANT_PROP_UQ">
+      <ObjectId>120573</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:38</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:38</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_PROP</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="195" parent="135" name="IX_ASSISTANT_TEMPLATE">
+      <ObjectId>120571</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:38</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:38</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_TEMPLATE</ColNames>
+    </index>
+    <key id="196" parent="135" name="PK_ASSISTANT_ID">
+      <ModifiedTimestamp>2018-01-18.17:37:38</ModifiedTimestamp>
+      <ColNames>ID_ASSISTANT</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_ASSISTANT_ID</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="197" parent="135" name="CS_ASSISTANT_PROP_UQ">
+      <ModifiedTimestamp>2018-01-18.17:37:38</ModifiedTimestamp>
+      <ColNames>ID_PROP</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>CS_ASSISTANT_PROP_UQ</UnderlyingIndexName>
+    </key>
+    <column id="198" parent="136" name="ID_BB_GROUP">
+      <Position>1</Position>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="199" parent="136" name="NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(128)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="200" parent="136" name="PK_BB_GROUP">
+      <ObjectId>120575</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:38</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:38</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_BB_GROUP</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="201" parent="136" name="PK_BB_GROUP">
+      <ModifiedTimestamp>2018-01-18.17:37:38</ModifiedTimestamp>
+      <ColNames>ID_BB_GROUP</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_BB_GROUP</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="202" parent="137" name="ID_CATEGORY">
+      <Position>1</Position>
+      <Comment>ID</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="203" parent="137" name="ID_PARENT">
+      <Position>2</Position>
+      <Comment>ID rodice</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+    </column>
+    <column id="204" parent="137" name="CODE">
+      <Position>3</Position>
+      <Comment>Reg cislo kategorie</Comment>
+      <DataType>VARCHAR2(3)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="205" parent="137" name="TITLE">
+      <Position>4</Position>
+      <Comment>Nazev</Comment>
+      <DataType>VARCHAR2(128)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="206" parent="137" name="DESCRIPTION">
+      <Position>5</Position>
+      <Comment>Popis</Comment>
+      <DataType>VARCHAR2(1024)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="207" parent="137" name="USER_ORDER">
+      <Position>6</Position>
+      <Comment>Uzivatelske poradi v selectu</Comment>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <index id="208" parent="137" name="PK_CATEGORY_ID">
+      <ObjectId>120578</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:39</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:39</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_CATEGORY</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="209" parent="137" name="CS_CATEGORY_PARENT_CODE">
+      <ObjectId>120579</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:39</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:39</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_PARENT
+CODE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="210" parent="137" name="IX_CATEGORY_PARENT">
+      <ObjectId>120577</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:39</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:39</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_PARENT</ColNames>
+    </index>
+    <key id="211" parent="137" name="PK_CATEGORY_ID">
+      <ModifiedTimestamp>2018-01-18.17:37:39</ModifiedTimestamp>
+      <ColNames>ID_CATEGORY</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_CATEGORY_ID</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="212" parent="137" name="CS_CATEGORY_PARENT_CODE">
+      <ModifiedTimestamp>2018-01-18.17:37:39</ModifiedTimestamp>
+      <ColNames>ID_PARENT
+CODE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>CS_CATEGORY_PARENT_CODE</UnderlyingIndexName>
+    </key>
+    <foreign-key id="213" parent="137" name="FK_CATEGORY_PARENT">
+      <ModifiedTimestamp>2018-01-18.17:37:39</ModifiedTimestamp>
+      <ColNames>ID_PARENT</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_CATEGORY</RefTableName>
+      <RefKeyName>PK_CATEGORY_ID</RefKeyName>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <column id="214" parent="138" name="ID">
+      <Position>1</Position>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="215" parent="138" name="TITLE">
+      <Position>2</Position>
+      <DataType>VARCHAR2(32 char)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="216" parent="138" name="PK_CHECKLIST">
+      <ObjectId>120581</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:39</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:39</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="217" parent="138" name="CS_CHECKLIST_TITLE">
+      <ObjectId>120582</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:39</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:39</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>TITLE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="218" parent="138" name="PK_CHECKLIST">
+      <ModifiedTimestamp>2018-01-18.17:37:39</ModifiedTimestamp>
+      <ColNames>ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_CHECKLIST</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="219" parent="138" name="CS_CHECKLIST_TITLE">
+      <ModifiedTimestamp>2018-01-18.17:37:39</ModifiedTimestamp>
+      <ColNames>TITLE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>CS_CHECKLIST_TITLE</UnderlyingIndexName>
+    </key>
+    <column id="220" parent="139" name="ID">
+      <Position>1</Position>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="221" parent="139" name="ID_CHECKLIST">
+      <Position>2</Position>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="222" parent="139" name="CREATED_AT">
+      <Position>3</Position>
+      <DataType>DATE|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>SYSDATE </DefaultExpression>
+    </column>
+    <column id="223" parent="139" name="CANCELLED_AT">
+      <Position>4</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <index id="224" parent="139" name="PK_CHECK_MODEL">
+      <ObjectId>120585</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:40</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="225" parent="139" name="IX_CHECK_MODEL_CHECKLIST">
+      <ObjectId>120584</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:40</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_CHECKLIST</ColNames>
+    </index>
+    <key id="226" parent="139" name="PK_CHECK_MODEL">
+      <ModifiedTimestamp>2018-01-18.17:37:40</ModifiedTimestamp>
+      <ColNames>ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_CHECK_MODEL</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="227" parent="139" name="FK_CHECK_MODEL_CHECKLIST">
+      <ModifiedTimestamp>2018-01-18.17:37:40</ModifiedTimestamp>
+      <ColNames>ID_CHECKLIST</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_CHECKLIST</RefTableName>
+      <RefKeyName>PK_CHECKLIST</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="228" parent="140" name="ID_CHECK_MODEL">
+      <Position>1</Position>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="229" parent="140" name="ID_DOC_TYPE">
+      <Position>2</Position>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="230" parent="140" name="PK_CHECK_MODEL2DOC_TYPE">
+      <ObjectId>120605</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:44</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:44</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_CHECK_MODEL
+ID_DOC_TYPE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="231" parent="140" name="PK_CHECK_MODEL2DOC_TYPE">
+      <ModifiedTimestamp>2018-01-18.17:37:44</ModifiedTimestamp>
+      <ColNames>ID_CHECK_MODEL
+ID_DOC_TYPE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_CHECK_MODEL2DOC_TYPE</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="232" parent="140" name="FK_C_M2D_T_CHECK_MODEL">
+      <ModifiedTimestamp>2018-01-18.17:37:44</ModifiedTimestamp>
+      <ColNames>ID_CHECK_MODEL</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_COND_CHECK_MODEL</RefTableName>
+      <RefKeyName>PK_COND_CHECK_MODEL</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="233" parent="140" name="FK_C_M2D_T_DOC_TYPE">
+      <ModifiedTimestamp>2018-01-18.17:37:44</ModifiedTimestamp>
+      <ColNames>ID_DOC_TYPE</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_DOC_TYPE</RefTableName>
+      <RefKeyName>PK_DOC_TYPE</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="234" parent="141" name="ID_CHECK_MODEL">
+      <Position>1</Position>
+      <Comment>Id vzoru checku</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="235" parent="141" name="STATUS">
+      <Position>2</Position>
+      <Comment>Stav, který muže check (vytvorený dle vzoru checku) nabývat</Comment>
+      <DataType>VARCHAR2(32 char)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="236" parent="141" name="PK_CHECK_MODEL2STATUS">
+      <ObjectId>120607</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:45</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:45</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_CHECK_MODEL
+STATUS</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="237" parent="141" name="PK_CHECK_MODEL2STATUS">
+      <ModifiedTimestamp>2018-01-18.17:37:45</ModifiedTimestamp>
+      <ColNames>ID_CHECK_MODEL
+STATUS</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_CHECK_MODEL2STATUS</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="238" parent="141" name="FK_CH_M2S_CHECK_MODEL">
+      <ModifiedTimestamp>2018-01-18.17:37:45</ModifiedTimestamp>
+      <ColNames>ID_CHECK_MODEL</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_CHECK_MODEL</RefTableName>
+      <RefKeyName>PK_CHECK_MODEL</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="239" parent="142" name="ID_COND">
+      <Position>1</Position>
+      <Comment>ID podmínky</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="240" parent="142" name="STATUS">
+      <Position>2</Position>
+      <Comment>Stav</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="241" parent="142" name="CREATED_AT">
+      <Position>3</Position>
+      <Comment>Datum vytvorení</Comment>
+      <DataType>DATE|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="242" parent="142" name="PK_CLIENT_COND">
+      <ObjectId>120619</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:47</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:47</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_COND
+STATUS</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="243" parent="142" name="PK_CLIENT_COND">
+      <ModifiedTimestamp>2018-01-18.17:37:47</ModifiedTimestamp>
+      <ColNames>ID_COND
+STATUS</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_CLIENT_COND</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="244" parent="142" name="FK_CLIENT_COND_COND">
+      <ModifiedTimestamp>2018-01-18.17:37:47</ModifiedTimestamp>
+      <ColNames>ID_COND</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_COND</RefTableName>
+      <RefKeyName>PK_COND_ID</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <check id="245" parent="142" name="CS_CLIENT_COND_STATUS">
+      <ModifiedTimestamp>2018-01-18.17:37:47</ModifiedTimestamp>
+      <ColNames>STATUS</ColNames>
+      <Predicate>status IN (
+            &apos;ACTIVE&apos;,
+            &apos;PRINTED&apos;,
+            &apos;APPROVED&apos;
+        )</Predicate>
+    </check>
+    <column id="246" parent="143" name="ID_COND_MODEL">
+      <Position>1</Position>
+      <Comment>ID vzoru podminky</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="247" parent="143" name="ID_GROUP_MODEL_VER">
+      <Position>2</Position>
+      <Comment>ID verze vzoru skupiny</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="248" parent="143" name="ID_EXPR">
+      <Position>3</Position>
+      <Comment>ID vyrazu</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+    </column>
+    <column id="249" parent="143" name="DEFAULT_COND">
+      <Position>4</Position>
+      <Comment>Defaultní podmínka</Comment>
+      <DataType>CHAR(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;0&apos; </DefaultExpression>
+    </column>
+    <index id="250" parent="143" name="PK_CM2GMV_ID">
+      <ObjectId>120638</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:51</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:51</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_COND_MODEL
+ID_GROUP_MODEL_VER</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="251" parent="143" name="IX_CM2GMV_EXPR">
+      <ObjectId>120637</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:51</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:51</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_EXPR</ColNames>
+    </index>
+    <key id="252" parent="143" name="PK_CM2GMV_ID">
+      <ModifiedTimestamp>2018-01-18.17:37:51</ModifiedTimestamp>
+      <ColNames>ID_COND_MODEL
+ID_GROUP_MODEL_VER</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_CM2GMV_ID</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="253" parent="143" name="FK_CM2GMV_COND_MODEL">
+      <ModifiedTimestamp>2018-01-18.17:37:51</ModifiedTimestamp>
+      <ColNames>ID_COND_MODEL</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_COND_MODEL</RefTableName>
+      <RefKeyName>PK_COND_MODEL_ID</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="254" parent="143" name="FK_CM2GMV_GROUP_MODEL_VER">
+      <ModifiedTimestamp>2018-01-18.17:37:51</ModifiedTimestamp>
+      <ColNames>ID_GROUP_MODEL_VER</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_GROUP_MODEL_VER</RefTableName>
+      <RefKeyName>PK_GROUP_MODEL_VER_ID</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="255" parent="143" name="FK_CM2GMV_EXPR">
+      <ModifiedTimestamp>2018-01-18.17:37:51</ModifiedTimestamp>
+      <ColNames>ID_EXPR</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_EXPR</RefTableName>
+      <RefKeyName>PK_EXPR_ID</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <check id="256" parent="143" name="CS_CM2GMV_DEFAULT_COND">
+      <ModifiedTimestamp>2018-01-18.17:37:51</ModifiedTimestamp>
+      <ColNames>DEFAULT_COND</ColNames>
+      <Predicate>DEFAULT_COND IN (&apos;0&apos;,&apos;1&apos;)</Predicate>
+    </check>
+    <column id="257" parent="144" name="ID_COND">
+      <Position>1</Position>
+      <Comment>ID podmínky</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="258" parent="144" name="ID_COND_MODEL_VER">
+      <Position>2</Position>
+      <Comment>ID verze vzoru</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+    </column>
+    <column id="259" parent="144" name="ID_GROUP">
+      <Position>3</Position>
+      <Comment>ID skupiny</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+    </column>
+    <column id="260" parent="144" name="ID_PROP">
+      <Position>4</Position>
+      <Comment>ID navrhu</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="261" parent="144" name="IS_CONTRACTUAL">
+      <Position>5</Position>
+      <Comment>Príznak, zda je podmínka smluvní/nesmluvní</Comment>
+      <DataType>NUMBER(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="262" parent="144" name="STATUS">
+      <Position>6</Position>
+      <Comment>Stav podmínky</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="263" parent="144" name="REVISION_FLAG">
+      <Position>7</Position>
+      <Comment>Zmenový príznak (oznacuje zmenu podmínky návrhu proti zmenovému návrhu) - stávající/nová/smazaná/zmenená</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="264" parent="144" name="ID_REVISION_PARENT_COND">
+      <Position>8</Position>
+      <Comment>ID podmínky, že které vznikla revize nové podmínky</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+    </column>
+    <column id="265" parent="144" name="COMMENT_TEXT">
+      <Position>9</Position>
+      <Comment>Komentár podmínky</Comment>
+      <DataType>VARCHAR2(2000)|0</DataType>
+    </column>
+    <column id="266" parent="144" name="COLL">
+      <Position>10</Position>
+      <Comment>Zajištení - zástava</Comment>
+      <DataType>VARCHAR2(256)|0</DataType>
+    </column>
+    <column id="267" parent="144" name="TRANCHE">
+      <Position>11</Position>
+      <Comment>Zajištení - tranše/limity</Comment>
+      <DataType>VARCHAR2(256)|0</DataType>
+    </column>
+    <column id="268" parent="144" name="CREATED_AT">
+      <Position>12</Position>
+      <Comment>Datum vytvorení instance podmínky</Comment>
+      <DataType>DATE|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>SYSDATE </DefaultExpression>
+    </column>
+    <column id="269" parent="144" name="CREATED_BY">
+      <Position>13</Position>
+      <Comment>SSO uzivatele</Comment>
+      <DataType>CHAR(9)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="270" parent="144" name="PK_COND_ID">
+      <ObjectId>120617</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:47</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:47</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_COND</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="271" parent="144" name="IX_COND_MODEL">
+      <ObjectId>120615</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:47</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:47</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_COND_MODEL_VER</ColNames>
+    </index>
+    <index id="272" parent="144" name="IX_COND_GROUP">
+      <ObjectId>120614</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:47</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:47</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_GROUP</ColNames>
+    </index>
+    <index id="273" parent="144" name="IX_COND_PROP">
+      <ObjectId>120616</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:47</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:47</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_PROP</ColNames>
+    </index>
+    <index id="274" parent="144" name="IX_CON_COND_REV_PARENT_COND">
+      <ObjectId>120613</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:47</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:47</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_REVISION_PARENT_COND</ColNames>
+    </index>
+    <key id="275" parent="144" name="PK_COND_ID">
+      <ModifiedTimestamp>2018-01-18.17:37:47</ModifiedTimestamp>
+      <ColNames>ID_COND</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_COND_ID</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="276" parent="144" name="FK_COND_MODEL">
+      <ModifiedTimestamp>2018-01-18.17:37:47</ModifiedTimestamp>
+      <ColNames>ID_COND_MODEL_VER</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_COND_MODEL_VER</RefTableName>
+      <RefKeyName>PK_COND_MODEL_VER_ID</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="277" parent="144" name="FK_COND_GROUP">
+      <ModifiedTimestamp>2018-01-18.17:37:47</ModifiedTimestamp>
+      <ColNames>ID_GROUP</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_GROUP</RefTableName>
+      <RefKeyName>PK_GROUP_ID</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="278" parent="144" name="FK_CON_COND_REV_PARENT_COND">
+      <ModifiedTimestamp>2018-01-18.17:37:47</ModifiedTimestamp>
+      <ColNames>ID_REVISION_PARENT_COND</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_COND</RefTableName>
+      <RefKeyName>PK_COND_ID</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <check id="279" parent="144" name="CS_COND_CONSTRACTUAL">
+      <ModifiedTimestamp>2018-01-18.17:37:47</ModifiedTimestamp>
+      <ColNames>IS_CONTRACTUAL</ColNames>
+      <Predicate>is_contractual IN (0, 1)</Predicate>
+    </check>
+    <check id="280" parent="144" name="CS_COND_STATUS">
+      <ModifiedTimestamp>2018-01-18.17:37:47</ModifiedTimestamp>
+      <ColNames>STATUS</ColNames>
+      <Predicate>status IN (
+            &apos;SAVED&apos;,
+            &apos;REMOVED&apos;,
+            &apos;IGNORED&apos;
+        )</Predicate>
+    </check>
+    <check id="281" parent="144" name="CS_CON_COND_REVISION_FLAG">
+      <ModifiedTimestamp>2018-01-18.17:37:47</ModifiedTimestamp>
+      <ColNames>REVISION_FLAG</ColNames>
+      <Predicate>revision_flag IN (
+            &apos;UNCHANGED&apos;,
+            &apos;REMOVED_UNCHANGED&apos;,
+            &apos;CHANGED&apos;,
+            &apos;REMOVED_CHANGED&apos;,
+            &apos;ADDED&apos;
+        )</Predicate>
+    </check>
+    <column id="282" parent="145" name="ID_CHECK_MODEL">
+      <Position>1</Position>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="283" parent="145" name="ID_COND_MODEL">
+      <Position>2</Position>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="284" parent="145" name="PK_COND_CHECK_MODEL">
+      <ObjectId>120599</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:43</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:43</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_CHECK_MODEL</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="285" parent="145" name="IX_C_CH_M_COND_MODEL">
+      <ObjectId>120598</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:43</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:43</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_COND_MODEL</ColNames>
+    </index>
+    <key id="286" parent="145" name="PK_COND_CHECK_MODEL">
+      <ModifiedTimestamp>2018-01-18.17:37:43</ModifiedTimestamp>
+      <ColNames>ID_CHECK_MODEL</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_COND_CHECK_MODEL</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="287" parent="145" name="FK_C_CH_M_CHECK_MODEL">
+      <ModifiedTimestamp>2018-01-18.17:37:43</ModifiedTimestamp>
+      <ColNames>ID_CHECK_MODEL</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_CHECK_MODEL</RefTableName>
+      <RefKeyName>PK_CHECK_MODEL</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="288" parent="145" name="FK_C_CH_M_COND_MODEL">
+      <ModifiedTimestamp>2018-01-18.17:37:43</ModifiedTimestamp>
+      <ColNames>ID_COND_MODEL</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_COND_MODEL</RefTableName>
+      <RefKeyName>PK_COND_MODEL_ID</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="289" parent="146" name="ID_COND_MODEL">
+      <Position>1</Position>
+      <Comment>ID vzoru</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="290" parent="146" name="ID_CATEGORY">
+      <Position>2</Position>
+      <Comment>ID skupiny vzoru</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+    </column>
+    <column id="291" parent="146" name="ID_CURRENT_VER">
+      <Position>3</Position>
+      <Comment>ID poslednA­/aktuA¿lnA­ verze vzoru podmA­nky</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="292" parent="146" name="ID_COND_PROPS">
+      <Position>4</Position>
+      <Comment>ID vlastnostA­ pro podmA­nky (vlastnA­ch/standardnA­ch)</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="293" parent="146" name="EXPIRED">
+      <Position>5</Position>
+      <Comment>PL™A­znak neaktuA¿lnosti</Comment>
+      <DataType>NUMBER(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0 </DefaultExpression>
+    </column>
+    <column id="294" parent="146" name="SECRET">
+      <Position>6</Position>
+      <Comment>TajnA¿ kAld</Comment>
+      <DataType>NUMBER(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0 </DefaultExpression>
+    </column>
+    <column id="295" parent="146" name="ASD_DESCRIPTION">
+      <Position>7</Position>
+      <Comment>Popis podmA­nky pro ASD</Comment>
+      <DataType>VARCHAR2(2000)|0</DataType>
+    </column>
+    <column id="296" parent="146" name="USER_ORDER">
+      <Position>8</Position>
+      <Comment>Uzivatelsky definovane poradi v selectu</Comment>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="297" parent="146" name="IS_CONTRACTUAL">
+      <Position>9</Position>
+      <Comment>Smluvni nesmluvni</Comment>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0 </DefaultExpression>
+    </column>
+    <column id="298" parent="146" name="CT_FRAG_CALC">
+      <Position>10</Position>
+      <Comment>priznak 1 pro podminky, u kterych budeme dopocitavat fragment dle stanoveneho indikatoru</Comment>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0 </DefaultExpression>
+    </column>
+    <column id="299" parent="146" name="FULFILL_COND_ONE_COMMENT">
+      <Position>11</Position>
+      <Comment>Plneni podminek - kopirovat komentar</Comment>
+      <DataType>CHAR(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0 </DefaultExpression>
+    </column>
+    <column id="300" parent="146" name="FAST_TRACK">
+      <Position>12</Position>
+      <Comment>informace jestli danA¿ podmA­nka znamenA¿ pA¸echod do fast tracku</Comment>
+      <DataType>NUMBER(1)|0</DataType>
+      <DefaultExpression>0
+</DefaultExpression>
+    </column>
+    <index id="301" parent="146" name="PK_COND_MODEL_ID">
+      <ObjectId>120590</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:40</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_COND_MODEL</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="302" parent="146" name="IX_COND_MODEL_CATEGORY">
+      <ObjectId>120587</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:40</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_CATEGORY</ColNames>
+    </index>
+    <index id="303" parent="146" name="IX_COND_MODEL_CURRENT_VER">
+      <ObjectId>120589</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:40</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_CURRENT_VER</ColNames>
+    </index>
+    <index id="304" parent="146" name="IX_COND_MODEL_COND_PROPS">
+      <ObjectId>120588</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:40</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:40</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_COND_PROPS</ColNames>
+    </index>
+    <key id="305" parent="146" name="PK_COND_MODEL_ID">
+      <ModifiedTimestamp>2018-01-18.17:37:40</ModifiedTimestamp>
+      <ColNames>ID_COND_MODEL</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_COND_MODEL_ID</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="306" parent="146" name="FK_COND_MODEL_CATEGORY">
+      <ModifiedTimestamp>2018-01-18.17:37:41</ModifiedTimestamp>
+      <ColNames>ID_CATEGORY</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_CATEGORY</RefTableName>
+      <RefKeyName>PK_CATEGORY_ID</RefKeyName>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+    <check id="307" parent="146" name="CS_COND_MODEL_EXPIRED">
+      <ModifiedTimestamp>2018-01-18.17:37:41</ModifiedTimestamp>
+      <ColNames>EXPIRED</ColNames>
+      <Predicate>expired IN (0, 1)</Predicate>
+    </check>
+    <check id="308" parent="146" name="CS_COND_MODEL_SECRET">
+      <ModifiedTimestamp>2018-01-18.17:37:41</ModifiedTimestamp>
+      <ColNames>SECRET</ColNames>
+      <Predicate>secret IN (0, 1)</Predicate>
+    </check>
+    <check id="309" parent="146" name="CS_COND_MODEL_CONTRACTUAL">
+      <ModifiedTimestamp>2018-01-18.17:37:41</ModifiedTimestamp>
+      <ColNames>IS_CONTRACTUAL</ColNames>
+      <Predicate>is_CONTRACTUAL IN (0,1)</Predicate>
+    </check>
+    <check id="310" parent="146" name="CK_CT_FRAG_CALC">
+      <ModifiedTimestamp>2018-01-18.17:37:41</ModifiedTimestamp>
+      <ColNames>CT_FRAG_CALC</ColNames>
+      <Predicate>CT_FRAG_CALC IN (&apos;0&apos;,&apos;1&apos;)</Predicate>
+    </check>
+    <check id="311" parent="146" name="CK_FULFILL_COND_ONE_COMMENT">
+      <ModifiedTimestamp>2018-01-18.17:37:41</ModifiedTimestamp>
+      <ColNames>FULFILL_COND_ONE_COMMENT</ColNames>
+      <Predicate>FULFILL_COND_ONE_COMMENT IN (&apos;0&apos;,&apos;1&apos;)</Predicate>
+    </check>
+    <column id="312" parent="147" name="ID_BB_GROUP">
+      <Position>1</Position>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="313" parent="147" name="ID_COND_MODEL">
+      <Position>2</Position>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="314" parent="147" name="PRIORITY">
+      <Position>3</Position>
+      <DataType>NUMBER(2)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0 </DefaultExpression>
+    </column>
+    <column id="315" parent="147" name="EQUIVALENCE_BATCH">
+      <Position>4</Position>
+      <DataType>VARCHAR2(16)|0</DataType>
+    </column>
+    <foreign-key id="316" parent="147" name="FK_C_M2BB_G_BB_GROUP">
+      <ModifiedTimestamp>2018-01-18.17:37:52</ModifiedTimestamp>
+      <ColNames>ID_BB_GROUP</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_BB_GROUP</RefTableName>
+      <RefKeyName>PK_BB_GROUP</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="317" parent="147" name="FK_C_M2BB_G_COND_MODEL">
+      <ModifiedTimestamp>2018-01-18.17:37:52</ModifiedTimestamp>
+      <ColNames>ID_COND_MODEL</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_COND_MODEL</RefTableName>
+      <RefKeyName>PK_COND_MODEL_ID</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <check id="318" parent="147" name="CS_C_M2BB_G_PRIORITY">
+      <ModifiedTimestamp>2018-01-18.17:37:52</ModifiedTimestamp>
+      <ColNames>PRIORITY</ColNames>
+      <Predicate>priority BETWEEN 0 AND 90</Predicate>
+    </check>
+    <column id="319" parent="148" name="ID_COND_MODEL_VER">
+      <Position>1</Position>
+      <Comment>ID</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="320" parent="148" name="ID_COND_MODEL">
+      <Position>2</Position>
+      <Comment>ID vzoru podminky</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="321" parent="148" name="CREATED_AT">
+      <Position>3</Position>
+      <Comment>Datum vytvorení</Comment>
+      <DataType>DATE|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>SYSDATE </DefaultExpression>
+    </column>
+    <column id="322" parent="148" name="OLD_ID">
+      <Position>4</Position>
+      <Comment>Staré ID</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="323" parent="148" name="MIGRATION_FLAG">
+      <Position>5</Position>
+      <Comment>Info k migraci</Comment>
+      <DataType>VARCHAR2(6)|0</DataType>
+      <DefaultExpression>&apos;MANUAL&apos;</DefaultExpression>
+    </column>
+    <column id="324" parent="148" name="PROCESSED">
+      <Position>6</Position>
+      <Comment>Zpracovano</Comment>
+      <DataType>NUMBER(*)|0</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="325" parent="148" name="REVISION_PARENT_ID">
+      <Position>7</Position>
+      <Comment>Predchozi verze</Comment>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="326" parent="148" name="REVISION_COMMENT">
+      <Position>8</Position>
+      <Comment>Komentar k verzi</Comment>
+      <DataType>VARCHAR2(2000)|0</DataType>
+    </column>
+    <column id="327" parent="148" name="PUBLISH_STATUS">
+      <Position>9</Position>
+      <Comment>Status publikace</Comment>
+      <DataType>VARCHAR2(15)|0</DataType>
+    </column>
+    <column id="328" parent="148" name="VERSION">
+      <Position>10</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="329" parent="148" name="COLOURED_FLAG">
+      <Position>11</Position>
+      <Comment>Priznak podbarveni - HCisAnoNE</Comment>
+      <DataType>CHAR(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="330" parent="148" name="COMMENT_RESULT_FLAG">
+      <Position>12</Position>
+      <Comment>Priznak vyhodnoceni komentovani - HCisAnoNE</Comment>
+      <DataType>CHAR(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;1&apos; </DefaultExpression>
+    </column>
+    <index id="331" parent="148" name="PK_COND_MODEL_VER_ID">
+      <ObjectId>120593</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:42</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:42</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_COND_MODEL_VER</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="332" parent="148" name="IX_COND_MODEL_VER_BASE">
+      <ObjectId>120592</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:42</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:42</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_COND_MODEL</ColNames>
+    </index>
+    <key id="333" parent="148" name="PK_COND_MODEL_VER_ID">
+      <ModifiedTimestamp>2018-01-18.17:37:42</ModifiedTimestamp>
+      <ColNames>ID_COND_MODEL_VER</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_COND_MODEL_VER_ID</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="334" parent="148" name="FK_COND_MODEL_VER_BASE">
+      <ModifiedTimestamp>2018-01-18.17:37:42</ModifiedTimestamp>
+      <ColNames>ID_COND_MODEL</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_COND_MODEL</RefTableName>
+      <RefKeyName>PK_COND_MODEL_ID</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <check id="335" parent="148" name="CK_MODEL_VER_COLORED">
+      <ModifiedTimestamp>2018-01-18.17:37:42</ModifiedTimestamp>
+      <ColNames>COLOURED_FLAG</ColNames>
+      <Predicate>coloured_flag in (&apos;0&apos;, &apos;1&apos;)</Predicate>
+    </check>
+    <check id="336" parent="148" name="CK_MODEL_VER_COMM_RF">
+      <ModifiedTimestamp>2018-01-18.17:37:42</ModifiedTimestamp>
+      <ColNames>COMMENT_RESULT_FLAG</ColNames>
+      <Predicate>comment_result_flag in (&apos;0&apos;, &apos;1&apos;)</Predicate>
+    </check>
+    <column id="337" parent="149" name="ID_COND_MODEL_VER">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="338" parent="149" name="ENVIROMENT">
+      <Position>2</Position>
+      <DataType>VARCHAR2(15)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="339" parent="149" name="STATUS">
+      <Position>3</Position>
+      <DataType>VARCHAR2(15)|0</DataType>
+    </column>
+    <column id="340" parent="149" name="CREATED_AT">
+      <Position>4</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="341" parent="149" name="CREATED_BY">
+      <Position>5</Position>
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <column id="342" parent="149" name="UPDATED_AT">
+      <Position>6</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="343" parent="149" name="UPDATED_BY">
+      <Position>7</Position>
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <index id="344" parent="149" name="PK_COND_MODEL_VER_STATUS">
+      <ObjectId>120640</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:52</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:52</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_COND_MODEL_VER
+ENVIROMENT</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="345" parent="149" name="PK_COND_MODEL_VER_STATUS">
+      <ModifiedTimestamp>2018-01-18.17:37:52</ModifiedTimestamp>
+      <ColNames>ID_COND_MODEL_VER
+ENVIROMENT</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_COND_MODEL_VER_STATUS</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="346" parent="149" name="FK_CON_VER_STATUS2COND">
+      <ModifiedTimestamp>2018-01-18.17:37:52</ModifiedTimestamp>
+      <ColNames>ID_COND_MODEL_VER</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_COND_MODEL_VER</RefTableName>
+      <RefKeyName>PK_COND_MODEL_VER_ID</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <check id="347" parent="149" name="CS_COND_VER_ENV">
+      <ModifiedTimestamp>2018-01-18.17:37:52</ModifiedTimestamp>
+      <ColNames>ENVIROMENT</ColNames>
+      <Predicate>ENVIROMENT in (&apos;MFE&apos;,&apos;TST&apos;,&apos;LIVE&apos;)</Predicate>
+    </check>
+    <check id="348" parent="149" name="CS_COND_VER_STATUS">
+      <ModifiedTimestamp>2018-01-18.17:37:52</ModifiedTimestamp>
+      <ColNames>STATUS</ColNames>
+      <Predicate>STATUS in (&apos;VALID&apos;,&apos;EDITED&apos;,&apos;INVALID&apos;,&apos;N_A&apos;)</Predicate>
+    </check>
+    <column id="349" parent="150" name="ID_COND_PROPS">
+      <Position>1</Position>
+      <Comment>Id </Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="350" parent="150" name="CODE">
+      <Position>2</Position>
+      <Comment>Registracni cislo podminky</Comment>
+      <DataType>VARCHAR2(7)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="351" parent="150" name="TITLE">
+      <Position>3</Position>
+      <Comment>Nazev podminky</Comment>
+      <DataType>VARCHAR2(256)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="352" parent="150" name="PLACEMENT">
+      <Position>4</Position>
+      <Comment>Umisteni ve smlouve</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="353" parent="150" name="KIND">
+      <Position>5</Position>
+      <Comment>Typ podminky (klientská/obchodní)</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="354" parent="150" name="COVENANT">
+      <Position>6</Position>
+      <Comment>Príznak kovenanty</Comment>
+      <DataType>NUMBER(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0 </DefaultExpression>
+    </column>
+    <column id="355" parent="150" name="BENEVOLENCE">
+      <Position>7</Position>
+      <Comment>Príznak, který typ benevolence se muže uplatit u termínu této podmínky</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="356" parent="150" name="BIZ_YEAR_AFFECTED">
+      <Position>8</Position>
+      <Comment>Príznak, zda jsou termíny této podmínky ovlivneny hospodárským rokem</Comment>
+      <DataType>NUMBER(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0 </DefaultExpression>
+    </column>
+    <index id="357" parent="150" name="PK_COND_PROPS_ID">
+      <ObjectId>120595</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:42</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:42</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_COND_PROPS</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="358" parent="150" name="UQ_CON_COND_CODE">
+      <ObjectId>120596</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:42</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:42</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>CODE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="359" parent="150" name="PK_COND_PROPS_ID">
+      <ModifiedTimestamp>2018-01-18.17:37:42</ModifiedTimestamp>
+      <ColNames>ID_COND_PROPS</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_COND_PROPS_ID</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="360" parent="150" name="UQ_CON_COND_CODE">
+      <ModifiedTimestamp>2018-01-18.17:37:42</ModifiedTimestamp>
+      <ColNames>CODE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>UQ_CON_COND_CODE</UnderlyingIndexName>
+    </key>
+    <check id="361" parent="150" name="CS_COND_PROPS_CODE_CHECK">
+      <ModifiedTimestamp>2018-01-18.17:37:42</ModifiedTimestamp>
+      <ColNames>CODE</ColNames>
+      <Predicate>LENGTH(code) &gt; 1</Predicate>
+    </check>
+    <check id="362" parent="150" name="CS_COND_PROPS_KIND">
+      <ModifiedTimestamp>2018-01-18.17:37:42</ModifiedTimestamp>
+      <ColNames>KIND</ColNames>
+      <Predicate>kind IN (
+            &apos;DEAL&apos;,
+            &apos;CLIENT&apos;
+        )</Predicate>
+    </check>
+    <check id="363" parent="150" name="CS_COND_PROPS_COVENANT">
+      <ModifiedTimestamp>2018-01-18.17:37:42</ModifiedTimestamp>
+      <ColNames>COVENANT</ColNames>
+      <Predicate>covenant IN (0, 1)</Predicate>
+    </check>
+    <column id="364" parent="151" name="ID_COND_PROPS">
+      <Position>1</Position>
+      <Comment>ID podminky</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="365" parent="151" name="ID_DOC_TYPE">
+      <Position>2</Position>
+      <Comment>ID typu dokumentu</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="366" parent="151" name="PK_CON_COND_PROPS2DOC_TYPE">
+      <ObjectId>120643</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:53</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:53</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_COND_PROPS
+ID_DOC_TYPE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="367" parent="151" name="PK_CON_COND_PROPS2DOC_TYPE">
+      <ModifiedTimestamp>2018-01-18.17:37:53</ModifiedTimestamp>
+      <ColNames>ID_COND_PROPS
+ID_DOC_TYPE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_CON_COND_PROPS2DOC_TYPE</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="368" parent="151" name="FK_CON_COND_PROPS2DOC_TYPE_CON">
+      <ModifiedTimestamp>2018-01-18.17:37:53</ModifiedTimestamp>
+      <ColNames>ID_COND_PROPS</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_COND_PROPS</RefTableName>
+      <RefKeyName>PK_COND_PROPS_ID</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="369" parent="151" name="FK_CON_COND_PROPS2DOC_TYPE_CO1">
+      <ModifiedTimestamp>2018-01-18.17:37:53</ModifiedTimestamp>
+      <ColNames>ID_DOC_TYPE</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_DOC_TYPE</RefTableName>
+      <RefKeyName>PK_DOC_TYPE</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="370" parent="152" name="ID_COND_MODEL">
+      <Position>1</Position>
+      <Comment>ID vzoru podmínky</Comment>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="371" parent="152" name="MONITORING_STATUS">
+      <Position>2</Position>
+      <Comment>Stav monitoringu kovenanty</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="372" parent="152" name="MONITORING_START_UNIT">
+      <Position>3</Position>
+      <Comment>Start výpoctu - jednotky</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="373" parent="152" name="MONITORING_START_CNT">
+      <Position>4</Position>
+      <Comment>Start výpoctu - pocet jednotek</Comment>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <index id="374" parent="152" name="PK_CON_COV_MODEL">
+      <ObjectId>120645</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:53</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:53</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_COND_MODEL</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="375" parent="152" name="PK_CON_COV_MODEL">
+      <ModifiedTimestamp>2018-01-18.17:37:53</ModifiedTimestamp>
+      <ColNames>ID_COND_MODEL</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_CON_COV_MODEL</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="376" parent="152" name="FK_CON_COV_MOD_ID_COND_MODEL">
+      <ModifiedTimestamp>2018-01-18.17:37:53</ModifiedTimestamp>
+      <ColNames>ID_COND_MODEL</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_COND_MODEL</RefTableName>
+      <RefKeyName>PK_COND_MODEL_ID</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <check id="377" parent="152" name="CS_CON_COV_MON_STAT">
+      <ModifiedTimestamp>2018-01-18.17:37:53</ModifiedTimestamp>
+      <ColNames>MONITORING_STATUS</ColNames>
+      <Predicate>monitoring_status IN (
+            &apos;MONITORED&apos;,
+            &apos;NOT_MONITORED&apos;
+    )</Predicate>
+    </check>
+    <column id="378" parent="153" name="ID_COND">
+      <Position>1</Position>
+      <Comment>ID</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="379" parent="153" name="AUTH_STATUS">
+      <Position>2</Position>
+      <Comment>Stav autorizace</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="380" parent="153" name="AUTH_USER">
+      <Position>3</Position>
+      <Comment>SSO autorizujícího uživatele</Comment>
+      <DataType>CHAR(9)|0</DataType>
+    </column>
+    <column id="381" parent="153" name="AUTH_DATE">
+      <Position>4</Position>
+      <Comment>Datum autorizace</Comment>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="382" parent="153" name="AUTH_COMMENT">
+      <Position>5</Position>
+      <Comment>Komentár autorizace</Comment>
+      <DataType>VARCHAR2(2000)|0</DataType>
+    </column>
+    <column id="383" parent="153" name="VALUE">
+      <Position>6</Position>
+      <Comment>Hodnota (Textace)</Comment>
+      <DataType>VARCHAR2(2000)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="384" parent="153" name="ID_COND_PROPS">
+      <Position>7</Position>
+      <Comment>Provazani na ID vlastnosti podminky</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="385" parent="153" name="PK_CUSTOM_COND_ID">
+      <ObjectId>120648</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:54</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:54</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_COND</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="386" parent="153" name="IX_CUSTOM_COND_COND_PROPS">
+      <ObjectId>120647</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:54</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:54</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_COND_PROPS</ColNames>
+    </index>
+    <key id="387" parent="153" name="PK_CUSTOM_COND_ID">
+      <ModifiedTimestamp>2018-01-18.17:37:54</ModifiedTimestamp>
+      <ColNames>ID_COND</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_CUSTOM_COND_ID</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="388" parent="153" name="FK_CUSTOM_COND_COND">
+      <ModifiedTimestamp>2018-01-18.17:37:54</ModifiedTimestamp>
+      <ColNames>ID_COND</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_COND</RefTableName>
+      <RefKeyName>PK_COND_ID</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="389" parent="153" name="FK_CUSTOM_COND_COND_PROPS">
+      <ModifiedTimestamp>2018-01-18.17:37:54</ModifiedTimestamp>
+      <ColNames>ID_COND_PROPS</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_COND_PROPS</RefTableName>
+      <RefKeyName>PK_COND_PROPS_ID</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <check id="390" parent="153" name="CS_CUST_COND_AUTH_STATUS">
+      <ModifiedTimestamp>2018-01-18.17:37:54</ModifiedTimestamp>
+      <ColNames>AUTH_STATUS</ColNames>
+      <Predicate>auth_status IN (
+            &apos;AUTHORIZED&apos;,
+            &apos;UNAUTHORIZED&apos;,
+            &apos;NO_VERDICT&apos;,
+            &apos;NO_NEED&apos;
+        )</Predicate>
+    </check>
+    <column id="391" parent="154" name="ID">
+      <Position>1</Position>
+      <Comment>Id typu dokumentu</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="392" parent="154" name="ORDERING">
+      <Position>2</Position>
+      <Comment>Uživatelské poradí</Comment>
+      <DataType>NUMBER(4)|0</DataType>
+    </column>
+    <column id="393" parent="154" name="FIRST_REMINDER">
+      <Position>3</Position>
+      <Comment>První upomínka (pocet dní)</Comment>
+      <DataType>NUMBER(3)|0</DataType>
+    </column>
+    <column id="394" parent="154" name="INFO_FORMAT">
+      <Position>4</Position>
+      <Comment>Formát komentáre instance dokumentu</Comment>
+      <DataType>VARCHAR2(256)|0</DataType>
+    </column>
+    <column id="395" parent="154" name="ACTIVITY">
+      <Position>5</Position>
+      <Comment>Aktivita</Comment>
+      <DataType>NUMBER(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>1 </DefaultExpression>
+    </column>
+    <column id="396" parent="154" name="DOC_TYPE_NAME">
+      <Position>6</Position>
+      <DataType>VARCHAR2(256)|0</DataType>
+    </column>
+    <column id="397" parent="154" name="ID_CATEGORY">
+      <Position>7</Position>
+      <DataType>NUMBER(16)|0</DataType>
+    </column>
+    <column id="398" parent="154" name="ID_CATEGORY_TMP">
+      <Position>8</Position>
+      <DataType>NUMBER(16)|0</DataType>
+    </column>
+    <column id="399" parent="154" name="PLEDGE_AGREEMENT">
+      <Position>9</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <DefaultExpression>0
+</DefaultExpression>
+    </column>
+    <index id="400" parent="154" name="PK_DOC_TYPE">
+      <ObjectId>120603</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:44</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:44</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="401" parent="154" name="PK_DOC_TYPE">
+      <ModifiedTimestamp>2018-01-18.17:37:44</ModifiedTimestamp>
+      <ColNames>ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_DOC_TYPE</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="402" parent="154" name="FK_DOC_TYPE_CATEGORY">
+      <ModifiedTimestamp>2018-01-18.17:37:44</ModifiedTimestamp>
+      <ColNames>ID_CATEGORY</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_DOC_TYPE_CATEGORY</RefTableName>
+      <RefKeyName>PK_CON_DOC_TYPE_CATEGORY</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <check id="403" parent="154" name="CS_DOC_TYPE_ACTIVITY">
+      <ModifiedTimestamp>2018-01-18.17:37:44</ModifiedTimestamp>
+      <ColNames>ACTIVITY</ColNames>
+      <Predicate>activity IN (0, 1)</Predicate>
+    </check>
+    <check id="404" parent="154" name="CK_PLEDGE_AGREEMENT">
+      <ModifiedTimestamp>2018-01-18.17:37:44</ModifiedTimestamp>
+      <ColNames>PLEDGE_AGREEMENT</ColNames>
+      <Predicate>pledge_agreement IN (1,0)</Predicate>
+    </check>
+    <column id="405" parent="155" name="ID_CATEGORY">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="406" parent="155" name="TITLE">
+      <Position>2</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <index id="407" parent="155" name="PK_CON_DOC_TYPE_CATEGORY">
+      <ObjectId>120601</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:43</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:43</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_CATEGORY</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="408" parent="155" name="PK_CON_DOC_TYPE_CATEGORY">
+      <ModifiedTimestamp>2018-01-18.17:37:43</ModifiedTimestamp>
+      <ColNames>ID_CATEGORY</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_CON_DOC_TYPE_CATEGORY</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="409" parent="156" name="ID_CATEGORY">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="410" parent="156" name="TITLE">
+      <Position>2</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="411" parent="157" name="ID_DOC_TYPE">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="412" parent="157" name="DB_LINK">
+      <Position>2</Position>
+      <DataType>VARCHAR2(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="413" parent="157" name="ENV_USER">
+      <Position>3</Position>
+      <DataType>VARCHAR2(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="414" parent="157" name="ENVIRONMENT">
+      <Position>4</Position>
+      <DataType>VARCHAR2(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="415" parent="157" name="PUBLISHED_BY">
+      <Position>5</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="416" parent="158" name="ID_DOC_TYPE">
+      <Position>1</Position>
+      <Comment>Id typu dokumentu</Comment>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="417" parent="158" name="ENVIRONMENT">
+      <Position>2</Position>
+      <Comment>ProstL™edA­</Comment>
+      <DataType>VARCHAR2(15)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="418" parent="158" name="STATUS">
+      <Position>3</Position>
+      <Comment>Stav publikace</Comment>
+      <DataType>VARCHAR2(15)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="419" parent="158" name="CREATED_AT">
+      <Position>4</Position>
+      <Comment>VytvoL™eno</Comment>
+      <DataType>DATE|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>SYSDATE </DefaultExpression>
+    </column>
+    <column id="420" parent="158" name="CREATED_BY">
+      <Position>5</Position>
+      <Comment>Autor</Comment>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="421" parent="158" name="UPDATED_AT">
+      <Position>6</Position>
+      <Comment>Upraveno</Comment>
+      <DataType>DATE|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>SYSDATE </DefaultExpression>
+    </column>
+    <column id="422" parent="158" name="UPDATED_BY">
+      <Position>7</Position>
+      <Comment>Editor</Comment>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="423" parent="158" name="PK_DOC_TYPE_STATUS">
+      <ObjectId>120652</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:56</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:56</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_DOC_TYPE
+ENVIRONMENT</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="424" parent="158" name="PK_DOC_TYPE_STATUS">
+      <ModifiedTimestamp>2018-01-18.17:37:56</ModifiedTimestamp>
+      <ColNames>ID_DOC_TYPE
+ENVIRONMENT</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_DOC_TYPE_STATUS</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="425" parent="158" name="FK_DOC_TYPE_STATUS_ID_DOC_TYPE">
+      <ModifiedTimestamp>2018-01-18.17:37:56</ModifiedTimestamp>
+      <ColNames>ID_DOC_TYPE</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_DOC_TYPE</RefTableName>
+      <RefKeyName>PK_DOC_TYPE</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="426" parent="159" name="ID_EXPR">
+      <Position>1</Position>
+      <Comment>ID</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="427" parent="159" name="ID_EXPR_ELEMENT">
+      <Position>2</Position>
+      <Comment>ID elementu</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="428" parent="159" name="DESCRIPTION">
+      <Position>3</Position>
+      <Comment>Popis</Comment>
+      <DataType>VARCHAR2(2000)|0</DataType>
+    </column>
+    <index id="429" parent="159" name="PK_EXPR_ID">
+      <ObjectId>120628</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:49</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:49</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_EXPR</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="430" parent="159" name="IX_EXPR_EXPR_ELEMENT">
+      <ObjectId>120627</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:49</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:49</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_EXPR_ELEMENT</ColNames>
+    </index>
+    <key id="431" parent="159" name="PK_EXPR_ID">
+      <ModifiedTimestamp>2018-01-18.17:37:49</ModifiedTimestamp>
+      <ColNames>ID_EXPR</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_EXPR_ID</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="432" parent="159" name="FK_EXPR_EXPR_ELEMENT">
+      <ModifiedTimestamp>2018-01-18.17:37:49</ModifiedTimestamp>
+      <ColNames>ID_EXPR_ELEMENT</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_EXPR_ELEMENT</RefTableName>
+      <RefKeyName>PK_EXPR_ELEMENT_ID</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="433" parent="160" name="ID_EXPR_ELEMENT">
+      <Position>1</Position>
+      <Comment>ID</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="434" parent="160" name="ID_PROP_ATTR">
+      <Position>2</Position>
+      <Comment>ID/Název atributu</Comment>
+      <DataType>VARCHAR2(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="435" parent="160" name="OPERATOR">
+      <Position>3</Position>
+      <Comment>operátor (EQUAL rovná se, NOT_EQUAL nerovná se)</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="436" parent="160" name="VALUE_TITLE">
+      <Position>4</Position>
+      <Comment>symbolický (zástupný) název hodnoty</Comment>
+      <DataType>VARCHAR2(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="437" parent="160" name="ID_NEXT">
+      <Position>5</Position>
+      <Comment>ID následujícího elementu, pokud jde o kombinaci více elementu, jinak null</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+    </column>
+    <column id="438" parent="160" name="NEXT_OPERATOR">
+      <Position>6</Position>
+      <Comment>operátor (AND/OR) který je použit pri vyhodnocování elementu, pokud jich je víc než jeden</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <index id="439" parent="160" name="PK_EXPR_ELEMENT_ID">
+      <ObjectId>120625</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:48</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:48</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_EXPR_ELEMENT</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="440" parent="160" name="IX_EXPR_ELEMENT_PROP_ATTR">
+      <ObjectId>120624</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:48</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:48</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_PROP_ATTR</ColNames>
+    </index>
+    <index id="441" parent="160" name="IX_EXPR_ELEMENT_NEXT">
+      <ObjectId>120623</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:48</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:48</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_NEXT</ColNames>
+    </index>
+    <key id="442" parent="160" name="PK_EXPR_ELEMENT_ID">
+      <ModifiedTimestamp>2018-01-18.17:37:48</ModifiedTimestamp>
+      <ColNames>ID_EXPR_ELEMENT</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_EXPR_ELEMENT_ID</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="443" parent="160" name="FK_EXPR_ELEMENT_PROP_ATTR">
+      <ModifiedTimestamp>2018-01-18.17:37:48</ModifiedTimestamp>
+      <ColNames>ID_PROP_ATTR</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_PROP_ATTR</RefTableName>
+      <RefKeyName>PK_PROP_ATTR</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="444" parent="160" name="FK_EXPR_ELEMENT_NEXT">
+      <ModifiedTimestamp>2018-01-18.17:37:48</ModifiedTimestamp>
+      <ColNames>ID_NEXT</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_EXPR_ELEMENT</RefTableName>
+      <RefKeyName>PK_EXPR_ELEMENT_ID</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <check id="445" parent="160" name="CS_EXPR_ELEMENT_OPERATOR">
+      <ModifiedTimestamp>2018-01-18.17:37:49</ModifiedTimestamp>
+      <ColNames>OPERATOR</ColNames>
+      <Predicate>operator IN (
+            &apos;EQUAL&apos;,
+            &apos;NOT_EQUAL&apos;
+        )</Predicate>
+    </check>
+    <check id="446" parent="160" name="CS_EXPR_ELEMENT_NEXT_OPERATOR">
+      <ModifiedTimestamp>2018-01-18.17:37:49</ModifiedTimestamp>
+      <ColNames>NEXT_OPERATOR</ColNames>
+      <Predicate>next_operator IN (
+            &apos;AND&apos;,
+            &apos;OR&apos;
+        )</Predicate>
+    </check>
+    <column id="447" parent="161" name="ID_PROP_ATTR">
+      <Position>1</Position>
+      <Comment>ID/Název atributu</Comment>
+      <DataType>VARCHAR2(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="448" parent="161" name="OPERATOR">
+      <Position>2</Position>
+      <Comment>operátor (EQUAL rovná se, NOT_EQUAL nerovná se)</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="449" parent="161" name="VALUE_TITLE">
+      <Position>3</Position>
+      <Comment>symbolický (zástupný) název hodnoty</Comment>
+      <DataType>VARCHAR2(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="450" parent="161" name="VALUES_CLAUSE">
+      <Position>4</Position>
+      <Comment>klauzule použitá pro nactení hodnot</Comment>
+      <DataType>VARCHAR2(2000)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="451" parent="161" name="PK_CON_EXPR_EL_VALUES">
+      <ObjectId>120654</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:56</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:56</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_PROP_ATTR
+OPERATOR
+VALUE_TITLE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="452" parent="161" name="PK_CON_EXPR_EL_VALUES">
+      <ModifiedTimestamp>2018-01-18.17:37:56</ModifiedTimestamp>
+      <ColNames>ID_PROP_ATTR
+OPERATOR
+VALUE_TITLE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_CON_EXPR_EL_VALUES</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="453" parent="161" name="FK_EXPR_EL_VALUES_PROP_ATTR">
+      <ModifiedTimestamp>2018-01-18.17:37:57</ModifiedTimestamp>
+      <ColNames>ID_PROP_ATTR</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_PROP_ATTR</RefTableName>
+      <RefKeyName>PK_PROP_ATTR</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <check id="454" parent="161" name="CS_EXPR_EL_VALUES_OPERATOR">
+      <ModifiedTimestamp>2018-01-18.17:37:57</ModifiedTimestamp>
+      <ColNames>OPERATOR</ColNames>
+      <Predicate>operator IN (
+            &apos;EQUAL&apos;,
+            &apos;NOT_EQUAL&apos;
+        )</Predicate>
+    </check>
+    <column id="455" parent="162" name="COND_CODE1">
+      <Position>1</Position>
+      <Comment>reg. císlo podmínky 1 (mazající)</Comment>
+      <DataType>VARCHAR2(7)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="456" parent="162" name="COND_CODE2">
+      <Position>2</Position>
+      <Comment>reg. císlo podmínky 2 (eliminované)</Comment>
+      <DataType>VARCHAR2(7)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="457" parent="162" name="PK_FORB_CONDS">
+      <ObjectId>120656</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:57</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:57</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>COND_CODE1
+COND_CODE2</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="458" parent="162" name="PK_FORB_CONDS">
+      <ModifiedTimestamp>2018-01-18.17:37:57</ModifiedTimestamp>
+      <ColNames>COND_CODE1
+COND_CODE2</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_FORB_CONDS</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="459" parent="162" name="FK_FORB_CONDS1_2COND_PROP">
+      <ModifiedTimestamp>2018-01-18.17:37:57</ModifiedTimestamp>
+      <ColNames>COND_CODE1</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_COND_PROPS</RefTableName>
+      <RefKeyName>UQ_CON_COND_CODE</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="460" parent="162" name="FK_FORB_CONDS2_2COND_PROP">
+      <ModifiedTimestamp>2018-01-18.17:37:57</ModifiedTimestamp>
+      <ColNames>COND_CODE2</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_COND_PROPS</RefTableName>
+      <RefKeyName>UQ_CON_COND_CODE</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="461" parent="163" name="ID_FRAGMENT">
+      <Position>1</Position>
+      <Comment>ID</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="462" parent="163" name="ID_FRAGMENT_MODEL">
+      <Position>2</Position>
+      <Comment>ID modelu fragmentu</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="463" parent="163" name="ID_COND">
+      <Position>3</Position>
+      <Comment>ID podminky</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="464" parent="163" name="VALUE">
+      <Position>4</Position>
+      <Comment>Hodnota</Comment>
+      <DataType>VARCHAR2(2000)|0</DataType>
+    </column>
+    <index id="465" parent="163" name="PK_FRAGMENT_ID">
+      <ObjectId>120668</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:59</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:59</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_FRAGMENT</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="466" parent="163" name="IX_FRAGMENT_MODEL">
+      <ObjectId>120667</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:59</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:59</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_FRAGMENT_MODEL</ColNames>
+    </index>
+    <index id="467" parent="163" name="IX_FRAGMENT_COND">
+      <ObjectId>120666</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:59</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:59</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_COND</ColNames>
+    </index>
+    <key id="468" parent="163" name="PK_FRAGMENT_ID">
+      <ModifiedTimestamp>2018-01-18.17:37:59</ModifiedTimestamp>
+      <ColNames>ID_FRAGMENT</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_FRAGMENT_ID</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="469" parent="163" name="FK_FRAGMENT_MODEL">
+      <ModifiedTimestamp>2018-01-18.17:37:59</ModifiedTimestamp>
+      <ColNames>ID_FRAGMENT_MODEL</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_FRAGMENT_MODEL</RefTableName>
+      <RefKeyName>PK_FRAGMENT_MODEL_ID</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="470" parent="163" name="FK_FRAGMENT_COND">
+      <ModifiedTimestamp>2018-01-18.17:37:59</ModifiedTimestamp>
+      <ColNames>ID_COND</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_COND</RefTableName>
+      <RefKeyName>PK_COND_ID</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="471" parent="164" name="ID_FRAGMENT_MODEL">
+      <Position>1</Position>
+      <Comment>ID</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="472" parent="164" name="ID_COND_MODEL_VER">
+      <Position>2</Position>
+      <Comment>ID verze modelu podminky</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="473" parent="164" name="ID_PREV">
+      <Position>3</Position>
+      <Comment>ID predchoziho fragmentu</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+    </column>
+    <column id="474" parent="164" name="PLACEHOLDER">
+      <Position>4</Position>
+      <Comment>Název fragmentu (hodnota zobrazovaná v textaci podmínky, která je pak zamenena za konkretní uživatelky zadanou hodnotu)</Comment>
+      <DataType>VARCHAR2(128)|0</DataType>
+    </column>
+    <column id="475" parent="164" name="DESCRIPTION">
+      <Position>5</Position>
+      <Comment>Popis</Comment>
+      <DataType>VARCHAR2(512)|0</DataType>
+    </column>
+    <column id="476" parent="164" name="KIND">
+      <Position>6</Position>
+      <Comment>Typ fragmentu - volna promenná/systémová promenná/termín plnení</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="477" parent="164" name="VALUE">
+      <Position>7</Position>
+      <Comment>Hodnota fragmentu typu pevny text / volná promenná</Comment>
+      <DataType>VARCHAR2(2000)|0</DataType>
+    </column>
+    <column id="478" parent="164" name="ID_VARIABLE">
+      <Position>8</Position>
+      <Comment>ID promenne</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+    </column>
+    <column id="479" parent="164" name="MANDATORY">
+      <Position>9</Position>
+      <Comment>1 povinny, 0 nepovinny fragment</Comment>
+      <DataType>NUMBER(1)|0</DataType>
+    </column>
+    <column id="480" parent="164" name="MIGRATION_FRAG_ID">
+      <Position>10</Position>
+      <Comment>pouzito k migraci</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+    </column>
+    <column id="481" parent="164" name="VALUE_TYPE">
+      <Position>11</Position>
+      <Comment>Urcuje jakeho typu muze nabyvat hodnota fragmentu</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;STRING&apos; </DefaultExpression>
+    </column>
+    <index id="482" parent="164" name="PK_FRAGMENT_MODEL_ID">
+      <ObjectId>120664</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:59</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:59</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_FRAGMENT_MODEL</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="483" parent="164" name="IX_FRAG_MOD_COND_MODEL_VER">
+      <ObjectId>120662</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:59</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:59</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_COND_MODEL_VER</ColNames>
+    </index>
+    <index id="484" parent="164" name="IX_FRAG_MOD_PREV">
+      <ObjectId>120663</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:59</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:59</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_PREV</ColNames>
+    </index>
+    <index id="485" parent="164" name="IX_FRAGMENT_MODEL_VARIABLE">
+      <ObjectId>120661</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:59</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:59</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_VARIABLE</ColNames>
+    </index>
+    <key id="486" parent="164" name="PK_FRAGMENT_MODEL_ID">
+      <ModifiedTimestamp>2018-01-18.17:37:59</ModifiedTimestamp>
+      <ColNames>ID_FRAGMENT_MODEL</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_FRAGMENT_MODEL_ID</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="487" parent="164" name="FK_FRAG_MOD_COND_MODEL_VER">
+      <ModifiedTimestamp>2018-01-18.17:37:59</ModifiedTimestamp>
+      <ColNames>ID_COND_MODEL_VER</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_COND_MODEL_VER</RefTableName>
+      <RefKeyName>PK_COND_MODEL_VER_ID</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="488" parent="164" name="FK_FRAG_MOD_PREV">
+      <ModifiedTimestamp>2018-01-18.17:37:59</ModifiedTimestamp>
+      <ColNames>ID_PREV</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_FRAGMENT_MODEL</RefTableName>
+      <RefKeyName>PK_FRAGMENT_MODEL_ID</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="489" parent="164" name="FK_FRAGMENT_MODEL_VARIABLE">
+      <ModifiedTimestamp>2018-01-18.17:37:59</ModifiedTimestamp>
+      <ColNames>ID_VARIABLE</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_VARIABLE</RefTableName>
+      <RefKeyName>PK_VARIABLE_ID</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <check id="490" parent="164" name="CS_FRAGMENT_VALUE_TYPE_KIND">
+      <ModifiedTimestamp>2018-01-18.17:37:59</ModifiedTimestamp>
+      <ColNames>KIND
+VALUE_TYPE</ColNames>
+      <Predicate>KIND = &apos;USER&apos; OR VALUE_TYPE = &apos;STRING&apos; OR (KIND = &apos;INDICATOR&apos; AND VALUE_TYPE = &apos;NUMBER&apos;)</Predicate>
+    </check>
+    <check id="491" parent="164" name="CS_FRAGMENT_MODEL_KIND">
+      <ModifiedTimestamp>2018-01-18.17:37:59</ModifiedTimestamp>
+      <ColNames>KIND</ColNames>
+      <Predicate>kind IN (
+            &apos;STATIC&apos;,
+            &apos;USER&apos;,
+            &apos;SYSTEM&apos;,
+        &apos;INDICATOR&apos;)</Predicate>
+    </check>
+    <check id="492" parent="164" name="CS_FRAGMENT_VALUE_TYPE">
+      <ModifiedTimestamp>2018-01-18.17:37:59</ModifiedTimestamp>
+      <ColNames>VALUE_TYPE</ColNames>
+      <Predicate>VALUE_TYPE IN (&apos;NUMBER&apos;, &apos;PERCENT&apos;, &apos;DAY_COUNT&apos;, &apos;DATE&apos;, &apos;BANK_ACC&apos;, &apos;BANK_ACC_BANK_CODE&apos;, &apos;CURRENCY&apos;, &apos;STRING&apos;)</Predicate>
+    </check>
+    <column id="493" parent="165" name="ID_FRAGMENT_MODEL">
+      <Position>1</Position>
+      <Comment>ID fragmentu textace podmínky - kovenanty</Comment>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="494" parent="165" name="INDICATOR_ABBREV">
+      <Position>2</Position>
+      <Comment>Zkratka indikátoru</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="495" parent="165" name="OPERATOR">
+      <Position>3</Position>
+      <Comment>Operátor pro porovnání požadovaný a realizované hodnoty indikátoru - využito pro kovenanty</Comment>
+      <DataType>VARCHAR2(2)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="496" parent="165" name="PK_CON_FRAGMENT_MODEL_COV">
+      <ObjectId>120672</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:00</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:00</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_FRAGMENT_MODEL</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="497" parent="165" name="PK_CON_FRAGMENT_MODEL_COV">
+      <ModifiedTimestamp>2018-01-18.17:38:00</ModifiedTimestamp>
+      <ColNames>ID_FRAGMENT_MODEL</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_CON_FRAGMENT_MODEL_COV</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="498" parent="165" name="FK_CON_FR_MO_CO_ID_FR_MOD">
+      <ModifiedTimestamp>2018-01-18.17:38:01</ModifiedTimestamp>
+      <ColNames>ID_FRAGMENT_MODEL</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_FRAGMENT_MODEL</RefTableName>
+      <RefKeyName>PK_FRAGMENT_MODEL_ID</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="499" parent="165" name="FK_C_FR_M_C_CON_IND_ABBR">
+      <ModifiedTimestamp>2018-01-18.17:38:00</ModifiedTimestamp>
+      <ColNames>INDICATOR_ABBREV</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_INDICATOR_ABBREV</RefTableName>
+      <RefKeyName>PK_CON_INDICATOR_ABBREV</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <check id="500" parent="165" name="CS_CON_FR_MO_COV_OPERATOR">
+      <ModifiedTimestamp>2018-01-18.17:38:01</ModifiedTimestamp>
+      <ColNames>OPERATOR</ColNames>
+      <Predicate>operator IN (
+              &apos;&lt;&apos;,
+              &apos;&lt;=&apos;,
+              &apos;=&apos;,
+              &apos;&gt;=&apos;,
+              &apos;&gt;&apos;,
+              &apos;&lt;&gt;&apos;
+        )</Predicate>
+    </check>
+    <column id="501" parent="166" name="ID_COND">
+      <Position>1</Position>
+      <Comment>ID podminky</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="502" parent="166" name="STATUS">
+      <Position>2</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="503" parent="166" name="COMMENT_TEXT">
+      <Position>3</Position>
+      <DataType>VARCHAR2(2000)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="504" parent="166" name="CREATED_BY">
+      <Position>4</Position>
+      <Comment>SSO uzivatele</Comment>
+      <DataType>CHAR(9)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="505" parent="166" name="CREATED_AT">
+      <Position>5</Position>
+      <DataType>DATE|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>SYSDATE </DefaultExpression>
+    </column>
+    <index id="506" parent="166" name="PK_FULFILLMENT">
+      <ObjectId>120674</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:01</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:01</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_COND</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="507" parent="166" name="PK_FULFILLMENT">
+      <ModifiedTimestamp>2018-01-18.17:38:01</ModifiedTimestamp>
+      <ColNames>ID_COND</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_FULFILLMENT</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="508" parent="166" name="FK_FULFILLMENT_COND">
+      <ModifiedTimestamp>2018-01-18.17:38:01</ModifiedTimestamp>
+      <ColNames>ID_COND</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_COND</RefTableName>
+      <RefKeyName>PK_COND_ID</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="509" parent="167" name="GEN_COND_CODE">
+      <Position>1</Position>
+      <Comment>reg. císlo generujcí podmínky</Comment>
+      <DataType>VARCHAR2(7)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="510" parent="167" name="ID_GROUP_MODEL">
+      <Position>2</Position>
+      <Comment>ID Generované skupiny</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="511" parent="167" name="PK_GEN_CONDS">
+      <ObjectId>120676</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:02</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:02</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>GEN_COND_CODE
+ID_GROUP_MODEL</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="512" parent="167" name="PK_GEN_CONDS">
+      <ModifiedTimestamp>2018-01-18.17:38:02</ModifiedTimestamp>
+      <ColNames>GEN_COND_CODE
+ID_GROUP_MODEL</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_GEN_CONDS</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="513" parent="167" name="FK_CON_GEN_CONDS_ADD2CONDS">
+      <ModifiedTimestamp>2018-01-18.17:38:02</ModifiedTimestamp>
+      <ColNames>GEN_COND_CODE</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_COND_PROPS</RefTableName>
+      <RefKeyName>UQ_CON_COND_CODE</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="514" parent="168" name="ID_GROUP">
+      <Position>1</Position>
+      <Comment>ID</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="515" parent="168" name="ID_GROUP_MODEL_VER">
+      <Position>2</Position>
+      <Comment>ID verze vzoru skupiny</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="516" parent="168" name="ID_ASSISTANT">
+      <Position>3</Position>
+      <Comment>ID asistenta</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="517" parent="168" name="STATUS">
+      <Position>4</Position>
+      <Comment>Stav skupiny</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="518" parent="168" name="FULFILLED">
+      <Position>5</Position>
+      <Comment>Splnená/neplnená skupina</Comment>
+      <DataType>NUMBER(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0 </DefaultExpression>
+    </column>
+    <column id="519" parent="168" name="MANDATORY">
+      <Position>6</Position>
+      <Comment>Povinnost</Comment>
+      <DataType>NUMBER(1)|0</DataType>
+    </column>
+    <column id="520" parent="168" name="AVAILABLE_CONDITIONS">
+      <Position>7</Position>
+      <Comment>Pocet dostupnych podminek ve skupine</Comment>
+      <DataType>NUMBER(2)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0 </DefaultExpression>
+    </column>
+    <index id="521" parent="168" name="PK_GROUP_ID">
+      <ObjectId>120611</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:46</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:46</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_GROUP</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="522" parent="168" name="IX_GROUP_MODEL_VER">
+      <ObjectId>120610</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:46</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:46</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_GROUP_MODEL_VER</ColNames>
+    </index>
+    <index id="523" parent="168" name="IX_GROUP_ASSISTANT">
+      <ObjectId>120609</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:46</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:46</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_ASSISTANT</ColNames>
+    </index>
+    <key id="524" parent="168" name="PK_GROUP_ID">
+      <ModifiedTimestamp>2018-01-18.17:37:46</ModifiedTimestamp>
+      <ColNames>ID_GROUP</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_GROUP_ID</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="525" parent="168" name="FK_GROUP_ASSISTANT">
+      <ModifiedTimestamp>2018-01-18.17:37:46</ModifiedTimestamp>
+      <ColNames>ID_ASSISTANT</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_ASSISTANT</RefTableName>
+      <RefKeyName>PK_ASSISTANT_ID</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <check id="526" parent="168" name="CS_GROUP_STATUS">
+      <ModifiedTimestamp>2018-01-18.17:37:46</ModifiedTimestamp>
+      <ColNames>STATUS</ColNames>
+      <Predicate>status IN (
+            &apos;IRRELEVANT&apos;,
+            &apos;NEW&apos;,
+            &apos;SAVED&apos;,
+            &apos;IGNORED&apos;
+        )</Predicate>
+    </check>
+    <check id="527" parent="168" name="CS_GROUP_FULFILLED">
+      <ModifiedTimestamp>2018-01-18.17:37:46</ModifiedTimestamp>
+      <ColNames>FULFILLED</ColNames>
+      <Predicate>fulfilled IN (0, 1)</Predicate>
+    </check>
+    <check id="528" parent="168" name="CS_GROUP_MANDATORY">
+      <ModifiedTimestamp>2018-01-18.17:37:46</ModifiedTimestamp>
+      <ColNames>MANDATORY</ColNames>
+      <Predicate>mandatory IN (0, 1)</Predicate>
+    </check>
+    <check id="529" parent="168" name="CS_GROUP_AVAILABLE_CONDITIONS">
+      <ModifiedTimestamp>2018-01-18.17:37:46</ModifiedTimestamp>
+      <ColNames>AVAILABLE_CONDITIONS</ColNames>
+      <Predicate>available_conditions &gt;= 0</Predicate>
+    </check>
+    <column id="530" parent="169" name="ID_GROUP_MODEL">
+      <Position>1</Position>
+      <Comment>ID</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="531" parent="169" name="ID_CURRENT_VER">
+      <Position>2</Position>
+      <Comment>ID aktuální verze</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="532" parent="169" name="TITLE">
+      <Position>3</Position>
+      <Comment>Název</Comment>
+      <DataType>VARCHAR2(256)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="533" parent="169" name="ID_EXPR">
+      <Position>4</Position>
+      <Comment>ID výrazu pro splnenost skupiny</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+    </column>
+    <column id="534" parent="169" name="USER_ORDER">
+      <Position>5</Position>
+      <Comment>Uživatelské poradí</Comment>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="535" parent="169" name="OLD_GROUP_ID">
+      <Position>6</Position>
+      <Comment>Staré ID</Comment>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <index id="536" parent="169" name="PK_GROUP_MODEL_ID">
+      <ObjectId>120632</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:50</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:50</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_GROUP_MODEL</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="537" parent="169" name="IX_GROUP_MODEL_CURRENT_VER">
+      <ObjectId>120630</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:50</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:50</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_CURRENT_VER</ColNames>
+    </index>
+    <index id="538" parent="169" name="IX_GROUP_MODEL_EXPR">
+      <ObjectId>120631</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:50</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:50</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_EXPR</ColNames>
+    </index>
+    <key id="539" parent="169" name="PK_GROUP_MODEL_ID">
+      <ModifiedTimestamp>2018-01-18.17:37:50</ModifiedTimestamp>
+      <ColNames>ID_GROUP_MODEL</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_GROUP_MODEL_ID</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="540" parent="169" name="FK_GROUP_MODEL_EXPR">
+      <ModifiedTimestamp>2018-01-18.17:37:50</ModifiedTimestamp>
+      <ColNames>ID_EXPR</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_EXPR</RefTableName>
+      <RefKeyName>PK_EXPR_ID</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="541" parent="170" name="ID_GROUP_MODEL_VER">
+      <Position>1</Position>
+      <Comment>ID</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="542" parent="170" name="ID_GROUP_MODEL">
+      <Position>2</Position>
+      <Comment>ID vzoru skupiny</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="543" parent="170" name="MANDATORY">
+      <Position>3</Position>
+      <Comment>Povinnost</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="544" parent="170" name="SELECTIVITY">
+      <Position>4</Position>
+      <Comment>Volitelnost</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <index id="545" parent="170" name="PK_GROUP_MODEL_VER_ID">
+      <ObjectId>120635</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:50</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:50</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_GROUP_MODEL_VER</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="546" parent="170" name="IX_CON_GROUP_MODEL_VER_BASE">
+      <ObjectId>120634</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:50</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:50</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_GROUP_MODEL</ColNames>
+    </index>
+    <key id="547" parent="170" name="PK_GROUP_MODEL_VER_ID">
+      <ModifiedTimestamp>2018-01-18.17:37:50</ModifiedTimestamp>
+      <ColNames>ID_GROUP_MODEL_VER</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_GROUP_MODEL_VER_ID</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="548" parent="170" name="FK_CON_GROUP_MODEL_VER_BASE">
+      <ModifiedTimestamp>2018-01-18.17:37:50</ModifiedTimestamp>
+      <ColNames>ID_GROUP_MODEL</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_GROUP_MODEL</RefTableName>
+      <RefKeyName>PK_GROUP_MODEL_ID</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <check id="549" parent="170" name="CS_GROUP_MODEL_VER_MANDATORY">
+      <ModifiedTimestamp>2018-01-18.17:37:51</ModifiedTimestamp>
+      <ColNames>MANDATORY</ColNames>
+      <Predicate>mandatory IN (
+            &apos;REQUIRED&apos;,
+            &apos;OPTIONAL&apos;,
+            &apos;DYNAMIC&apos;
+        )</Predicate>
+    </check>
+    <check id="550" parent="170" name="CS_GROUP_MODEL_VER_SEL">
+      <ModifiedTimestamp>2018-01-18.17:37:51</ModifiedTimestamp>
+      <ColNames>SELECTIVITY</ColNames>
+      <Predicate>selectivity IN (
+            &apos;ONE&apos;,
+            &apos;ALL&apos;,
+            &apos;ONE_OR_MORE&apos;
+        )</Predicate>
+    </check>
+    <column id="551" parent="171" name="ID_GROUP_MODEL_VER">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="552" parent="171" name="ENVIROMENT">
+      <Position>2</Position>
+      <DataType>VARCHAR2(15)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="553" parent="171" name="STATUS">
+      <Position>3</Position>
+      <DataType>VARCHAR2(15)|0</DataType>
+    </column>
+    <column id="554" parent="171" name="CREATED_AT">
+      <Position>4</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="555" parent="171" name="CREATED_BY">
+      <Position>5</Position>
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <column id="556" parent="171" name="UPDATED_AT">
+      <Position>6</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="557" parent="171" name="UPDATED_BY">
+      <Position>7</Position>
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <index id="558" parent="171" name="PK_GROUP_MODEL_VER_STATUS">
+      <ObjectId>120678</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:02</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:02</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_GROUP_MODEL_VER
+ENVIROMENT</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="559" parent="171" name="PK_GROUP_MODEL_VER_STATUS">
+      <ModifiedTimestamp>2018-01-18.17:38:02</ModifiedTimestamp>
+      <ColNames>ID_GROUP_MODEL_VER
+ENVIROMENT</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_GROUP_MODEL_VER_STATUS</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <check id="560" parent="171" name="CS_GROUP_VER_ENV">
+      <ModifiedTimestamp>2018-01-18.17:38:02</ModifiedTimestamp>
+      <ColNames>ENVIROMENT</ColNames>
+      <Predicate>ENVIROMENT in (&apos;MFE&apos;,&apos;TST&apos;,&apos;LIVE&apos;,&apos;TST2&apos;,&apos;UAM&apos;)</Predicate>
+    </check>
+    <check id="561" parent="171" name="CS_GROUP_VER_STATUS">
+      <ModifiedTimestamp>2018-01-18.17:38:02</ModifiedTimestamp>
+      <ColNames>STATUS</ColNames>
+      <Predicate>STATUS in (&apos;VALID&apos;,&apos;EDITED&apos;,&apos;INVALID&apos;,&apos;N_A&apos;)</Predicate>
+    </check>
+    <column id="562" parent="172" name="INDICATOR_ABBREV">
+      <Position>1</Position>
+      <Comment>indikator</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="563" parent="172" name="INDCATOR_ACTIVITY">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>1 </DefaultExpression>
+    </column>
+    <index id="564" parent="172" name="PK_CON_INDICATOR_ABBREV">
+      <ObjectId>120670</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:00</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:00</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>INDICATOR_ABBREV</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="565" parent="172" name="PK_CON_INDICATOR_ABBREV">
+      <ModifiedTimestamp>2018-01-18.17:38:00</ModifiedTimestamp>
+      <ColNames>INDICATOR_ABBREV</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_CON_INDICATOR_ABBREV</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="566" parent="173" name="ID_LIST_CODE">
+      <Position>1</Position>
+      <Comment>ID polozky cisleniku</Comment>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="567" parent="173" name="CODE">
+      <Position>2</Position>
+      <Comment>Jmeno ciselniku</Comment>
+      <DataType>VARCHAR2(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="568" parent="173" name="ITEM">
+      <Position>3</Position>
+      <Comment>Jmeno polozky ciselniku</Comment>
+      <DataType>VARCHAR2(250)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="569" parent="173" name="VALUE">
+      <Position>4</Position>
+      <Comment>Hodnota polozky</Comment>
+      <DataType>VARCHAR2(250)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="570" parent="173" name="VALID">
+      <Position>5</Position>
+      <Comment>Platnost polozky</Comment>
+      <DataType>VARCHAR2(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;Y&apos; </DefaultExpression>
+    </column>
+    <index id="571" parent="173" name="PK_CON_LIST_CODE">
+      <ObjectId>120680</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:03</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:03</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_LIST_CODE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="572" parent="173" name="PK_CON_LIST_CODE">
+      <ModifiedTimestamp>2018-01-18.17:38:03</ModifiedTimestamp>
+      <ColNames>ID_LIST_CODE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_CON_LIST_CODE</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <check id="573" parent="173" name="CS_CON_LIST_CODE_VALID">
+      <ModifiedTimestamp>2018-01-18.17:38:03</ModifiedTimestamp>
+      <ColNames>VALID</ColNames>
+      <Predicate>valid IN (&apos;Y&apos;,&apos;N&apos;)</Predicate>
+    </check>
+    <column id="574" parent="174" name="LOAN_OBJECT">
+      <Position>1</Position>
+      <Comment>Objekt uveru</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="575" parent="174" name="LOAN_TYPE">
+      <Position>2</Position>
+      <Comment>Typ uveru (HCisKomTypUveru)</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="576" parent="174" name="ID_TEMPLATE_VER">
+      <Position>3</Position>
+      <Comment>ID verze sablony</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="577" parent="174" name="ID_LOAN_OBJECT2TEMPLATE">
+      <Position>4</Position>
+      <Comment>Primarni klic tabulky con_loan_object2template</Comment>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="578" parent="174" name="LOAN_PURPOSE">
+      <Position>5</Position>
+      <Comment>Ucel uveru (HCisUcelUveruSME)</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="579" parent="174" name="PROP_TYPE">
+      <Position>6</Position>
+      <Comment>Typ navrhu (HCisKomTypNavrhu)</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <index id="580" parent="174" name="CS_LOAN_OBJECT2TEMPLATE_UQ">
+      <ObjectId>120686</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:04</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:04</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>LOAN_OBJECT
+ID_TEMPLATE_VER
+LOAN_TYPE
+LOAN_PURPOSE
+PROP_TYPE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="581" parent="174" name="PK_CON_LOAN_O2T">
+      <ObjectId>120685</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:04</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:04</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_LOAN_OBJECT2TEMPLATE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="582" parent="174" name="PK_CON_LOAN_O2T">
+      <ModifiedTimestamp>2018-01-18.17:38:04</ModifiedTimestamp>
+      <ColNames>ID_LOAN_OBJECT2TEMPLATE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_CON_LOAN_O2T</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="583" parent="174" name="CS_LOAN_OBJECT2TEMPLATE_UQ">
+      <ModifiedTimestamp>2018-01-18.17:38:04</ModifiedTimestamp>
+      <ColNames>LOAN_OBJECT
+ID_TEMPLATE_VER
+LOAN_TYPE
+LOAN_PURPOSE
+PROP_TYPE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>CS_LOAN_OBJECT2TEMPLATE_UQ</UnderlyingIndexName>
+    </key>
+    <foreign-key id="584" parent="174" name="FK_LO2T_TEMPLATE">
+      <ModifiedTimestamp>2018-01-18.17:38:04</ModifiedTimestamp>
+      <ColNames>ID_TEMPLATE_VER</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_TEMPLATE_VER</RefTableName>
+      <RefKeyName>PK_TEMPLATE_VER_ID</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="585" parent="175" name="ID_PROP_ATTR">
+      <Position>1</Position>
+      <Comment>ID/Název atributu</Comment>
+      <DataType>VARCHAR2(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="586" parent="175" name="PK_PROP_ATTR">
+      <ObjectId>120621</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:48</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:48</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_PROP_ATTR</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="587" parent="175" name="PK_PROP_ATTR">
+      <ModifiedTimestamp>2018-01-18.17:37:48</ModifiedTimestamp>
+      <ColNames>ID_PROP_ATTR</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_PROP_ATTR</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="588" parent="176" name="ID_PROP_ATTR">
+      <Position>1</Position>
+      <Comment>ID atributu</Comment>
+      <DataType>VARCHAR2(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="589" parent="176" name="VALUE">
+      <Position>2</Position>
+      <Comment>Hodnota</Comment>
+      <DataType>VARCHAR2(32)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="590" parent="176" name="GROUPING">
+      <Position>3</Position>
+      <Comment>ID podle kterého jsou logicky seskupeny opakující se hodnoty atributu</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+    </column>
+    <check id="591" parent="176" name="CS_PROP_CONTEXT_GROUPING">
+      <ModifiedTimestamp>2018-01-18.17:38:05</ModifiedTimestamp>
+      <ColNames>GROUPING</ColNames>
+      <Predicate>grouping &gt; 0</Predicate>
+    </check>
+    <column id="592" parent="177" name="ID_CHECK_MODEL">
+      <Position>1</Position>
+      <Comment>Id vzoru checku</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="593" parent="177" name="LOAN_OBJECT">
+      <Position>2</Position>
+      <Comment>Objekt uveru</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="594" parent="177" name="INCLUDE">
+      <Position>3</Position>
+      <Comment>Druh výjimky (1..pouze u techto objetku úveru, 0..nikdy u techto objektu  úveru)</Comment>
+      <DataType>NUMBER(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="595" parent="177" name="PK_SCHM2LOAN_OBJECT">
+      <ObjectId>120691</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:06</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:06</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_CHECK_MODEL
+LOAN_OBJECT</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="596" parent="177" name="PK_SCHM2LOAN_OBJECT">
+      <ModifiedTimestamp>2018-01-18.17:38:06</ModifiedTimestamp>
+      <ColNames>ID_CHECK_MODEL
+LOAN_OBJECT</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_SCHM2LOAN_OBJECT</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="597" parent="177" name="FK_SCHM2L_O_CHECK_MODEL">
+      <ModifiedTimestamp>2018-01-18.17:38:06</ModifiedTimestamp>
+      <ColNames>ID_CHECK_MODEL</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_STATIC_CHECK_MODEL</RefTableName>
+      <RefKeyName>PK_STATIC_CHECK_MODEL</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <check id="598" parent="177" name="CS_SCHM2LOAN_OBJECT_INCLUDE">
+      <ModifiedTimestamp>2018-01-18.17:38:06</ModifiedTimestamp>
+      <ColNames>INCLUDE</ColNames>
+      <Predicate>include IN (0, 1)</Predicate>
+    </check>
+    <column id="599" parent="178" name="ID_CHECK_MODEL">
+      <Position>1</Position>
+      <Comment>Id vzoru checku</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="600" parent="178" name="TEXT">
+      <Position>2</Position>
+      <Comment>Text</Comment>
+      <DataType>VARCHAR2(1024 char)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="601" parent="178" name="MANDATORY">
+      <Position>3</Position>
+      <Comment>Povinnost vyplnení datum u instance plnení checku</Comment>
+      <DataType>NUMBER(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>1 </DefaultExpression>
+    </column>
+    <column id="602" parent="178" name="USER_ORDER">
+      <Position>4</Position>
+      <Comment>Uzivatelsky definovane poradi statickych checklistu</Comment>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="603" parent="178" name="PK_STATIC_CHECK_MODEL">
+      <ObjectId>120689</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:05</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:05</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_CHECK_MODEL</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="604" parent="178" name="PK_STATIC_CHECK_MODEL">
+      <ModifiedTimestamp>2018-01-18.17:38:05</ModifiedTimestamp>
+      <ColNames>ID_CHECK_MODEL</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_STATIC_CHECK_MODEL</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="605" parent="178" name="FK_S_CH_M_CHECK_MODEL">
+      <ModifiedTimestamp>2018-01-18.17:38:05</ModifiedTimestamp>
+      <ColNames>ID_CHECK_MODEL</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_CHECK_MODEL</RefTableName>
+      <RefKeyName>PK_CHECK_MODEL</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <check id="606" parent="178" name="CS_S_CH_M_MANDATORY">
+      <ModifiedTimestamp>2018-01-18.17:38:05</ModifiedTimestamp>
+      <ColNames>MANDATORY</ColNames>
+      <Predicate>mandatory IN (0, 1)</Predicate>
+    </check>
+    <column id="607" parent="179" name="ID_TEMPLATE">
+      <Position>1</Position>
+      <Comment>ID</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="608" parent="179" name="DEFAULT_TEMPLATE">
+      <Position>2</Position>
+      <Comment>priznak ze jde o defaultni sablonu (1)</Comment>
+      <DataType>NUMBER(1)|0</DataType>
+    </column>
+    <column id="609" parent="179" name="DESCRIPTION">
+      <Position>3</Position>
+      <Comment>Popis</Comment>
+      <DataType>VARCHAR2(2000)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="610" parent="179" name="NAME">
+      <Position>4</Position>
+      <Comment>Zkratka</Comment>
+      <DataType>VARCHAR2(250)|0</DataType>
+    </column>
+    <column id="611" parent="179" name="SHORT">
+      <Position>5</Position>
+      <DataType>VARCHAR2(250)|0</DataType>
+    </column>
+    <column id="612" parent="179" name="MFESTATUS">
+      <Position>6</Position>
+      <Comment>Stav sablony na prostredi MFE</Comment>
+      <DataType>VARCHAR2(15)|0</DataType>
+    </column>
+    <column id="613" parent="179" name="VALID">
+      <Position>7</Position>
+      <Comment>Priznak platnosti sablony</Comment>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>1 </DefaultExpression>
+    </column>
+    <column id="614" parent="179" name="ID_CURRENT_VER">
+      <Position>8</Position>
+      <Comment>Id aktuální verze šablony</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+    </column>
+    <index id="615" parent="179" name="PK_TEMPLATE_ID">
+      <ObjectId>120693</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:06</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:06</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_TEMPLATE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="616" parent="179" name="CS_TEMPLATE_DEFAULT_TEMPL_UQ">
+      <ObjectId>120694</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:06</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:06</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>DEFAULT_TEMPLATE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="617" parent="179" name="PK_TEMPLATE_ID">
+      <ModifiedTimestamp>2018-01-18.17:38:06</ModifiedTimestamp>
+      <ColNames>ID_TEMPLATE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_TEMPLATE_ID</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="618" parent="179" name="CS_TEMPLATE_DEFAULT_TEMPL_UQ">
+      <ModifiedTimestamp>2018-01-18.17:38:06</ModifiedTimestamp>
+      <ColNames>DEFAULT_TEMPLATE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>CS_TEMPLATE_DEFAULT_TEMPL_UQ</UnderlyingIndexName>
+    </key>
+    <foreign-key id="619" parent="179" name="FK_TEMPLATE_CURRENT_VER">
+      <ModifiedTimestamp>2018-01-18.17:38:06</ModifiedTimestamp>
+      <ColNames>ID_CURRENT_VER</ColNames>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_TEMPLATE_VER</RefTableName>
+      <RefKeyName>PK_TEMPLATE_VER_ID</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <check id="620" parent="179" name="CS_TEMPLATE_DEFAULT_TEMPL_CH">
+      <ModifiedTimestamp>2018-01-18.17:38:07</ModifiedTimestamp>
+      <ColNames>DEFAULT_TEMPLATE</ColNames>
+      <Predicate>default_template = 1</Predicate>
+    </check>
+    <check id="621" parent="179" name="CK_CON_TEMPLATE_VALID">
+      <ModifiedTimestamp>2018-01-18.17:38:06</ModifiedTimestamp>
+      <ColNames>VALID</ColNames>
+      <Predicate>VALID IN (&apos;0&apos;,&apos;1&apos;)</Predicate>
+    </check>
+    <column id="622" parent="180" name="ID_TEMPLATE_STATUS">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="623" parent="180" name="ID_TEMPLATE">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="624" parent="180" name="ENVIROMENT">
+      <Position>3</Position>
+      <DataType>VARCHAR2(15)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="625" parent="180" name="STATUS">
+      <Position>4</Position>
+      <DataType>VARCHAR2(15)|0</DataType>
+    </column>
+    <column id="626" parent="180" name="CREATED_AT">
+      <Position>5</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="627" parent="180" name="CREATED_BY">
+      <Position>6</Position>
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <column id="628" parent="180" name="UPDATED_AT">
+      <Position>7</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="629" parent="180" name="UPDATED_BY">
+      <Position>8</Position>
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <index id="630" parent="180" name="PK_TEMPLATE_STATUS">
+      <ObjectId>120696</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:07</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:07</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_TEMPLATE_STATUS
+ID_TEMPLATE
+ENVIROMENT</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="631" parent="180" name="PK_TEMPLATE_STATUS">
+      <ModifiedTimestamp>2018-01-18.17:38:07</ModifiedTimestamp>
+      <ColNames>ID_TEMPLATE_STATUS
+ID_TEMPLATE
+ENVIROMENT</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_TEMPLATE_STATUS</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <check id="632" parent="180" name="CS_TEMPLATE_STATUS_ENV">
+      <ModifiedTimestamp>2018-01-18.17:38:07</ModifiedTimestamp>
+      <ColNames>ENVIROMENT</ColNames>
+      <Predicate>ENVIROMENT in (&apos;MFE&apos;,&apos;TST&apos;,&apos;LIVE&apos;,&apos;TST2&apos;,&apos;UAM&apos;)</Predicate>
+    </check>
+    <check id="633" parent="180" name="CS_TEMPLATE_STATUS_STATUS">
+      <ModifiedTimestamp>2018-01-18.17:38:07</ModifiedTimestamp>
+      <ColNames>STATUS</ColNames>
+      <Predicate>STATUS in (&apos;VALID&apos;,&apos;EDITED&apos;,&apos;INVALID&apos;,&apos;N_A&apos;)</Predicate>
+    </check>
+    <column id="634" parent="181" name="ID_TEMPLATE_VER">
+      <Position>1</Position>
+      <Comment>ID verze šablony</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="635" parent="181" name="ID_TEMPLATE">
+      <Position>2</Position>
+      <Comment>Id šablony</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="636" parent="181" name="PK_TEMPLATE_VER_ID">
+      <ObjectId>120682</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:03</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:03</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_TEMPLATE_VER</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="637" parent="181" name="UQ_TEMP_TEMP_VER">
+      <ObjectId>120683</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:03</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:03</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_TEMPLATE
+ID_TEMPLATE_VER</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="638" parent="181" name="PK_TEMPLATE_VER_ID">
+      <ModifiedTimestamp>2018-01-18.17:38:03</ModifiedTimestamp>
+      <ColNames>ID_TEMPLATE_VER</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_TEMPLATE_VER_ID</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="639" parent="181" name="UQ_TEMP_TEMP_VER">
+      <ModifiedTimestamp>2018-01-18.17:38:03</ModifiedTimestamp>
+      <ColNames>ID_TEMPLATE
+ID_TEMPLATE_VER</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>UQ_TEMP_TEMP_VER</UnderlyingIndexName>
+    </key>
+    <column id="640" parent="182" name="ID_TEMPLATE_VER">
+      <Position>1</Position>
+      <Comment>ID verze šablony</Comment>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="641" parent="182" name="ENVIROMENT">
+      <Position>2</Position>
+      <Comment>Prostredí (MFE/TST/LIVE)</Comment>
+      <DataType>VARCHAR2(15)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="642" parent="182" name="STATUS">
+      <Position>3</Position>
+      <Comment>Stav (EIDTED/VALID/INVALID/N_A)</Comment>
+      <DataType>VARCHAR2(15)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="643" parent="182" name="CREATED_AT">
+      <Position>4</Position>
+      <Comment>Vytvoreno kdy</Comment>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="644" parent="182" name="CREATED_BY">
+      <Position>5</Position>
+      <Comment>Vytvoreno kým</Comment>
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <column id="645" parent="182" name="UPDATED_AT">
+      <Position>6</Position>
+      <Comment>Upraveno kdy</Comment>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="646" parent="182" name="UPDATED_BY">
+      <Position>7</Position>
+      <Comment>Upraveno kým</Comment>
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <index id="647" parent="182" name="PK_TEMPLATE_VER_STATUS">
+      <ObjectId>120698</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:08</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:08</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_TEMPLATE_VER
+ENVIROMENT
+STATUS</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="648" parent="182" name="PK_TEMPLATE_VER_STATUS">
+      <ModifiedTimestamp>2018-01-18.17:38:08</ModifiedTimestamp>
+      <ColNames>ID_TEMPLATE_VER
+ENVIROMENT
+STATUS</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_TEMPLATE_VER_STATUS</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <check id="649" parent="182" name="CS_TEMPLATE_VER_STATUS_ENV">
+      <ModifiedTimestamp>2018-01-18.17:38:08</ModifiedTimestamp>
+      <ColNames>ENVIROMENT</ColNames>
+      <Predicate>ENVIROMENT in (&apos;MFE&apos;,&apos;TST&apos;,&apos;LIVE&apos;,&apos;TST2&apos;,&apos;UAM&apos;)</Predicate>
+    </check>
+    <check id="650" parent="182" name="CS_TEMPLATE_VER_STATUS_STATUS">
+      <ModifiedTimestamp>2018-01-18.17:38:08</ModifiedTimestamp>
+      <ColNames>STATUS</ColNames>
+      <Predicate>STATUS in (&apos;VALID&apos;,&apos;EDITED&apos;,&apos;INVALID&apos;,&apos;N_A&apos;)</Predicate>
+    </check>
+    <column id="651" parent="183" name="ID_TERM_ACTION">
+      <Position>1</Position>
+      <Comment>ID</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="652" parent="183" name="TITLE">
+      <Position>2</Position>
+      <Comment>Název</Comment>
+      <DataType>VARCHAR2(64)|0</DataType>
+    </column>
+    <column id="653" parent="183" name="MONITORING">
+      <Position>3</Position>
+      <Comment>Monitorovani akce</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="654" parent="183" name="TITLE_DECLENSION">
+      <Position>4</Position>
+      <Comment>Sklonování názvu</Comment>
+      <DataType>VARCHAR2(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="655" parent="183" name="CODE">
+      <Position>5</Position>
+      <Comment>Kod akce</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <index id="656" parent="183" name="PK_TERM_ACTION">
+      <ObjectId>120700</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:08</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:08</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_TERM_ACTION</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="657" parent="183" name="PK_TERM_ACTION">
+      <ModifiedTimestamp>2018-01-18.17:38:08</ModifiedTimestamp>
+      <ColNames>ID_TERM_ACTION</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_TERM_ACTION</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <check id="658" parent="183" name="CS_TERM_ACTION_MONITORING">
+      <ModifiedTimestamp>2018-01-18.17:38:08</ModifiedTimestamp>
+      <ColNames>MONITORING</ColNames>
+      <Predicate>monitoring IN (
+            &apos;SYSTEM&apos;,
+            &apos;NON_SYSTEM&apos;
+        )</Predicate>
+    </check>
+    <column id="659" parent="184" name="ID_TERM_MODEL">
+      <Position>1</Position>
+      <Comment>ID</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="660" parent="184" name="ID_COND_MODEL_VER">
+      <Position>2</Position>
+      <Comment>ID vzoru podminky</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="661" parent="184" name="UNIT_COUNT_DEFAULT">
+      <Position>3</Position>
+      <Comment>Default pro pocet casových jednotek</Comment>
+      <DataType>NUMBER(4)|0</DataType>
+    </column>
+    <column id="662" parent="184" name="UNIT_COUNT_EDITABLE">
+      <Position>4</Position>
+      <Comment>Príznak editovatelnosti</Comment>
+      <DataType>NUMBER(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>1 </DefaultExpression>
+    </column>
+    <column id="663" parent="184" name="PERIOD_DEFAULT">
+      <Position>5</Position>
+      <Comment>Default pro frekvence opakovaní (perioda)</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="664" parent="184" name="PERIOD_EDITABLE">
+      <Position>6</Position>
+      <Comment>Príznak editovatelnosti</Comment>
+      <DataType>NUMBER(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>1 </DefaultExpression>
+    </column>
+    <column id="665" parent="184" name="DAY_IN_PERIOD_DEFAULT">
+      <Position>7</Position>
+      <Comment>Default pro den v periode</Comment>
+      <DataType>NUMBER(3)|0</DataType>
+    </column>
+    <column id="666" parent="184" name="DAY_IN_PERIOD_EDITABLE">
+      <Position>8</Position>
+      <Comment>Príznak editovatelnosti</Comment>
+      <DataType>NUMBER(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>1 </DefaultExpression>
+    </column>
+    <column id="667" parent="184" name="TIME_UNIT_DEFAULT">
+      <Position>9</Position>
+      <Comment>Default pro typ casové jednotky</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="668" parent="184" name="TIME_UNIT_EDITABLE">
+      <Position>10</Position>
+      <Comment>Príznak editovatelnosti</Comment>
+      <DataType>NUMBER(1)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>1 </DefaultExpression>
+    </column>
+    <column id="669" parent="184" name="TEXTATION_TYPE">
+      <Position>11</Position>
+      <Comment>Typ textace</Comment>
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <index id="670" parent="184" name="PK_TERM_MODEL_ID">
+      <ObjectId>120706</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:10</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:10</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_TERM_MODEL</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="671" parent="184" name="IX_TERM_MODEL_COND_MODEL_VER">
+      <ObjectId>120705</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:10</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:10</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_COND_MODEL_VER</ColNames>
+    </index>
+    <key id="672" parent="184" name="PK_TERM_MODEL_ID">
+      <ModifiedTimestamp>2018-01-18.17:38:10</ModifiedTimestamp>
+      <ColNames>ID_TERM_MODEL</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_TERM_MODEL_ID</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="673" parent="184" name="FK_TERM_MODEL_COND_MODEL_VER">
+      <ModifiedTimestamp>2018-01-18.17:38:10</ModifiedTimestamp>
+      <ColNames>ID_COND_MODEL_VER</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_COND_MODEL_VER</RefTableName>
+      <RefKeyName>PK_COND_MODEL_VER_ID</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="674" parent="184" name="FK_TERM_MODEL2PERIDO_DEFAULT">
+      <ModifiedTimestamp>2018-01-18.17:38:10</ModifiedTimestamp>
+      <ColNames>PERIOD_DEFAULT</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_TERM_PERIOD_MODEL</RefTableName>
+      <RefKeyName>PK_TERM_PERIOD_MODEL_CODE</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <check id="675" parent="184" name="CS_TERM_MODEL_UCD">
+      <ModifiedTimestamp>2018-01-18.17:38:10</ModifiedTimestamp>
+      <ColNames>UNIT_COUNT_DEFAULT</ColNames>
+      <Predicate>unit_count_default &gt; 0</Predicate>
+    </check>
+    <check id="676" parent="184" name="CS_TERM_MODEL_UCE">
+      <ModifiedTimestamp>2018-01-18.17:38:10</ModifiedTimestamp>
+      <ColNames>UNIT_COUNT_EDITABLE</ColNames>
+      <Predicate>unit_count_editable IN (0, 1)</Predicate>
+    </check>
+    <check id="677" parent="184" name="CS_TERM_MODEL_PE">
+      <ModifiedTimestamp>2018-01-18.17:38:10</ModifiedTimestamp>
+      <ColNames>PERIOD_EDITABLE</ColNames>
+      <Predicate>period_editable IN (0, 1)</Predicate>
+    </check>
+    <check id="678" parent="184" name="CS_TERM_MODEL_DIPD">
+      <ModifiedTimestamp>2018-01-18.17:38:10</ModifiedTimestamp>
+      <ColNames>DAY_IN_PERIOD_DEFAULT</ColNames>
+      <Predicate>day_in_period_default &gt; 0</Predicate>
+    </check>
+    <check id="679" parent="184" name="CS_TERM_MODEL_DIPE">
+      <ModifiedTimestamp>2018-01-18.17:38:10</ModifiedTimestamp>
+      <ColNames>DAY_IN_PERIOD_EDITABLE</ColNames>
+      <Predicate>day_in_period_editable IN (0, 1)</Predicate>
+    </check>
+    <check id="680" parent="184" name="CS_TERM_MODEL_TUD">
+      <ModifiedTimestamp>2018-01-18.17:38:10</ModifiedTimestamp>
+      <ColNames>TIME_UNIT_DEFAULT</ColNames>
+      <Predicate>time_unit_default IN (
+            &apos;CAL_DAY&apos;,
+            &apos;WORK_DAY&apos;,
+            &apos;MONTH&apos;
+        )</Predicate>
+    </check>
+    <check id="681" parent="184" name="CS_TERM_MODEL_TUE">
+      <ModifiedTimestamp>2018-01-18.17:38:10</ModifiedTimestamp>
+      <ColNames>TIME_UNIT_EDITABLE</ColNames>
+      <Predicate>time_unit_editable IN (0, 1)</Predicate>
+    </check>
+    <column id="682" parent="185" name="ID_TERM_MODEL">
+      <Position>1</Position>
+      <Comment>ID vzoru terminu</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="683" parent="185" name="RULE">
+      <Position>2</Position>
+      <Comment>Pravidlo</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="684" parent="185" name="ACTION_DEFAULT">
+      <Position>3</Position>
+      <Comment>Defaultni akce</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+    </column>
+    <column id="685" parent="185" name="ACTION_EDITABLE">
+      <Position>4</Position>
+      <Comment>Priznak editovatelnosti</Comment>
+      <DataType>NUMBER(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="686" parent="185" name="PK_TERM_MODEL_RULE">
+      <ObjectId>120709</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:11</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:11</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_TERM_MODEL
+RULE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="687" parent="185" name="IX_TMR_AD">
+      <ObjectId>120708</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:11</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:11</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ACTION_DEFAULT</ColNames>
+    </index>
+    <key id="688" parent="185" name="PK_TERM_MODEL_RULE">
+      <ModifiedTimestamp>2018-01-18.17:38:11</ModifiedTimestamp>
+      <ColNames>ID_TERM_MODEL
+RULE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_TERM_MODEL_RULE</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="689" parent="185" name="FK_TMR_TERM_MODEL">
+      <ModifiedTimestamp>2018-01-18.17:38:11</ModifiedTimestamp>
+      <ColNames>ID_TERM_MODEL</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_TERM_MODEL</RefTableName>
+      <RefKeyName>PK_TERM_MODEL_ID</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="690" parent="185" name="FK_TMR_AD">
+      <ModifiedTimestamp>2018-01-18.17:38:11</ModifiedTimestamp>
+      <ColNames>ACTION_DEFAULT</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_TERM_ACTION</RefTableName>
+      <RefKeyName>PK_TERM_ACTION</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <check id="691" parent="185" name="FK_TMR_RULE">
+      <ModifiedTimestamp>2018-01-18.17:38:11</ModifiedTimestamp>
+      <ColNames>RULE</ColNames>
+      <Predicate>rule IN (
+            &apos;ABSOLUTE&apos;,
+            &apos;AT_LATEST&apos;,
+            &apos;RELATIVE&apos;,
+            &apos;PERIODIC&apos;
+        )</Predicate>
+    </check>
+    <check id="692" parent="185" name="CS_TMR_AE">
+      <ModifiedTimestamp>2018-01-18.17:38:11</ModifiedTimestamp>
+      <ColNames>ACTION_EDITABLE</ColNames>
+      <Predicate>action_editable IN (0, 1)</Predicate>
+    </check>
+    <column id="693" parent="186" name="PERIOD_CODE">
+      <Position>1</Position>
+      <Comment>Kod z [HCisFrekvenceOpakovaniPodm]</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="694" parent="186" name="PERIOD_DESC">
+      <Position>2</Position>
+      <Comment>Popis z [HCisFrekvenceOpakovaniPodm]</Comment>
+      <DataType>VARCHAR2(4000)|0</DataType>
+    </column>
+    <column id="695" parent="186" name="ORDERING">
+      <Position>3</Position>
+      <Comment>Poradi z [HCisFrekvenceOpakovaniPodm]</Comment>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="696" parent="186" name="IN_MONTHS">
+      <Position>4</Position>
+      <Comment>Perioda prepocitana v mesicich</Comment>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="697" parent="186" name="PERIOD_TYPE">
+      <Position>5</Position>
+      <Comment>Zda se jedna o kalendarni nebo nekalendarni peridou</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="698" parent="186" name="PERIOD_TEXTATION">
+      <Position>6</Position>
+      <Comment>Textace, jenz se zkopiruje do CON_FRAGMENT.VALUE</Comment>
+      <DataType>VARCHAR2(2000)|0</DataType>
+    </column>
+    <index id="699" parent="186" name="PK_TERM_PERIOD_MODEL_CODE">
+      <ObjectId>120702</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:09</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>PERIOD_CODE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="700" parent="186" name="UQ_TERM_PERIOD_MODEL_DESC">
+      <ObjectId>120703</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:09</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:09</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>PERIOD_DESC</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="701" parent="186" name="PK_TERM_PERIOD_MODEL_CODE">
+      <ModifiedTimestamp>2018-01-18.17:38:09</ModifiedTimestamp>
+      <ColNames>PERIOD_CODE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_TERM_PERIOD_MODEL_CODE</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="702" parent="186" name="UQ_TERM_PERIOD_MODEL_DESC">
+      <ModifiedTimestamp>2018-01-18.17:38:09</ModifiedTimestamp>
+      <ColNames>PERIOD_DESC</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>UQ_TERM_PERIOD_MODEL_DESC</UnderlyingIndexName>
+    </key>
+    <check id="703" parent="186" name="CK_PERIOD_TYPE">
+      <ModifiedTimestamp>2018-01-18.17:38:09</ModifiedTimestamp>
+      <ColNames>PERIOD_TYPE</ColNames>
+      <Predicate> PERIOD_TYPE IN (&apos;CALENDAR&apos;,&apos;NON-CALENDAR&apos;)</Predicate>
+    </check>
+    <column id="704" parent="187" name="ID_TEMPLATE_VER">
+      <Position>1</Position>
+      <Comment>ID verze šablony</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="705" parent="187" name="ID_GROUP_MODEL">
+      <Position>2</Position>
+      <Comment>ID vzoru skupiny</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="706" parent="187" name="PK_P2GM_ID">
+      <ObjectId>120711</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:38:11</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:38:11</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_TEMPLATE_VER
+ID_GROUP_MODEL</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="707" parent="187" name="PK_P2GM_ID">
+      <ModifiedTimestamp>2018-01-18.17:38:11</ModifiedTimestamp>
+      <ColNames>ID_TEMPLATE_VER
+ID_GROUP_MODEL</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_P2GM_ID</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="708" parent="187" name="FK_P2GM_TEMPLATE">
+      <ModifiedTimestamp>2018-01-18.17:38:12</ModifiedTimestamp>
+      <ColNames>ID_TEMPLATE_VER</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_TEMPLATE_VER</RefTableName>
+      <RefKeyName>PK_TEMPLATE_VER_ID</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="709" parent="187" name="FK_P2GM_GROUP_MODEL">
+      <ModifiedTimestamp>2018-01-18.17:38:11</ModifiedTimestamp>
+      <ColNames>ID_GROUP_MODEL</ColNames>
+      <RefSchemaName>CMD_MFE</RefSchemaName>
+      <RefTableName>CON_GROUP_MODEL</RefTableName>
+      <RefKeyName>PK_GROUP_MODEL_ID</RefKeyName>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="710" parent="188" name="ID_VARIABLE">
+      <Position>1</Position>
+      <Comment>ID</Comment>
+      <DataType>NUMBER(16)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="711" parent="188" name="TITLE">
+      <Position>2</Position>
+      <Comment>Nazev</Comment>
+      <DataType>VARCHAR2(64)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="712" parent="188" name="KIND">
+      <Position>3</Position>
+      <Comment>Typ systémové hodnoty</Comment>
+      <DataType>VARCHAR2(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="713" parent="188" name="QUERY">
+      <Position>4</Position>
+      <Comment>Kód dotazu na systémovou hodnotu</Comment>
+      <DataType>VARCHAR2(512)|0</DataType>
+    </column>
+    <index id="714" parent="188" name="PK_VARIABLE_ID">
+      <ObjectId>120658</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:58</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:58</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID_VARIABLE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="715" parent="188" name="CS_VARIABLE_TITLE">
+      <ObjectId>120659</ObjectId>
+      <CreatedTimestamp>2018-01-18.17:37:58</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-18.17:37:58</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>TITLE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="716" parent="188" name="PK_VARIABLE_ID">
+      <ModifiedTimestamp>2018-01-18.17:37:58</ModifiedTimestamp>
+      <ColNames>ID_VARIABLE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>PK_VARIABLE_ID</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="717" parent="188" name="CS_VARIABLE_TITLE">
+      <ModifiedTimestamp>2018-01-18.17:37:58</ModifiedTimestamp>
+      <ColNames>TITLE</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>CS_VARIABLE_TITLE</UnderlyingIndexName>
+    </key>
+    <check id="718" parent="188" name="CS_VARIABLE_KIND">
+      <ModifiedTimestamp>2018-01-18.17:37:58</ModifiedTimestamp>
+      <ColNames>KIND</ColNames>
+      <Predicate>kind IN (
+            &apos;HARDCODED&apos;,
+            &apos;SOFTCODED&apos;
+        )</Predicate>
+    </check>
+  </database-model>
+</dataSource>
