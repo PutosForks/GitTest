@@ -1,15 +1,18 @@
 package com.itext.pdf;
 
+import com.itext.xml.XMLToMap;
 import com.itextpdf.forms.PdfAcroForm;
 import com.itextpdf.forms.fields.PdfButtonFormField;
 import com.itextpdf.forms.fields.PdfFormField;
 import com.itextpdf.kernel.pdf.*;
+import org.xml.sax.SAXException;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * Simple filling out form example.
@@ -17,6 +20,7 @@ import java.util.Map;
 public class FillForm {
 
     public static final String SRC = "src/main/resources/pdf/moneta_OA_zivnoleasing_08_2017.pdf";
+    public static final String XML = "src/main/resources/xml/zivnoleasing.xml";
     public static final String DEST = "results/moneta_OA_zivnoleasing_08_2017_filled.pdf";
 
     public static void main(String args[]) throws IOException {
@@ -25,32 +29,42 @@ public class FillForm {
         new FillForm().manipulatePdf(SRC, DEST);
     }
 
+
+    public Map<String, String> getXmlToMap(String uri) {
+        XMLToMap xmlToMap = new XMLToMap();
+        Map<String, String> map = null;
+        try {
+            map = xmlToMap.convertToMap(XML);
+//            Set<String> keys = map.keySet();
+//            for (String key : keys) {
+//                System.out.println("Key [" + key + "] value [" + map.get(key) + "]");
+//            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SAXException e) {
+            e.printStackTrace();
+        }
+        return map;
+    }
+
+    public void setField(Map<String, PdfFormField> fields, String key, String value) {
+        if (fields.containsKey(key)) fields.get(key).setValue(value);
+    }
+
+
     public void manipulatePdf(String src, String dest) throws IOException {
 
         //Initialize PDF document
         PdfDocument pdf = new PdfDocument(new PdfReader(src), new PdfWriter(dest));
-        l
         PdfAcroForm form = PdfAcroForm.getAcroForm(pdf, true);
+
+
+        Map<String, String> map = getXmlToMap(XML);
         Map<String, PdfFormField> fields = form.getFormFields();
-        fields.get("COMPANY_NAME").setValue("Malik Petr");
-        fields.get("ICO").setValue("078978745").setJustification(PdfFormField.ALIGN_CENTER);
-        fields.get("DIC").setValue("5879875");
-        fields.get("VAT_PAYER_1").setValue("Off");
-        fields.get("EMP_CNT").setValue("3");
-        fields.get("DN").setValue("30.11.1980");
-
-        PdfButtonFormField checkField = (PdfButtonFormField) fields.get("Radio1");
-
-        String[] values = checkField.getAppearanceStates();
-        for (String value : values) {
-            System.out.println(value);
+        Set<String> keys = map.keySet();
+        for (String key : keys) {
+            setField(fields, key, map.get(key));
         }
-
-        checkField.setValue("Gamma");
-        fields.get("FF").setValue("OL");
-
-        System.out.println(fields.containsKey("NE1"));
-        System.out.println(fields.containsKey("NE8"));
         pdf.close();
 
     }
