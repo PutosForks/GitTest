@@ -1,0 +1,88 @@
+#*
+ * Copyright 2017 George Aristy
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *#
+#set($h1 = '#')
+#set($h2 = '##')
+#set($h3 = '###')
+#set($h4 = '####')
+#set($h5 = '#####')
+#set($h6 = '######')
+
+$h3 About
+`${project.artifactId}` is a fluent, object-oriented Java API for [YouTrack](https://www.jetbrains.com/youtrack/), tested against version `${youtrackVersion}`. It has just one dependency: Apache's [HttpClient](https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient) version `4.5.x`.
+
+**Note:** the API is currently unstable as we approach our [first milestone](https://github.com/llorllale/youtrack-api/milestone/1).
+
+View the [usage](./usage.html) and the [javadoc](http://javadoc.io/doc/org.llorllale/youtrack-api) resources for additional details.
+
+For bugs or enhancements, please use our [issue tracker](${project.url}/issues).
+
+<br/>
+
+$h4 Snippet
+
+    final YouTrack youtrack = new DefaultYouTrack(
+        new PermanentToken("your_token").login()   //login
+    );
+    
+    youtrack.projects()
+        .stream()                                        //stream of all projects
+        .filter(p -> p.id().equals("project_id"))
+        .get()
+        .issues()                                 
+        .create("summary", "description") //create issue for the selected project
+        .comments()
+        .post("This is my first comment!");              //posts a comment to the newly created issue
+
+<br/>
+
+$h4 Goals
+The goals of this project include:
+
+* Provide a complete API in Java centered on the **user** (eg. the developer). This means that admin features are out of scope.
+* Faithfully follow YouTrack's model and paradigms.
+* Provide a fluent interface to access YouTrack's features.
+* Implement the best OOP design practices.
+* High quality by providing extensive test coverage and documentation.
+* Give back to the community by open-sourcing this project (we've applied the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)).
+
+It is worth noting that **performance is not a goal** of this project.
+
+<br/>
+
+$h4 Why another Java YouTrack API?
+Of the few other Java API projects for YouTrack that seem anywhere remotely "complete", all are lacking several of the following aspects:
+
+* Fluency
+* OOP (`DTO` is the backbone of their design philosophy)
+* Incorrect modeling
+* Immutability
+* Documentation (including licensing)
+* Tests (unit + integration)
+* Project activity
+
+<br/>
+
+$h4 Include in maven projects
+
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>${project.artifactId}</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+<br/>
+
+<div>Icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
