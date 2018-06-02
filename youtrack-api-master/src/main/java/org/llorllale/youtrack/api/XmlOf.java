@@ -46,7 +46,7 @@ final class XmlOf implements Xml {
   }
 
   /**
-   * Encapsulates the given {@link Document} as a {@link XmlObject}.
+   * Encapsulates the given {@link Document} as a {@link }.
    * 
    * @param document the document to encapsulate
    * @since 1.0.0
@@ -56,7 +56,7 @@ final class XmlOf implements Xml {
   }
 
   /**
-   * Encapsulates the given {@link Response} as a {@link XmlObject}.
+   * Encapsulates the given {@link Response} as a {@link }.
    * 
    * @param response the response to encapsulate
    * @throws IOException from {@link InputStreamAsString#apply(java.io.InputStream)}

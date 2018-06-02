@@ -21,7 +21,7 @@ import java.util.Optional;
 import org.llorllale.youtrack.api.session.Session;
 
 /**
- * Adapter {@link org.llorllale.youtrack.api.issues.jaxb.Project} -> {@link Project}.
+ * Adapter {@link org.llorllale.youtrack.api} -> {@link Project}.
  * 
  * @author George Aristy (george.aristy@gmail.com)
  * @since 0.2.0

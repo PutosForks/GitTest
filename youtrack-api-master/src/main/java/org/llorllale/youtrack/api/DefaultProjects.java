@@ -57,7 +57,7 @@ final class DefaultProjects implements Projects {
    * 
    * @param youtrack the parent {@link YouTrack}
    * @param session the user's {@link Session}
-   * @see #DefaultProjects(org.llorllale.youtrack.api.session.Session, 
+   * @see #(org.llorllale.youtrack.api.session.Session,
    *     org.apache.http.client.HttpClient) 
    * @since 0.4.0
    */
