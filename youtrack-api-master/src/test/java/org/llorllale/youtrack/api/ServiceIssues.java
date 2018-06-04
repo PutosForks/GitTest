@@ -50,10 +50,10 @@ public final class ServiceIssues {
     private static String pathname2 = "src\\site\\resources\\sd_in_mmb_2018.xlsx";
     private static File f2 = new File(pathname2);
 
-    private static Workbook wb;
-    private static CellStyle tableRowStyle;
-    private static CellStyle headerRowStyle;
-    private static CellStyle summaryRowStyle;
+    private static Workbook workbook;
+    private static CellStyle tableStyle;
+    private static CellStyle headerStyle;
+    private static CellStyle summaryStyle;
     private static int startSheet = 1;
     static Integer rowNum = 0;
 
@@ -67,28 +67,32 @@ public final class ServiceIssues {
 
     private static void setWorksheet() throws Exception {
         InputStream inp = new FileInputStream(pathname2);
-        wb = WorkbookFactory.create(inp);
+        workbook = WorkbookFactory.create(inp);
 
-        tableRowStyle = wb.createCellStyle();
-        tableRowStyle.setBorderBottom(CellStyle.BORDER_THIN);
-        tableRowStyle.setBorderTop(CellStyle.BORDER_THIN);
-        tableRowStyle.setBorderLeft(CellStyle.BORDER_THIN);
-        tableRowStyle.setBorderRight(CellStyle.BORDER_THIN);
+        tableStyle = workbook.createCellStyle();
+        tableStyle.setBorderBottom(CellStyle.BORDER_THIN);
+        tableStyle.setBorderTop(CellStyle.BORDER_THIN);
+        tableStyle.setBorderLeft(CellStyle.BORDER_THIN);
+        tableStyle.setBorderRight(CellStyle.BORDER_THIN);
 
-        headerRowStyle = wb.createCellStyle();
-        headerRowStyle.setFillPattern(HSSFCellStyle.BORDER_NONE);
-        headerRowStyle.setFillBackgroundColor(new HSSFColor.GREY_25_PERCENT().getIndex());
-        headerRowStyle.setBorderBottom(CellStyle.BORDER_THIN);
-        headerRowStyle.setBorderTop(CellStyle.BORDER_THIN);
-        headerRowStyle.setBorderLeft(CellStyle.BORDER_THIN);
-        headerRowStyle.setBorderRight(CellStyle.BORDER_THIN);
+        headerStyle = workbook.createCellStyle();
+        headerStyle.setFillPattern(HSSFCellStyle.LEAST_DOTS);
+        headerStyle.setFillBackgroundColor(new HSSFColor.GREY_25_PERCENT().getIndex());
+        headerStyle.setFillForegroundColor(new HSSFColor.GREY_25_PERCENT().getIndex());
+        headerStyle.setBorderBottom(CellStyle.BORDER_THIN);
+        headerStyle.setBorderTop(CellStyle.BORDER_THIN);
+        headerStyle.setBorderLeft(CellStyle.BORDER_THIN);
+        headerStyle.setBorderRight(CellStyle.BORDER_THIN);
 
-        summaryRowStyle = wb.createCellStyle();
-        summaryRowStyle.setAlignment(CellStyle.ALIGN_CENTER);
-        summaryRowStyle.setBorderBottom(CellStyle.BORDER_THIN);
-        summaryRowStyle.setBorderTop(CellStyle.BORDER_THIN);
-        summaryRowStyle.setBorderLeft(CellStyle.BORDER_THIN);
-        summaryRowStyle.setBorderRight(CellStyle.BORDER_THIN);
+        summaryStyle = workbook.createCellStyle();
+        summaryStyle.setAlignment(CellStyle.ALIGN_CENTER);
+        summaryStyle.setBorderBottom(CellStyle.BORDER_THIN);
+        summaryStyle.setBorderTop(CellStyle.BORDER_THIN);
+        summaryStyle.setBorderLeft(CellStyle.BORDER_THIN);
+        summaryStyle.setBorderRight(CellStyle.BORDER_THIN);
+        Font summaryFont = workbook.createFont();
+        summaryFont.setBold(true);
+        summaryStyle.setFont(summaryFont);
 
         startSheet++;
         rowNum = 0;
@@ -97,17 +101,17 @@ public final class ServiceIssues {
     private static void setServiceHeader(Sheet sheet) {
         Row currentRow = sheet.createRow(rowNum++);
         currentRow.createCell(0).setCellValue("Název projektu");
-        currentRow.getCell(0).setCellStyle(headerRowStyle);
+        currentRow.getCell(0).setCellStyle(headerStyle);
         currentRow.createCell(1).setCellValue("Požadavek");
-        currentRow.getCell(1).setCellStyle(headerRowStyle);
+        currentRow.getCell(1).setCellStyle(headerStyle);
         currentRow.createCell(2).setCellValue("Zaměstnanec");
-        currentRow.getCell(2).setCellStyle(headerRowStyle);
+        currentRow.getCell(2).setCellStyle(headerStyle);
         currentRow.createCell(3).setCellValue("Výkazano hodin");
-        currentRow.getCell(3).setCellStyle(headerRowStyle);
+        currentRow.getCell(3).setCellStyle(headerStyle);
         currentRow.createCell(4).setCellValue("Datum výkazu");
-        currentRow.getCell(4).setCellStyle(headerRowStyle);
+        currentRow.getCell(4).setCellStyle(headerStyle);
         currentRow.createCell(5).setCellValue("Popis na výkazu");
-        currentRow.getCell(5).setCellStyle(headerRowStyle);
+        currentRow.getCell(5).setCellStyle(headerStyle);
     }
 
 
@@ -115,19 +119,23 @@ public final class ServiceIssues {
         sheet.createRow(rowNum++);
         Row currentRow = sheet.createRow(rowNum++);
         currentRow.createCell(2).setCellValue("Součet:");
+        currentRow.getCell(2).setCellStyle(summaryStyle);
         currentRow.createCell(3).setCellValue(sumPerMonth);
+        currentRow.getCell(3).setCellStyle(summaryStyle);
         currentRow = sheet.createRow(rowNum++);
         currentRow.createCell(2).setCellValue("Hodiny:");
+        currentRow.getCell(2).setCellStyle(summaryStyle);
         currentRow.createCell(3).setCellType(0);
         currentRow.getCell(3).setCellValue((double) sumPerMonth / 60);
+        currentRow.getCell(3).setCellStyle(summaryStyle);
         sheet.createRow(rowNum++);
     }
 
     private static void drawSheet(Project p) {
         try {
             setWorksheet();
-            Sheet sheet = wb.getSheetAt(startSheet);
-            wb.setSheetName(startSheet, p.name());
+            Sheet sheet = workbook.getSheetAt(startSheet);
+            workbook.setSheetName(startSheet, p.name());
             rowNum = 0;
             Long sumPerMonth = 0L;
             int monthDate = monthFrom;
@@ -146,27 +154,29 @@ public final class ServiceIssues {
 
                 currentRow = sheet.createRow(rowNum);
                 currentRow.createCell(0).setCellValue(tt.getProjectName());
-                currentRow.getCell(0).setCellStyle(tableRowStyle);
+                currentRow.getCell(0).setCellStyle(tableStyle);
                 currentRow.createCell(1).setCellValue(tt.getIssueName());
-                currentRow.getCell(1).setCellStyle(tableRowStyle);
+                currentRow.getCell(1).setCellStyle(tableStyle);
                 currentRow.createCell(2).setCellValue(tt.getUserlogin());
-                currentRow.getCell(2).setCellStyle(tableRowStyle);
+                currentRow.getCell(2).setCellStyle(tableStyle);
                 currentRow.createCell(3).setCellType(0);
-                currentRow.getCell(3).setCellStyle(tableRowStyle);
+                currentRow.getCell(3).setCellStyle(tableStyle);
                 currentRow.getCell(3).setCellValue(tt.getDuration());
-                currentRow.getCell(3).setCellStyle(tableRowStyle);
+                currentRow.getCell(3).setCellStyle(tableStyle);
                 currentRow.createCell(4).setCellValue(tt.getDate().format(DateTimeFormatter.ofPattern("dd.M.yyyy")).toString());
-                currentRow.getCell(4).setCellStyle(tableRowStyle);
+                currentRow.getCell(4).setCellStyle(tableStyle);
                 currentRow.createCell(5).setCellValue(tt.getDescription().toString());
-                currentRow.getCell(5).setCellStyle(tableRowStyle);
+                currentRow.getCell(5).setCellStyle(tableStyle);
 
                 monthDate = tt.getMonthDate();
                 sumPerMonth += tt.getDuration();
             }
 
+            addSummaryRow(sheet, sumPerMonth);
+
             FileOutputStream fileOut = new FileOutputStream(pathname2);
 
-            wb.write(fileOut);
+            workbook.write(fileOut);
             fileOut.close();
         } catch (Exception e) {
             e.printStackTrace();
@@ -179,21 +189,29 @@ public final class ServiceIssues {
 
 
     private static void issuesOfProject(Project p) throws IOException {
+        String description = null;
         for (Issue i : p.issues().stream().collect(Collectors.toList())) {
             Issue issue = p.issues().get(i.id()).get();
-            AssignedField assignedField = p.issues().get(issue.id()).get().fields().stream().filter(assignedField1 -> assignedField1.name().equals(type)).findFirst().get();
+            AssignedField assignedField = issue.fields().stream().filter(assignedField1 -> assignedField1.name().equals(type)).findFirst().get();
             if (assignedField.value().asString().equals(service)) {
 
                 List<TimeTrackEntry> issueTimeTracking = issue.timetracking().stream().collect(Collectors.toList());
 
                 for (TimeTrackEntry itt : issueTimeTracking) {
                     if (itt.date().getYear() == year) {
+
+                        try {
+                            description = itt.description().get();
+                        } catch (Exception e) {
+                            description = "";
+                        }
+
                         loadToTimeTrack(new TimeTrack(p.name(),
                                 issue.id() + " " + assignedField.value().asString(),
                                 itt.author(),
                                 itt.duration(),
                                 itt.date(),
-                                (itt.description().isPresent()) ? itt.description().get() : null));
+                                description));
                     }
                 }
             }
@@ -216,10 +234,7 @@ public final class ServiceIssues {
             List<Project> projects = new DefaultYouTrack(session).projects().stream().collect(Collectors.toList());
             for (Project p : projects) {
                 issuesOfProject(p);
-
-                if (p.id().equals("CM")) {
-                    drawSheet(p);
-                }
+                drawSheet(p);
 
                 timeTracks = new ArrayList<>();
 
