@@ -23,6 +23,7 @@ import java.time.ZoneId;
 import java.util.Optional;
 import java.util.stream.Stream;
 
+import org.apache.http.HttpHeaders;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
@@ -30,6 +31,12 @@ import org.apache.http.entity.ContentType;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClients;
 
+
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.HttpClients;
+
+import org.apache.http.message.BasicHeader;
 import org.llorllale.youtrack.api.session.Session;
 import org.llorllale.youtrack.api.session.UnauthorizedException;
 
@@ -64,7 +71,7 @@ final class DefaultIssueTimeTracking implements IssueTimeTracking {
    * 
    * @param session the user's {@link Session}
    * @param issue the {@link Issue} to which this {@link IssueTimeTracking} is attached to
-   * @see #DefaultTimeTracking(org.llorllale.youtrack.api.session.Session, 
+   * @see #(org.llorllale.youtrack.api.session.Session,
    *     org.llorllale.youtrack.api.Issue, org.apache.http.client.HttpClient) 
    * @since 0.4.0
    */
@@ -74,6 +81,14 @@ final class DefaultIssueTimeTracking implements IssueTimeTracking {
 
   @Override
   public Stream<TimeTrackEntry> stream() throws IOException, UnauthorizedException {
+
+    HttpGet httpGet = new HttpGet(
+            this.session.baseUrl().toString()
+                    .concat(String.format(PATH_TEMPLATE, this.issue.id()))
+    );
+
+    httpGet.setHeader(HttpHeaders.ACCEPT, "application/xml; charset=UTF-8");
+
     return new StreamOf<>(
       new MappedCollection<>(
         xml -> new XmlTimeTrackEntry(this.issue, xml),
@@ -82,11 +97,8 @@ final class DefaultIssueTimeTracking implements IssueTimeTracking {
           new HttpResponseAsResponse(
             this.httpClient.execute(
               new HttpRequestWithSession(
-                this.session, 
-                new HttpGet(
-                  this.session.baseUrl().toString()
-                    .concat(String.format(PATH_TEMPLATE, this.issue.id()))
-                )
+                this.session,
+                httpGet
               )
             )
           )

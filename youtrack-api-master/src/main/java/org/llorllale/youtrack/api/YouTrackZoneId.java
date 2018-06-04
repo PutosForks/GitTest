@@ -37,6 +37,6 @@ final class YouTrackZoneId {
    * @since 1.0.0
    */
   ZoneId toZoneId() {
-    return ZoneId.of("GMT+0");
+    return ZoneId.of("GMT+2");
   }
 }

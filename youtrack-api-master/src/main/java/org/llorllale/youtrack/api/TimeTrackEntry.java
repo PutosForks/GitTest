@@ -49,7 +49,7 @@ public interface TimeTrackEntry {
    * @return the duration during which the work-item was worked on
    * @since 0.4.0
    */
-  Duration duration();
+  Long duration();
 
   /**
    * The item's description.
@@ -57,7 +57,9 @@ public interface TimeTrackEntry {
    * @return the item's description
    * @since 0.4.0
    */
-  String description();
+  Optional<String> description();
+
+  String author();
 
   /**
    * The entry's {@link TimeTrackEntryType type}.

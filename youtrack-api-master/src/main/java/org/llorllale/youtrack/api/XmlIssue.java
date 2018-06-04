@@ -71,7 +71,8 @@ final class XmlIssue implements Issue {
 
   @Override
   public String summary() {
-    return this.xml.textOf("//field[@name = 'summary']/value").get();
+
+    return this.xml.textOf("field[@name = 'summary']/value").get();
   }
 
   @Override

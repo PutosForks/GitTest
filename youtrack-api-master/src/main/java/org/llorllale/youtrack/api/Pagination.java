@@ -71,7 +71,7 @@ final class Pagination<T> implements Iterator<T> {
    * @param combiner the function that maps page numbers to http requests
    * @param mapper the function that maps the resources to collections
    * @param httpClient the {@link HttpClient} to use to execute the requests
-   * @see #Pagination(PageUri, ExceptionalFunction) 
+   * @see #(PageUri, ExceptionalFunction)
    * @see PageUri
    * @since 1.0.0
    */

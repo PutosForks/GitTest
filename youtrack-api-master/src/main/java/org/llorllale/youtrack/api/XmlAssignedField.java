@@ -18,7 +18,7 @@ package org.llorllale.youtrack.api;
 
 /**
  * Combines and adapts a given {@link Field} and a given 
- * {@link org.llorllale.youtrack.api.jaxb.Field} into an {@link AssignedField}.
+ * {@link org.llorllale.youtrack.api} into an {@link AssignedField}.
  *
  * @author George Aristy (george.aristy@gmail.com)
  * @since 0.8.0
@@ -46,9 +46,11 @@ final class XmlAssignedField implements AssignedField {
   public Issue issue() {
     return this.issue;
   }
-
   @Override
   public FieldValue value() {
+    //field[@name = 'summary']/
+   // System.out.println(this.xml.node().getTextContent());
+   // System.out.println(this.issue.id());
     return new XmlFieldValue(this.xml.child("value").get(), this);
   }
 

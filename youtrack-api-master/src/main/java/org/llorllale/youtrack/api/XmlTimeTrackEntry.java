@@ -59,14 +59,21 @@ final class XmlTimeTrackEntry implements TimeTrackEntry {
   }
 
   @Override
-  public Duration duration() {
-    return Duration.ofMinutes(Long.parseLong(this.xml.textOf("duration").get()));
+  public Long duration() {
+    return Long.parseLong(this.xml.textOf("duration").get());
   }
 
   @Override
-  public String description() {
-    return this.xml.textOf("description").get();
+  public String author() {
+    return this.xml.textOf("author/@login").get();
   }
+
+
+  @Override
+  public Optional<String> description() {
+    return Optional.of(this.xml.textOf("description").get());
+  }
+
 
   @Override
   public Optional<TimeTrackEntryType> type() {

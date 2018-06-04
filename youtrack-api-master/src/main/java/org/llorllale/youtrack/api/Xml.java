@@ -41,7 +41,7 @@ interface Xml {
 
   /**
    * Returns the first {@link Xml} node selected with {@code xpath}.
-   * 
+   *
    * @param xpath the xpath expression that identifies the child node desired
    * @return the first {@link Xml} node selected with {@code xpath}
    * @throws UncheckedException wrapping any {@link XPathExpressionException} thrown by java

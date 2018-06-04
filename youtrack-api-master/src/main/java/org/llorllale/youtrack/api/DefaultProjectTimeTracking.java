@@ -18,6 +18,8 @@ package org.llorllale.youtrack.api;
 
 import java.io.IOException;
 import java.util.stream.Stream;
+
+import org.apache.http.HttpHeaders;
 import org.apache.http.client.HttpClient;
 
 import org.apache.http.client.methods.HttpGet;
@@ -40,7 +42,7 @@ final class DefaultProjectTimeTracking implements ProjectTimeTracking {
 
   /**
    * Primary ctor.
-   * 
+   *
    * @param project the parent {@link Project}
    * @param session the user's {@link Session}
    * @param httpClient the {@link HttpClient} to use
@@ -54,7 +56,7 @@ final class DefaultProjectTimeTracking implements ProjectTimeTracking {
 
   /**
    * Ctor.
-   * 
+   *
    * @param project the parent {@link Project}
    * @param session the user's {@link Session}
    * @since 0.8.0
@@ -62,7 +64,7 @@ final class DefaultProjectTimeTracking implements ProjectTimeTracking {
   DefaultProjectTimeTracking(Project project, Session session) {
     this(project, session, HttpClients.createDefault());
   }
-  
+
   @Override
   public Project project() {
     return this.project;
@@ -70,16 +72,21 @@ final class DefaultProjectTimeTracking implements ProjectTimeTracking {
 
   @Override
   public boolean enabled() throws IOException, UnauthorizedException {
+
+      HttpGet httpGet = new HttpGet(
+              this.session.baseUrl().toString()
+                      .concat(String.format(PATH_TEMPLATE, this.project().id()))
+      );
+
+      httpGet.setHeader(HttpHeaders.ACCEPT, "application/xml; charset=UTF-8");
+
     final Xml settings = new XmlsOf(
         "/settings",
         new HttpResponseAsResponse(
             this.httpClient.execute(
                 new HttpRequestWithSession(
-                    this.session, 
-                    new HttpGet(
-                        this.session.baseUrl().toString()
-                            .concat(String.format(PATH_TEMPLATE, this.project().id()))
-                    )
+                    this.session,
+                    httpGet
                 )
             )
         )
@@ -100,7 +107,7 @@ final class DefaultProjectTimeTracking implements ProjectTimeTracking {
                 new HttpResponseAsResponse(
                     this.httpClient.execute(
                         new HttpRequestWithSession(
-                            this.session, 
+                            this.session,
                             new HttpGet(
                                 this.session.baseUrl().toString()
                                     .concat(String.format(PATH_TEMPLATE, this.project().id()))

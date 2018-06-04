@@ -29,7 +29,7 @@ import org.llorllale.youtrack.api.session.UnauthorizedException;
 
 /**
  * Default implementation of {@link Projects}.
- * 
+ *
  * @author George Aristy (george.aristy@gmail.com)
  * @since 0.4.0
  */
@@ -40,7 +40,7 @@ final class DefaultProjects implements Projects {
 
   /**
    * Primary ctor.
-   * 
+   *
    * @param youtrack the parent {@link YouTrack}
    * @param session the user's {@link Session}
    * @param httpClient the {@link HttpClient} to use
@@ -54,11 +54,11 @@ final class DefaultProjects implements Projects {
 
   /**
    * Uses the {@link HttpClients#createDefault() default} http client.
-   * 
+   *
    * @param youtrack the parent {@link YouTrack}
    * @param session the user's {@link Session}
    * @see #(org.llorllale.youtrack.api.session.Session,
-   *     org.apache.http.client.HttpClient) 
+   *     org.apache.http.client.HttpClient)
    * @since 0.4.0
    */
   DefaultProjects(YouTrack youtrack, Session session) {
@@ -75,7 +75,7 @@ final class DefaultProjects implements Projects {
           new HttpResponseAsResponse(
             this.httpClient.execute(
               new HttpRequestWithSession(
-                this.session, 
+                this.session,
                 new HttpGet(
                   this.session.baseUrl().toString().concat("/project/all")
                 )
@@ -96,7 +96,7 @@ final class DefaultProjects implements Projects {
         new HttpResponseAsResponse(
           this.httpClient.execute(
             new HttpRequestWithSession(
-              this.session, 
+              this.session,
                 new HttpGet(
                   this.session.baseUrl().toString()
                     .concat("/admin/project/")

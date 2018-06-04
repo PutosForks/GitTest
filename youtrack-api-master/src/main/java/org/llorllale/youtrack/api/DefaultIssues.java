@@ -79,7 +79,7 @@ final class DefaultIssues implements Issues {
       new Pagination<>(
         pageSize,
         n -> new HttpRequestWithSession(
-          this.session, 
+          this.session,
           new HttpGet(
             new UncheckedUriBuilder(
               this.session.baseUrl().toString()
@@ -89,7 +89,7 @@ final class DefaultIssues implements Issues {
               .build()
           )
         ),
-        resp -> 
+        resp ->
           new MappedCollection<>(
             xml -> new XmlIssue(this.project(), this.session, xml),
             new XmlsOf("/issues/issue", resp)

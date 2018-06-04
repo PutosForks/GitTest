@@ -18,40 +18,40 @@ package org.llorllale.youtrack.api;
 
 /**
  * Adapts an {@link Xml} received from YouTrack to a {@link TimeTrackEntryType}.
- * 
+ *
  * @author George Aristy (george.aristy@gmail.com)
  * @since 0.8.0
  */
 final class XmlTimeTrackEntryType implements TimeTrackEntryType {
-  private final Xml xml;
+    private final Xml xml;
 
-  /**
-   * Ctor.
-   * 
-   * @param xml the xml recieved from YouTrack
-   * @since 0.8.0
-   */
-  XmlTimeTrackEntryType(Xml xml) {
-    this.xml = xml;
-  }
-
-  @Override
-  public String asString() {
-    return this.xml.textOf("name").get();
-  }
-
-  @Override
-  public int hashCode() {
-    return this.asString().hashCode();
-  }
-
-  @Override
-  public boolean equals(Object object) {
-    if (!(object instanceof TimeTrackEntryType)) {
-      return false;
+    /**
+     * Ctor.
+     *
+     * @param xml the xml recieved from YouTrack
+     * @since 0.8.0
+     */
+    XmlTimeTrackEntryType(Xml xml) {
+        this.xml = xml;
     }
 
-    final TimeTrackEntryType other = (TimeTrackEntryType) object;
-    return this.asString().equals(other.asString());
-  }
+    @Override
+    public String asString() {
+        return this.xml.textOf("name").get();
+    }
+
+    @Override
+    public int hashCode() {
+        return this.asString().hashCode();
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (!(object instanceof TimeTrackEntryType)) {
+            return false;
+        }
+
+        final TimeTrackEntryType other = (TimeTrackEntryType) object;
+        return this.asString().equals(other.asString());
+    }
 }
