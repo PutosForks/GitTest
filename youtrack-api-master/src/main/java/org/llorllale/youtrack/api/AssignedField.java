@@ -18,24 +18,24 @@ package org.llorllale.youtrack.api;
 
 /**
  * A {@link Field} that is attached to an {@link Issue}.
- * 
+ *
  * @author George Aristy (george.aristy@gmail.com)
  * @since 0.8.0
  */
 public interface AssignedField extends Field {
-  /**
-   * The {@link Issue} to which this {@link AssignedField} is attached to.
-   * 
-   * @return the {@link Issue} to which this {@link AssignedField} is attached to
-   * @since 0.8.0
-   */
-  Issue issue();
+    /**
+     * The {@link Issue} to which this {@link AssignedField} is attached to.
+     *
+     * @return the {@link Issue} to which this {@link AssignedField} is attached to
+     * @since 0.8.0
+     */
+    Issue issue();
 
-  /**
-   * This field's {@link FieldValue value}.
-   * 
-   * @return this field's {@link FieldValue value}
-   * @since 0.8.0
-   */
-  FieldValue value();
+    /**
+     * This field's {@link FieldValue value}.
+     *
+     * @return this field's {@link FieldValue value}
+     * @since 0.8.0
+     */
+    FieldValue value();
 }

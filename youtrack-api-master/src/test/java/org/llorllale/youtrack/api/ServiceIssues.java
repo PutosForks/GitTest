@@ -1,24 +1,9 @@
-/*
- * Copyright 2017 George Aristy
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package org.llorllale.youtrack.api;
 
 // @checkstyle AvoidStaticImport (2 lines)
 
 import org.apache.poi.hssf.usermodel.HSSFCellStyle;
+import org.apache.poi.hssf.usermodel.HSSFFormulaEvaluator;
 import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.*;
 import org.llorllale.youtrack.api.session.PermanentToken;
@@ -27,11 +12,9 @@ import org.stringdata.entity.FilesCopy;
 import org.stringdata.entity.TimeTrack;
 
 import java.io.*;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public final class ServiceIssues {
@@ -43,6 +26,7 @@ public final class ServiceIssues {
     private static int monthFrom;
     private static int monthTo;
     private static List<TimeTrack> timeTracks = new ArrayList<>();
+    private static Map<String, Double> summaryRows = new HashMap<>();
 
     private static String pathname1 = "src\\site\\resources\\sd_in_mmb.xlsx";
     private static File f1 = new File(pathname1);
@@ -54,7 +38,8 @@ public final class ServiceIssues {
     private static CellStyle tableStyle;
     private static CellStyle headerStyle;
     private static CellStyle summaryStyle;
-    private static int startSheet = 1;
+    private static int startSheet = 2;
+    private static Map<String, String> users = new HashMap<>();
     static Integer rowNum = 0;
 
     public static void setup() throws Exception {
@@ -65,10 +50,43 @@ public final class ServiceIssues {
         ).login();
     }
 
-    private static void setWorksheet() throws Exception {
+
+    public static void deletedUsers() {
+        users.put("system_user@b8XoJZ1eDW", "Adam Neco");
+    }
+
+
+    private static String getAuthor(String login, TimeTrackEntry itt, Project p) throws IOException {
+        String value;
+        if (users.containsKey(login)) {
+            return users.get(login);
+        } else if (login.equals("system_user@b8XoJZ1eDW") && p.id().equals("EA")) {
+            users.put("Vlada Adamovsky", "Vlada Adamovsky");
+            return "Vlada Adamovsky";
+        } else if (login.equals("system_user@b8XoJZ1eDW")) {
+            users.put("Tomas Morong", "Tomas Morong");
+            return "Tomas Morong";
+        } else {
+            value = p.users().user(login).email().replace("@stringdata.cz", "").replace(".", " ");
+            users.put(login, value);
+            return value;
+        }
+
+    }
+
+    private static void setWorkBook() throws Exception {
         InputStream inp = new FileInputStream(pathname2);
         workbook = WorkbookFactory.create(inp);
+    }
 
+
+    private static void closeWorkbook() throws Exception {
+        FileOutputStream fileOut = new FileOutputStream(pathname2);
+        workbook.write(fileOut);
+        fileOut.close();
+    }
+
+    private static void setWorksheet() {
         tableStyle = workbook.createCellStyle();
         tableStyle.setBorderBottom(CellStyle.BORDER_THIN);
         tableStyle.setBorderTop(CellStyle.BORDER_THIN);
@@ -98,37 +116,59 @@ public final class ServiceIssues {
         rowNum = 0;
     }
 
+    private static void setCellValue(Row currentRow, int cellIndex, String value, CellStyle cellStyle) {
+        currentRow.createCell(cellIndex).setCellValue(value);
+        currentRow.getCell(cellIndex).setCellStyle(cellStyle);
+    }
+
+    private static void setCellValue(Row currentRow, int cellIndex, double value, CellStyle cellStyle) {
+        currentRow.createCell(cellIndex).setCellValue(value);
+        currentRow.getCell(cellIndex).setCellStyle(cellStyle);
+    }
+
+    private static void setCellValue(Row currentRow, int cellIndex, Date value, CellStyle cellStyle) {
+        currentRow.createCell(cellIndex).setCellValue(value);
+        currentRow.getCell(cellIndex).setCellStyle(cellStyle);
+    }
+
     private static void setServiceHeader(Sheet sheet) {
         Row currentRow = sheet.createRow(rowNum++);
-        currentRow.createCell(0).setCellValue("Název projektu");
-        currentRow.getCell(0).setCellStyle(headerStyle);
-        currentRow.createCell(1).setCellValue("Požadavek");
-        currentRow.getCell(1).setCellStyle(headerStyle);
-        currentRow.createCell(2).setCellValue("Zaměstnanec");
-        currentRow.getCell(2).setCellStyle(headerStyle);
-        currentRow.createCell(3).setCellValue("Výkazano hodin");
-        currentRow.getCell(3).setCellStyle(headerStyle);
-        currentRow.createCell(4).setCellValue("Datum výkazu");
-        currentRow.getCell(4).setCellStyle(headerStyle);
-        currentRow.createCell(5).setCellValue("Popis na výkazu");
-        currentRow.getCell(5).setCellStyle(headerStyle);
+        setCellValue(currentRow, 0, "Název projektu", headerStyle);
+        setCellValue(currentRow, 1, "Požadavek", headerStyle);
+        setCellValue(currentRow, 2, "Zaměstnanec", headerStyle);
+        setCellValue(currentRow, 3, "Výkazano hodin", headerStyle);
+        setCellValue(currentRow, 4, "Datum výkazu", headerStyle);
+        setCellValue(currentRow, 5, "Popis na výkazu", headerStyle);
     }
 
 
-    private static void addSummaryRow(Sheet sheet, Long sumPerMonth) {
+    private static void addSummaryRow(Sheet sheet, Long sumPerMonth, String projectName, int month) {
         sheet.createRow(rowNum++);
+        Double sumHours = (double) sumPerMonth / 60;
         Row currentRow = sheet.createRow(rowNum++);
-        currentRow.createCell(2).setCellValue("Součet:");
-        currentRow.getCell(2).setCellStyle(summaryStyle);
-        currentRow.createCell(3).setCellValue(sumPerMonth);
-        currentRow.getCell(3).setCellStyle(summaryStyle);
+        setCellValue(currentRow, 2, "Součetu", summaryStyle);
+        setCellValue(currentRow, 3, sumPerMonth, summaryStyle);
         currentRow = sheet.createRow(rowNum++);
-        currentRow.createCell(2).setCellValue("Hodiny:");
-        currentRow.getCell(2).setCellStyle(summaryStyle);
-        currentRow.createCell(3).setCellType(0);
-        currentRow.getCell(3).setCellValue((double) sumPerMonth / 60);
-        currentRow.getCell(3).setCellStyle(summaryStyle);
+        setCellValue(currentRow, 2, "Hodiny", summaryStyle);
+        setCellValue(currentRow, 3, sumHours, summaryStyle);
         sheet.createRow(rowNum++);
+        // if (!sumPerMonth.equals(""))
+        summaryRows.put(projectName + "" + "01-0" + month+ "-" + year, sumHours);
+
+    }
+
+    private static void drawSummarySheet() {
+        int row = 499;
+        Sheet sheet = workbook.getSheetAt(0);
+        Row currentRow = sheet.createRow(row);
+        Iterator it = summaryRows.entrySet().iterator();
+        while (it.hasNext()) {
+            Map.Entry pair = (Map.Entry) it.next();
+            currentRow = sheet.createRow(row++);
+            currentRow.createCell(0).setCellValue((String) pair.getKey());
+            currentRow.createCell(1).setCellValue((Double) pair.getValue());
+            it.remove(); // avoids a ConcurrentModificationException
+        }
     }
 
     private static void drawSheet(Project p) {
@@ -136,23 +176,25 @@ public final class ServiceIssues {
             setWorksheet();
             Sheet sheet = workbook.getSheetAt(startSheet);
             workbook.setSheetName(startSheet, p.name());
-            rowNum = 0;
             Long sumPerMonth = 0L;
             int monthDate = monthFrom;
             Row currentRow;
             setServiceHeader(sheet);
             ListIterator<TimeTrack> it = timeTracks.listIterator();
             while (it.hasNext()) {
-                rowNum++;
                 TimeTrack tt = it.next();
 
+                if (tt.getMonthDate() > monthTo) {
+                    break;
+                }
+
                 if (monthDate != tt.getMonthDate()) {
-                    addSummaryRow(sheet, sumPerMonth);
+                    addSummaryRow(sheet, sumPerMonth, tt.getProjectName(), monthDate);
                     setServiceHeader(sheet);
                     sumPerMonth = 0L;
                 }
 
-                currentRow = sheet.createRow(rowNum);
+                currentRow = sheet.createRow(rowNum++);
                 currentRow.createCell(0).setCellValue(tt.getProjectName());
                 currentRow.getCell(0).setCellStyle(tableStyle);
                 currentRow.createCell(1).setCellValue(tt.getIssueName());
@@ -172,12 +214,6 @@ public final class ServiceIssues {
                 sumPerMonth += tt.getDuration();
             }
 
-            addSummaryRow(sheet, sumPerMonth);
-
-            FileOutputStream fileOut = new FileOutputStream(pathname2);
-
-            workbook.write(fileOut);
-            fileOut.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -190,14 +226,17 @@ public final class ServiceIssues {
 
     private static void issuesOfProject(Project p) throws IOException {
         String description = null;
-        for (Issue i : p.issues().stream().collect(Collectors.toList())) {
-            Issue issue = p.issues().get(i.id()).get();
-            AssignedField assignedField = issue.fields().stream().filter(assignedField1 -> assignedField1.name().equals(type)).findFirst().get();
-            if (assignedField.value().asString().equals(service)) {
+        List<Issue> issues = p.issues().stream().collect(Collectors.toList());
+        for (Issue issue : issues) {
+
+            Optional<AssignedField> assignedField = issue.fields().stream().filter(assignedField1 -> assignedField1.issue().id().equals(issue.id()) &&
+                    assignedField1.name().equals(type) && assignedField1.value().asString().equals(service)).findAny();
+            if (assignedField.isPresent()) {
 
                 List<TimeTrackEntry> issueTimeTracking = issue.timetracking().stream().collect(Collectors.toList());
 
                 for (TimeTrackEntry itt : issueTimeTracking) {
+
                     if (itt.date().getYear() == year) {
 
                         try {
@@ -207,8 +246,8 @@ public final class ServiceIssues {
                         }
 
                         loadToTimeTrack(new TimeTrack(p.name(),
-                                issue.id() + " " + assignedField.value().asString(),
-                                itt.author(),
+                                issue.id() + " " + issue.summary(),
+                                getAuthor(itt.author(), itt, p),
                                 itt.duration(),
                                 itt.date(),
                                 description));
@@ -218,9 +257,6 @@ public final class ServiceIssues {
         }
 
         Collections.sort(timeTracks);
-        for (TimeTrack tt : timeTracks) {
-            System.out.println(tt.toString());
-        }
 
     }
 
@@ -228,17 +264,25 @@ public final class ServiceIssues {
         try {
             new FilesCopy(f1, f2);
             setup();
+            setWorkBook();
             year = Integer.parseInt(args[0]);
             monthFrom = Integer.parseInt(args[1]);
             monthTo = Integer.parseInt(args[2]);
             List<Project> projects = new DefaultYouTrack(session).projects().stream().collect(Collectors.toList());
             for (Project p : projects) {
+                if (p.id().equals("ML") || p.id().equals("SDX")) {
+                    continue;
+                }
+                System.out.println(p.name());
                 issuesOfProject(p);
+                System.out.println(DateTimeFormatter.ofPattern("hh:mm:ss").format(ZonedDateTime.now()) + " " + p.name() + " proccessed ");
                 drawSheet(p);
-
                 timeTracks = new ArrayList<>();
-
             }
+
+            drawSummarySheet();
+            HSSFFormulaEvaluator.evaluateAllFormulaCells(workbook);
+            closeWorkbook();
 
         } catch (Exception e) {
             e.printStackTrace();

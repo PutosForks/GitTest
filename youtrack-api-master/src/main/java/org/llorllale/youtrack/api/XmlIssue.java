@@ -120,7 +120,7 @@ final class XmlIssue implements Issue {
           this,
           x
       ),
-      this.xml.children("//field[count(valueId) > 0]")
+      this.xml.children("field[count(valueId) > 0]")
     );
   }
 

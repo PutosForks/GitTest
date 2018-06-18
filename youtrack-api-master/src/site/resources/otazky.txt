@@ -1,0 +1,8 @@
+1.) Gepard neni v Youtracku?
+2.) FCO a DC nejsou vedeny v Youtracku
+3.) Co jsou formulare v Martinovem excelu? Jsou to predpisy?
+4.) Co je TMGL?
+5.) Proc se prihazuje 1PD na vyvojare do nabidek?
+
+
+=ROUND(IFERROR(VLOOKUP(CONCATENATE($A4,TEXT(F$1,"DD-MM-YYYY")),$A$500:$B$800,2,0),0),2)
